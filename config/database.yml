@@ -34,13 +34,7 @@ staging:
   <<: *production
 
 qa:
-  adapter: postgresql
-  host: localhost
-  database: ap11
-  username: pgn
-  password: pgn
-  pool: 5
-  timeout: 5000
+  <<: *production
 
 cucumber:
   <<: *test
