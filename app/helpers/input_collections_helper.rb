@@ -1,0 +1,2 @@
+module InputCollectionsHelper
+end

@@ -1,0 +1,9 @@
+= simple_form_for(@input_collection) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :experiment_id
+    = f.input :collection_id
+
+  .form-actions
+    = f.button :submit

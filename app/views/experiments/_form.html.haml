@@ -1,0 +1,35 @@
+= form_for(@experiment) do |f|
+
+  = render "shared/error_messages", :target => @experiment
+
+  .control-group
+    = f.label :title, "Title", :class => "control-label"
+    .controls
+      = f.text_field :title
+
+  .control-group
+    = f.label :date, "Date", :class => "control-label"
+    .controls
+      = f.date_select :date
+
+  .control-group
+    = f.label :user, "Owner", :class => "control-label"
+    .controls
+      = f.collection_select :user_id, @users, :id, :full_name
+
+  - unless @experiment.new_record?
+    .control-group
+      = f.label :collections, "Input Collections", :class => "control-label"
+      .controls
+        %a{:class => "btn btn-primary", :href => "#"}
+          %i{:class => "icon-plus icon-white"}
+          Add Collection
+    .control-group
+      = f.label :collections, "Output Collections", :class => "control-label"
+      .controls
+        %a{:class => "btn btn-primary", :href => "#"}
+          %i{:class => "icon-plus icon-white"}
+          Add Collection
+  .form-actions
+    = f.submit "#{@experiment.new_record? ? 'Create' : 'Edit'} Experiment", :class => "btn btn-primary"
+    %a.btn{:href => experiments_path} Cancel

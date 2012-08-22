@@ -1,0 +1,21 @@
+%h1 Listing output_collections
+
+%table
+  %tr
+    %th Experiment
+    %th Collection
+    %th
+    %th
+    %th
+
+  - @output_collections.each do |output_collection|
+    %tr
+      %td= output_collection.experiment_id
+      %td= output_collection.collection_id
+      %td= link_to 'Show', output_collection
+      %td= link_to 'Edit', edit_output_collection_path(output_collection)
+      %td= link_to 'Destroy', output_collection, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Output collection', new_output_collection_path

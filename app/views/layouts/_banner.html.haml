@@ -1,0 +1,16 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+      %a.brand{:href => root_path } AP11 - Proteomics-Genomics Nexus
+      .nav-collapse
+        %ul.nav
+          %li= link_to "Add me"
+      = render 'layouts/user_menu'
+-#.navbar.navbar-fixed-top
+-#  .navbar-inner
+-#    .container
+-#      %a{:href => "http://www.unsw.edu.au", :target => "_blank"}
+-#        %img{:alt => "Link to UNSW website", :src => "assets/logo_unsw.gif"}
+-#      %a{:href => "index.html"}
+-#        %img{:alt => "Link to The New South Wales Systems Biology Initiative home page", :src => "assets/hd_home.gif"}

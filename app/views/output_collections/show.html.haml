@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Experiment:
+  = @output_collection.experiment_id
+%p
+  %b Collection:
+  = @output_collection.collection_id
+
+= link_to 'Edit', edit_output_collection_path(@output_collection)
+\|
+= link_to 'Back', output_collections_path

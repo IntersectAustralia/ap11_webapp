@@ -1,0 +1,25 @@
+%h1 Listing collections
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th For codes
+    %th Citation info
+    %th
+    %th
+    %th
+
+  - @collections.each do |collection|
+    %tr
+      %td= collection.name
+      %td= collection.description
+      %td= collection.for_codes
+      %td= collection.citation_info
+      %td= link_to 'Show', collection
+      %td= link_to 'Edit', edit_collection_path(collection)
+      %td= link_to 'Destroy', collection, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Collection', new_experiment_collection_path

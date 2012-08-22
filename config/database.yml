@@ -1,0 +1,49 @@
+# Postgresql 9.0
+
+development:
+  adapter: postgresql
+  host: localhost
+  database: ap11-dev
+  username: ap11
+  password: ap11
+  pool: 5
+  timeout: 5000
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &test
+  adapter: postgresql
+  host: localhost
+  database: ap11-test
+  username: ap11
+  password: ap11
+  pool: 5
+  timeout: 5000
+
+production: &production
+  adapter: postgresql
+  host: localhost
+  database: ap11
+  username: ap11
+  password: ap11
+  pool: 5
+  timeout: 5000
+
+staging:
+  <<: *production
+
+qa:
+  adapter: postgresql
+  host: localhost
+  database: ap11
+  username: pgn
+  password: pgn
+  pool: 5
+  timeout: 5000
+
+cucumber:
+  <<: *test
+
+spec:
+  <<: *test

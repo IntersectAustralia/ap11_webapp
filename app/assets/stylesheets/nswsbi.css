@@ -1,0 +1,255 @@
+
+@charset "UTF-8";
+body {
+    color: #333333;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.verbatim {
+    font-family: Courier,serif;
+}
+#content {
+    margin: 0;
+    padding: 0 90px 120px 0;
+}
+#content_bottompadding {
+    margin: 0;
+    padding: 0 90px 350px 0;
+}
+#content_home01 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+#content_para1 {
+    margin: 0;
+    padding: 0 90px 10px 0;
+}
+#content_staff {
+    margin: 0;
+    padding: 0 90px 120px 0;
+}
+#content_staff p {
+    margin: 0;
+    padding: 0;
+}
+#content_staff td {
+    padding-bottom: 20px;
+}
+#content_staff td.text {
+    padding-left: 10px;
+}
+.downloads {
+    margin-bottom: 30px;
+}
+.downloads p {
+    margin-bottom: 2px;
+}
+.downloads td p {
+    margin-top: 2px;
+}
+.smalltext {
+    color: #838B8B;
+    font-size: 10px;
+    padding-left: 15px;
+}
+.smalltext p {
+    margin-top: 0;
+}
+#publications p {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.subtext {
+    border: 0 none;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.heading1 a {
+    color: #333333;
+    outline: medium none;
+    text-decoration: none;
+}
+.heading1 a:hover {
+    color: #333333;
+}
+.heading2 a {
+    color: #333333;
+    outline: medium none;
+    text-decoration: none;
+}
+.heading2 a:hover {
+    color: #333333;
+}
+a {
+    color: #0067AC;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #1FBECA;
+}
+.main_nav {
+    background-color: #00355F;
+    border-left: 1px solid #FFFFFF;
+    height: 20px;
+    text-align: center;
+}
+.main_nav a {
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+.main_nav a.here {
+    background-color: #1FBECA;
+}
+.main_nav a:hover {
+    background-color: #1FBECA;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main_nav_last {
+    background-color: #00355F;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    text-align: center;
+}
+.main_nav_last a {
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+.main_nav_last a.here {
+    background-color: #1FBECA;
+}
+.main_nav_last a:hover {
+    background-color: #1FBECA;
+    text-decoration: none;
+}
+#sec_nav {
+    margin-left: 10px;
+    position: absolute;
+    text-align: left;
+    top: 166px;
+    width: 200px;
+}
+#sec_nav ul {
+    margin: 0;
+    padding: 2px 0 10px;
+    width: 190px;
+}
+#sec_nav ul li {
+    border-bottom: 1px dashed #CCCCCC;
+    font-size: 11px;
+    list-style: none outside none;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-top: 5px;
+}
+#sec_nav a {
+    color: #333333;
+    font-size: 10px;
+    font-weight: bold;
+}
+#sec_nav a:hover {
+    color: #1FBECA;
+}
+#sec_nav ul ul li a {
+    font-weight: normal;
+    padding-left: 15px;
+}
+#sec_nav ul li.last {
+    border-bottom: 1px dashed #FFFFFF;
+    font-size: 11px;
+    list-style: none outside none;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-top: 5px;
+}
+#sec_nav p {
+    margin: 0;
+    padding: 0;
+}
+#sec_nav a.sel {
+    color: #1FBECA;
+}
+#sec_nav a.head {
+    color: #00AA4F;
+    font-size: 11px;
+}
+#footer {
+    color: #666666;
+    font-size: 9px;
+    height: 20px;
+    padding: 5px 0 0 10px;
+    text-align: right;
+}
+#footer a {
+    color: #666666;
+}
+#footer a:hover {
+    color: #1FBECA;
+    text-decoration: none;
+}
+#news {
+    border-top: 1px solid #00AA4F;
+    margin: 50px 0 0;
+    padding-top: 10px;
+}
+#news ul li {
+    padding-bottom: 5px;
+}
+#bullet_padding ul li {
+    padding-bottom: 5px;
+}
+.pub_source {
+    font-style: italic;
+}
+.pub_volume {
+    font-weight: bold;
+}
+#extra_section {
+    border-top: 1px solid #00AA4F;
+    padding-top: 20px;
+}
+h1 {
+    color: #00355F;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+.heading1 {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 2px;
+}
+.heading2 {
+    font-weight: bold;
+}
+.species {
+    font-style: italic;
+}
+ul {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+li {
+    list-style-type: disc;
+    padding-left: 5px;
+}
+table tr.even {
+    background-color: #EEFEF7;
+}
+#contact {
+    padding-top: 10px;
+}
+#video {
+    margin-bottom: 30px;
+}
+

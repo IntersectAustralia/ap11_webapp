@@ -1,0 +1,21 @@
+%h1 Listing input_collections
+
+%table
+  %tr
+    %th Experiment
+    %th Collection
+    %th
+    %th
+    %th
+
+  - @input_collections.each do |input_collection|
+    %tr
+      %td= input_collection.experiment_id
+      %td= input_collection.collection_id
+      %td= link_to 'Show', input_collection
+      %td= link_to 'Edit', edit_input_collection_path(input_collection)
+      %td= link_to 'Destroy', input_collection, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Input collection', new_input_collection_path

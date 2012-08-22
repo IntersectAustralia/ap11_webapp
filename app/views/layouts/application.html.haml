@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    = render 'layouts/head'
+  %body
+    = render 'layouts/banner'
+
+    .container.main_content
+      %h1= yield :title
+
+      - flash.each do |name, msg|
+        %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
+          %a.close{"data-dismiss" => "alert"} ×
+          = msg
+      = yield

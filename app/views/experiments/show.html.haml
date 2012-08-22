@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%h1 Viewing #{@experiment.title}
+%br
+
+%table.table
+  %tr
+    %th Title
+    %th
+      = @experiment.title
+  %tr
+    %th Date
+    %th
+      = @experiment.date
+  %tr
+    %th Owner
+    %th
+      = @experiment.user.full_name
+  %tr
+    %th Input Collections
+    %th None
+  %tr
+    %th Output Collection
+    %th None
+
+.form-actions
+
+= link_to 'Edit', edit_experiment_path(@experiment)
+\|
+= link_to 'Back', experiments_path

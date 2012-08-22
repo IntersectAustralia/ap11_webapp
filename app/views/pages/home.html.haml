@@ -1,0 +1,19 @@
+.container
+  - title 'Home'
+  - if !user_signed_in?
+    = simple_form_for("user", :url => user_session_path) do |f|
+      = render(:partial => 'devise/sessions/form', :locals => { :f => f })
+    = link_to "Sign Up", new_user_registration_path, :class => "button"
+    |
+    = link_to "Forgot your password?", new_user_password_path, :class => "button"
+  - else
+    .h2 Welcome
+    %a{:class => "btn btn-primary", :href => experiments_path}
+      %i{:class => "icon-th-list icon-white"}
+      View Experiments
+    %a{:class => "btn btn-primary", :href => users_path}
+      %i{:class => "icon-user icon-white"}
+      View Users
+    %a{:class => "btn btn-primary", :href => access_requests_users_path}
+      %i{:class => "icon-user icon-white"}
+      View Access Request
