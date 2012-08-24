@@ -8,7 +8,6 @@ require 'colorize'
 set :application, 'ap11'
 set :stages, %w(qa staging production)
 set :default_stage, "qa"
-set :rpms, "openssl openssl-devel curl-devel httpd-devel apr-devel apr-util-devel zlib zlib-devel libxml2 libxml2-devel libxslt libxslt-devel libffi mod_ssl mod_xsendfile"
 set :shared_children, shared_children + %w(log_archive)
 set :shell, '/bin/bash'
 set :rvm_ruby_string, 'ruby-1.9.3-p194@ap11'
@@ -28,9 +27,6 @@ set(:deploy_to) { "#{user_home}/#{application}" }
 default_run_options[:pty] = true
 
 namespace :server_setup do
-  task :rpm_install, :roles => :app do
-    run "#{try_sudo} yum install -y #{rpms}"
-  end
   namespace :filesystem do
     task :dir_perms, :roles => :app do
       run "[[ -d #{deploy_to} ]] || #{try_sudo} mkdir #{deploy_to}"
@@ -47,9 +43,6 @@ namespace :server_setup do
     task :trust_rvmrc do
       run "rvm rvmrc trust #{release_path}"
     end
-  end
-  task :gem_install, :roles => :app do
-    run "gem install bundler passenger"
   end
   task :passenger, :roles => :app do
     run "passenger-install-apache2-module -a"
@@ -73,9 +66,7 @@ namespace :server_setup do
   end
 end
 before 'deploy:setup' do
-  server_setup.rpm_install
-  server_setup.rvm.trust_rvmrc
-  server_setup.gem_install
+  #server_setup.rvm.trust_rvmrc
   server_setup.passenger
 end
 after 'deploy:setup' do
