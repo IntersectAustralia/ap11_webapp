@@ -1,7 +1,7 @@
 Ap11::Application.configure do
 
   # TODO: set your own correct URL for action mailer
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => Socket.gethostname }
 
   # Settings specified here will take precedence over those in config/application.rb
 
