@@ -1,7 +1,6 @@
 Ap11::Application.configure do
 
-  # TODO: set your own correct URL for action mailer
-  config.action_mailer.default_url_options = { :host => Socket.gethostname }
+  config.action_mailer.default_url_options = { :host => 'gsw1-ap11-staging-vm.intersect.org.au' }
 
   # Settings specified here will take precedence over those in config/application.rb
 
