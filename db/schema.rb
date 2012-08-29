@@ -51,8 +51,6 @@ ActiveRecord::Schema.define(:version => 20120829002536) do
   create_table "research_subject_codes", :force => true do |t|
     t.integer  "subject_code"
     t.string   "subject_name"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
   end
 
   create_table "roles", :force => true do |t|

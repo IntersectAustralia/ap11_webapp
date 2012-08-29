@@ -4,6 +4,7 @@ def populate_data
   User.delete_all
 
   create_test_users
+  create_for_codes
 end
 
 def create_test_users
@@ -18,6 +19,25 @@ def create_test_users
   set_role("georgina@intersect.org.au", "admin")
   set_role("charles@intersect.org.au", "admin")
 
+end
+
+
+def create_for_codes
+  create_subject_code(:subject_code => "010000", :subject_name => "Mathematical Sciences")
+  create_subject_code(:subject_code => "010100", :subject_name => "Pure Mathematics")
+  create_subject_code(:subject_code => "010101", :subject_name => "Algebra and Number Theory")
+  create_subject_code(:subject_code => "010102", :subject_name => "Algebraic and Differential Geometry")
+  create_subject_code(:subject_code => "020303", :subject_name => "Fluid Physics")
+  create_subject_code(:subject_code => "020304", :subject_name => "Thermodynamics and Statistical Physics")
+  create_subject_code(:subject_code => "020500", :subject_name => "Optical Physics")
+  create_subject_code(:subject_code => "020600", :subject_name => "Quantum Physics")
+  create_subject_code(:subject_code => "030302", :subject_name => "Nanochemistry and Supramolecular Chemistry")
+  create_subject_code(:subject_code => "030400", :subject_name => "Medicinal and Biomolecular Chemistry")
+end
+
+def create_subject_code(attrs)
+  s = ResearchSubjectCode.new(attrs)
+  s.save!
 end
 
 def set_role(email, role)
