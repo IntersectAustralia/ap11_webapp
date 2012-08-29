@@ -13,8 +13,6 @@ class User < ActiveRecord::Base
   validates_presence_of :last_name
   validates_presence_of :email
   validates_presence_of :status
-  validates_presence_of :title
-  validates_presence_of :for_code1, :on => :update
 
   validates_length_of :first_name, :maximum => 255
   validates_length_of :last_name, :maximum => 255

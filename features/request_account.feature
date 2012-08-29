@@ -57,7 +57,7 @@ Feature: Request an account
       | First Name       | Fred                      |
       | Last Name        | Bloggs                    |
     And I press "Submit Request"
-    And the "Password" field should have the error "doesn't match confirmation"
+    And I should see "Password doesn't match confirmation"
     And the "First Name" field should have no errors
     And the "Last Name" field should have no errors
     And the "Email" field should have no errors
@@ -69,8 +69,8 @@ Feature: Request an account
       | Password         | paS$w0rd                  |
       | Confirm Password | paS$w0rd                  |
     And I press "Submit Request"
-    And the "First Name" field should have the error "can't be blank"
-    And the "Last Name" field should have the error "can't be blank"
+    And I should see "First name can't be blank"
+    And I should see "Last name can't be blank"
     And the "Password" field should contain ""
     And the "Confirm Password" field should contain ""
 

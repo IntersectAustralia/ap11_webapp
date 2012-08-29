@@ -2,4 +2,9 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        for_code1: "Field of Research code"
+        for_code2: "Field of Research code"
+        for_code3: "Field of Research code"
