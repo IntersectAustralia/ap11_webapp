@@ -1,2 +1,14 @@
-= f.input :first_name , :label => "First Name:"
-= f.input :last_name  , :label => "Last Name:"
+.control-group
+  = f.label :title, "Title", :class => "control-label"
+  .controls
+    = f.text_field :title
+
+.control-group
+  = f.label :first_name, "First name", :class => "control-label"
+  .controls
+    = f.text_field :first_name
+
+.control-group
+  = f.label :first_name, "Last name", :class => "control-label"
+  .controls
+    = f.text_field :last_name

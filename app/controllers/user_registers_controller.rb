@@ -3,6 +3,8 @@ class UserRegistersController < Devise::RegistrationsController
 
   prepend_before_filter :authenticate_scope!, :only => [:edit, :update, :destroy, :edit_password, :update_password, :profile]
 
+  before_filter :load_static_data, :only => [:edit, :update]
+
   def profile
 
   end
@@ -63,4 +65,9 @@ class UserRegistersController < Devise::RegistrationsController
     end
   end
 
+  private
+
+  def load_static_data
+    @subject_codes = ResearchSubjectCode.all
+  end
 end

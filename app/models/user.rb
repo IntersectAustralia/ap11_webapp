@@ -7,16 +7,20 @@ class User < ActiveRecord::Base
   has_many :experiment, :foreign_key => 'user_id'
 
   # Setup accessible attributes (status/approved flags should NEVER be accessible by mass assignment)
-  attr_accessible :email, :password, :password_confirmation, :first_name, :last_name
+  attr_accessible :email, :password, :password_confirmation, :first_name, :last_name, :title, :description, :home_page, :for_code1, :for_code2, :for_code3
 
   validates_presence_of :first_name
   validates_presence_of :last_name
   validates_presence_of :email
   validates_presence_of :status
+  validates_presence_of :title
+  validates_presence_of :for_code1, :on => :update
 
   validates_length_of :first_name, :maximum => 255
   validates_length_of :last_name, :maximum => 255
   validates_length_of :email, :maximum => 255
+  validates_length_of :title, :maximum => 63
+  validates_length_of :home_page, :maximum => 255
 
   with_options :if => :password_required? do |v|
     v.validates :password, :password_format => true
