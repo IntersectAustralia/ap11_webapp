@@ -10,12 +10,14 @@ Feature: Edit my details
   Scenario: Edit my information
     Given I am on the home page
     When I follow "Edit My Details"
+    And I fill in "Title" with "Dr"
     And I fill in "First Name" with "Fred"
     And I fill in "Last Name" with "Bloggs"
     And I press "Update"
     Then I should see "Your account details have been successfully updated."
     And I should be on the home page
     And I follow "Edit My Details"
+    And the "Title" field should contain "Dr"
     And the "First Name" field should contain "Fred"
     And the "Last Name" field should contain "Bloggs"
 

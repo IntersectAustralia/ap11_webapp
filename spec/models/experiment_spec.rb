@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe Experiment do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "Creating experiments" do
+    it "nothing atm" do
+    end
+  end
 end

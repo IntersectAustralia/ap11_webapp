@@ -4,6 +4,6 @@ FactoryGirl.define do
   factory :experiment do
     title "MyString"
     date "2012-08-13"
-    owner ""
+    association :user
   end
 end

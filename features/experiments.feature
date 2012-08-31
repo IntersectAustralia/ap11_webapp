@@ -9,7 +9,7 @@ Feature: Experiments
       | admin  |
       | Researcher |
     And I have permissions
-      | entity | action          | roles     |
+      | entity | action          | roles |
       | User   | read            | admin |
       | User   | admin           | admin |
       | User   | access_requests | admin |
