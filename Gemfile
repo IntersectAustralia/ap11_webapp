@@ -69,3 +69,6 @@ gem "rvm-capistrano"
 gem "colorize"
 gem "metrical"
 gem "simplecov", ">=0.3.8", :require => false, :group => :test
+gem "wicked"
+gem "ckeditor", "3.7.1"
+gem "paperclip"

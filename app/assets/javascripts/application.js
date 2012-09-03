@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap
-//= require nicEdit
+//= require ckeditor/init
 
 
-bkLib.onDomLoaded(nicEditors.allTextAreas);
+//bkLib.onDomLoaded(nicEditors.allTextAreas);

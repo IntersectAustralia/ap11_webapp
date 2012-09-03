@@ -64,6 +64,10 @@ GEM
       rake
       ruby_parser (~> 2.3)
       sexp_processor (~> 3.0)
+    ckeditor (3.7.1)
+      mime-types
+      orm_adapter
+    cocaine (0.3.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -161,6 +165,12 @@ GEM
       net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
+    paperclip (3.1.4)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (>= 0.0.2)
+      mime-types
     pg (0.14.0)
     polyglot (0.3.3)
     progressbar (0.11.0)
@@ -270,6 +280,9 @@ GEM
       multi_json (~> 1.3)
     warden (1.2.1)
       rack (>= 1.0)
+    wicked (0.2.0)
+      activesupport (>= 3.0.7)
+      rails (>= 3.0.7)
     xpath (0.1.4)
       nokogiri (~> 1.3)
 
@@ -283,6 +296,7 @@ DEPENDENCIES
   capistrano-ext
   capistrano_colors
   capybara
+  ckeditor (= 3.7.1)
   coffee-rails (~> 3.2.1)
   colorize
   cucumber
@@ -296,6 +310,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   metrical
+  paperclip
   pg
   rails (= 3.2.8)
   rspec-rails
@@ -306,3 +321,4 @@ DEPENDENCIES
   simplecov (>= 0.3.8)
   therubyracer
   uglifier (>= 1.0.3)
+  wicked

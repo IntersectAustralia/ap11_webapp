@@ -16,5 +16,5 @@
     = f.collection_select :for_code3, @subject_codes, :subject_code, :display_name, :include_blank => "None"
 .control-group
   = f.label :description, "Description", :class => "control-label"
-  .controls.wysiwyg
-    = f.text_area :description
+  .controls
+    = f.cktext_area :description, :toolbar => 'Full'
