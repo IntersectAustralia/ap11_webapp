@@ -18,4 +18,9 @@ $navbarBackgroundHighlight: #fff;
 // remove box-shadow in the navbar
 
 @import "bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 70px; }
+
+.wysiwyg textarea {
+  height: 150px;
+  width: 100%;
+}
