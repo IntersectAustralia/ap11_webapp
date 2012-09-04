@@ -70,5 +70,5 @@ gem "colorize"
 gem "metrical"
 gem "simplecov", ">=0.3.8", :require => false, :group => :test
 gem "wicked"
-gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+gem 'ckeditor', "~> 3.7.3"
 gem "paperclip"
