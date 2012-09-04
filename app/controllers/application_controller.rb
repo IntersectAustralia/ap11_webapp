@@ -6,5 +6,6 @@ class ApplicationController < ActionController::Base
     redirect_to root_url
   end
 
+   config.assets.precompile += Ckeditor.assets
 
 end
