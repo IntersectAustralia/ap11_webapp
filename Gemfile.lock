@@ -64,13 +64,7 @@ GEM
       rake
       ruby_parser (~> 2.3)
       sexp_processor (~> 3.0)
-<<<<<<< HEAD
     ckeditor (3.7.2)
-=======
-    ckeditor (3.7.1)
->>>>>>> 63d98eb452561ecfbe49f09a867b559ebde63538
-      mime-types
-      orm_adapter
     cocaine (0.3.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -300,11 +294,7 @@ DEPENDENCIES
   capistrano-ext
   capistrano_colors
   capybara
-<<<<<<< HEAD
   ckeditor (~> 3.7.2)
-=======
-  ckeditor (= 3.7.1)
->>>>>>> 63d98eb452561ecfbe49f09a867b559ebde63538
   coffee-rails (~> 3.2.1)
   colorize
   cucumber
