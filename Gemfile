@@ -70,5 +70,7 @@ gem "colorize"
 gem "metrical"
 gem "simplecov", ">=0.3.8", :require => false, :group => :test
 gem "wicked"
-gem 'ckeditor', "~> 3.7.3"
+gem "ckeditor"
+gem "orm_adapter"
+gem "mime-types"
 gem "paperclip"

@@ -296,7 +296,7 @@ DEPENDENCIES
   capistrano-ext
   capistrano_colors
   capybara
-  ckeditor (~> 3.7.3)
+  ckeditor
   coffee-rails (~> 3.2.1)
   colorize
   cucumber
@@ -310,6 +310,8 @@ DEPENDENCIES
   jquery-rails
   launchy
   metrical
+  mime-types
+  orm_adapter
   paperclip
   pg
   rails (= 3.2.8)
