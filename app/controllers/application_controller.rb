@@ -5,5 +5,4 @@ class ApplicationController < ActionController::Base
     flash[:alert] = exception.message
     redirect_to root_url
   end
-
 end
