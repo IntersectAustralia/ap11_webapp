@@ -24,3 +24,6 @@ body { padding-top: 70px; }
   height: 150px;
   width: 100%;
 }
+
+.banner td, tr, img  { padding: 0px; margin: 0px; border: none; }
+.banner table { border-collapse: collapse; }

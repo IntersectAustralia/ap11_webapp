@@ -5,12 +5,3 @@
       = render(:partial => 'devise/sessions/form', :locals => { :f => f })
   - else
     .h2 Welcome
-    %a{:class => "btn btn-primary", :href => experiments_path}
-      %i{:class => "icon-th-list icon-white"}
-      View Experiments
-    %a{:class => "btn btn-primary", :href => users_path}
-      %i{:class => "icon-user icon-white"}
-      View Users
-    %a{:class => "btn btn-primary", :href => access_requests_users_path}
-      %i{:class => "icon-user icon-white"}
-      View Access Request

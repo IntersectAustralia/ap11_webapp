@@ -1,14 +1,34 @@
-.navbar.navbar-fixed-top
-  .navbar-inner
-    .container
-      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-      %a.brand{:href => root_path } AP11 - Proteomics-Genomics Nexus
-
-      = render 'layouts/user_menu'
--#.navbar.navbar-fixed-top
--#  .navbar-inner
--#    .container
--#      %a{:href => "http://www.unsw.edu.au", :target => "_blank"}
--#        %img{:alt => "Link to UNSW website", :src => "assets/logo_unsw.gif"}
--#      %a{:href => "index.html"}
--#        %img{:alt => "Link to The New South Wales Systems Biology Initiative home page", :src => "assets/hd_home.gif"}
+%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+  %tbody
+    %tr
+      %td.bck_head{:align => "center"}
+        %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "880"}
+          %tbody
+            %tr
+              %td{:colspan => "7"}
+                %a{:href => "http://www.unsw.edu.au", :target => "_blank"}
+                  %img.banner{:alt => "Link to UNSW website", :margin => "0", :padding => "0", :border => "0", :height => "103", :src => "/assets/unsw_ap11.png", :width => "223"}
+              %td
+                %a{:href => "/"}
+                  %img.banner{:alt => "Link to The New South Wales Systems Biology Initiative home page", :margin => "0", :padding => "0", :border => "0", :height => "103", :src => "/assets/index_ap11.png", :width => "655"}
+        %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "880"}
+          %tbody
+            %tr
+              %td.main_nav
+                %a.here{:href => "http://www.systemsbiology.org.au/index.html"} Home
+              %td.main_nav
+                %a{:href => "http://www.systemsbiology.org.au/about.html"} About Us
+              %td.main_nav
+                %a{:href => "http://www.systemsbiology.org.au/projects.html"} Research Projects
+              %td.main_nav
+                %a{:href => "http://www.systemsbiology.org.au/publications.html"} Publications
+              %td.main_nav
+                %a{:href => "http://www.systemsbiology.org.au/workshops.html"} Workshops
+              %td.main_nav
+                %a{:href => "http://www.systemsbiology.org.au/downloads.html"} Software
+              %td.main_nav
+                %a{:href => "http://www.systemsbiology.org.au/contact.html"} Contact Us
+        %table
+          %tbody
+            %tr
+              = render 'layouts/user_menu'
