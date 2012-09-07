@@ -55,6 +55,7 @@ group :test do
   gem "shoulda"
 end
 
+gem 'google-analytics-rails'
 gem "haml"
 gem "haml-rails"
 gem "bootstrap-sass"
