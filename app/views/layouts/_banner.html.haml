@@ -1,4 +1,4 @@
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+-#%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
   %tbody
     %tr
       %td.bck_head{:align => "center"}
@@ -7,10 +7,10 @@
             %tr
               %td
                 %a{:href => "http://www.unsw.edu.au", :target => "_blank"}
-                  %img{:alt => "Link to UNSW website", :height => "103", :src => "/assets/unsw_ap11.png", :width => "223"}
+                  %img{:alt => "Link to UNSW website", :src => "/assets/unsw_ap11.png" , :border => "0"}
               %td
                 %a{:href => "/"}
-                  %img{:alt => "Link to The New South Wales Systems Biology Initiative home page",  :height => "103", :src => "/assets/index_ap11.png", :width => "655"}
+                  %img{:alt => "Link to The New South Wales Systems Biology Initiative home page", :src => "/assets/index_ap11.png", :border => "0"}
         %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "880"}
           %tbody
             %tr
@@ -28,6 +28,42 @@
                 %a{:href => "http://www.systemsbiology.org.au/downloads.html"} Software
               %td.main_nav
                 %a{:href => "http://www.systemsbiology.org.au/contact.html"} Contact Us
+        %table
+          %tbody
+            %tr
+              = render 'layouts/user_menu'
+
+
+%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+  %tbody
+    %tr
+      %td.bck_head{:align => "center"}
+        %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "880"}
+          %tbody
+            %tr
+              %td
+                %a{:href => "http://www.unsw.edu.au", :target => "_blank"}
+                  %img{:alt => "Link to UNSW website", :border => "0", :height => "103", :src => "/assets/unsw_ap11.png", :width => "224"}/
+              %td
+                %a{:href => "index.html"}
+                  %img{:alt => "Link to The New South Wales Systems Biology Initiative home page", :border => "0", :height => "103", :src => "/assets/index_ap11.png", :width => "655"}/
+        %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "880"}
+          %tbody
+            %tr
+              %td.main_nav
+                %a{:href => "index.html"} Home
+              %td.main_nav
+                %a{:href => "about.html"} About Us
+              %td.main_nav
+                %a{:href => "projects.html"} Research Projects
+              %td.main_nav
+                %a.here{:href => "publications.html"} Publications
+              %td.main_nav
+                %a{:href => "workshops.html"} Workshops
+              %td.main_nav
+                %a{:href => "downloads.html"} Software
+              %td.main_nav_last
+                %a{:href => "contact.html"} Contact Us
         %table
           %tbody
             %tr
