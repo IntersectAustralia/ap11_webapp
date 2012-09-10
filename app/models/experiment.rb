@@ -3,8 +3,8 @@ class Experiment < ActiveRecord::Base
 
   belongs_to :user
 
-  has_many :input_collection, :through => :collections
-  has_one :output_collection, :through => :collections
+  has_many :input_collection, :foreign_key => 'experiment_id'
+  has_one :output_collection, :foreign_key => 'experiment_id'
 
   validates :date,  :presence => true
   validates :title, :presence => true

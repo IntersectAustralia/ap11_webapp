@@ -3,11 +3,8 @@ Ap11::Application.routes.draw do
 
   mount Ckeditor::Engine => "/ckeditor"
 
-  resources :output_collections
-
-  resources :input_collections
-
-  resources :collections
+  #resources :output_collections
+  #resources :input_collections
 
   devise_for :users, controllers: {registrations: "user_registers", passwords: "user_passwords"}
 devise_scope :user do
@@ -38,7 +35,7 @@ end
   end
 
   resources :experiments do
-    resources :collections do
+    resources :input_collections do
     end
   end
 

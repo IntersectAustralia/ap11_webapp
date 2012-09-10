@@ -29,16 +29,6 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
 
-  create_table "collections", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "for_codes"
-    t.text     "citation_info"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-    t.integer  "experiment_id"
-  end
-
   create_table "experiments", :force => true do |t|
     t.string   "title"
     t.date     "date"
@@ -47,9 +37,20 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
     t.integer  "user_id"
   end
 
-  create_table "input_collections", :id => false, :force => true do |t|
-    t.integer "experiment_id"
-    t.integer "collection_id"
+  create_table "input_collections", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.text     "license"
+    t.text     "access_rights"
+    t.text     "location"
+    t.integer  "for_code1"
+    t.integer  "for_code2"
+    t.integer  "for_code3"
+    t.string   "website_name"
+    t.string   "url"
+    t.integer  "experiment_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "output_collections", :id => false, :force => true do |t|
@@ -65,10 +66,8 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
   end
 
   create_table "research_subject_codes", :force => true do |t|
-    t.integer  "subject_code"
-    t.string   "subject_name"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.integer "subject_code"
+    t.string  "subject_name"
   end
 
   create_table "roles", :force => true do |t|

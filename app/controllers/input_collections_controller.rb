@@ -1,6 +1,7 @@
 class InputCollectionsController < ApplicationController
-  # GET /input_collections
-  # GET /input_collections.json
+
+  before_filter :load_static_data, :only => [:new, :create, :edit, :update]
+
   def index
     @input_collections = InputCollection.all
 
@@ -10,8 +11,6 @@ class InputCollectionsController < ApplicationController
     end
   end
 
-  # GET /input_collections/1
-  # GET /input_collections/1.json
   def show
     @input_collection = InputCollection.find(params[:id])
 
@@ -21,30 +20,28 @@ class InputCollectionsController < ApplicationController
     end
   end
 
-  # GET /input_collections/new
-  # GET /input_collections/new.json
   def new
     @input_collection = InputCollection.new
-
+    @experiment = Experiment.find(params[:experiment_id])
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @input_collection }
     end
   end
 
-  # GET /input_collections/1/edit
   def edit
     @input_collection = InputCollection.find(params[:id])
+    #@experiment = Experiment.find(params[:experiment_id])
   end
 
-  # POST /input_collections
-  # POST /input_collections.json
   def create
     @input_collection = InputCollection.new(params[:input_collection])
+    experiment_id = params[:experiment_id]
+    @input_collection.experiment_id = experiment_id
 
     respond_to do |format|
       if @input_collection.save
-        format.html { redirect_to @input_collection, notice: 'Input collection was successfully created.' }
+        format.html { redirect_to edit_experiment_path(experiment_id), notice: 'Input collection was successfully created.' }
         format.json { render json: @input_collection, status: :created, location: @input_collection }
       else
         format.html { render action: "new" }
@@ -53,8 +50,6 @@ class InputCollectionsController < ApplicationController
     end
   end
 
-  # PUT /input_collections/1
-  # PUT /input_collections/1.json
   def update
     @input_collection = InputCollection.find(params[:id])
 
@@ -69,8 +64,6 @@ class InputCollectionsController < ApplicationController
     end
   end
 
-  # DELETE /input_collections/1
-  # DELETE /input_collections/1.json
   def destroy
     @input_collection = InputCollection.find(params[:id])
     @input_collection.destroy
@@ -79,5 +72,9 @@ class InputCollectionsController < ApplicationController
       format.html { redirect_to input_collections_url }
       format.json { head :no_content }
     end
+  end
+
+  def load_static_data
+    @subject_codes = ResearchSubjectCode.all
   end
 end

@@ -1,9 +1,46 @@
-= simple_form_for(@input_collection) do |f|
-  = f.error_notification
+= form_for(@input_collection, :url => experiment_input_collections_path) do |f|
+  = render "shared/error_messages", :target => @input_collection
 
-  .form-inputs
-    = f.input :experiment_id
-    = f.input :collection_id
-
+  .control-group
+    = f.label :name, "Name", :name => "control-label"
+    .controls
+      = f.text_field :name
+  .control-group
+    = f.label :license, "License", :class => "control-label"
+    .controls
+      = f.text_area :license
+  .control-group
+    = f.label :access_rights, "Access rights", :class => "control-label"
+    .controls
+      = f.text_area :access_rights
+  .control-group
+    = f.label :location, "Location", :name => "control-label"
+    .controls
+      = f.text_field :location
+  .control-group
+    = f.label :for_code1, "FOR Code", :class => "control-label"
+    .controls
+      = f.collection_select :for_code1, @subject_codes, :subject_code, :display_name, :include_blank => "None", :required => true
+  .control-group
+    = f.label :for_code2, "FOR Code (optional)", :class => "control-label"
+    .controls
+      = f.collection_select :for_code2, @subject_codes, :subject_code, :display_name, :include_blank => "None"
+  .control-group
+    = f.label :for_code3, "FOR Code (optional)", :class => "control-label"
+    .controls
+      = f.collection_select :for_code3, @subject_codes, :subject_code, :display_name, :include_blank => "None"
+  .control-group
+    = f.label :website_name, "Website name", :name => "control-label"
+    .controls
+      = f.text_field :website_name
+  .control-group
+    = f.label :url, "Website URL", :name => "control-label"
+    .controls
+      = f.text_field :url
+  .control-group
+    = f.label :description, "Description", :class => "control-label"
+    .controls
+      = f.cktext_area :description, :toolbar => 'Full'
   .form-actions
-    = f.button :submit
+    = f.submit "#{@input_collection.new_record? ? 'Create' : 'Edit'} Input Collection", :class => "btn btn-primary"
+    %a.btn{:href => edit_experiment_path(@experiment)} Cancel

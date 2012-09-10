@@ -1,0 +1,20 @@
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      %th Name
+      %th License
+      %th Access Rights
+      %th Location
+      %th FOR Code
+      %th
+      %th
+
+  - @input_collections.each do |collection|
+    %tr
+      %td= collection.name
+      %td= collection.license
+      %td= collection.access_rights
+      %td= collection.location
+      %td= collection.for_code1
+      %td Edit
+      %td Delete

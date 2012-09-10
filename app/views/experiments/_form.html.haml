@@ -20,16 +20,18 @@
   - unless @experiment.new_record?
     .control-group
       = f.label :collections, "Input Collections", :class => "control-label"
+      = render 'input_collections'
       .controls
-        %a{:class => "btn btn-primary", :href => "#"}
+        %a{:class => "btn btn-primary", :href => new_experiment_input_collection_path(@experiment.id)}
           %i{:class => "icon-plus icon-white"}
           Add Collection
     .control-group
       = f.label :collections, "Output Collections", :class => "control-label"
       .controls
-        %a{:class => "btn btn-primary", :href => "#"}
-          %i{:class => "icon-plus icon-white"}
-          Add Collection
+        Nothing
+        -#%a{:class => "btn btn-primary", :href => "#"}
+        -#  %i{:class => "icon-plus icon-white"}
+        -#  Add Collection
   .form-actions
     = f.submit "#{@experiment.new_record? ? 'Create' : 'Edit'} Experiment", :class => "btn btn-primary"
     %a.btn{:href => experiments_path} Cancel

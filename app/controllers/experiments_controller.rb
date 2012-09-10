@@ -17,7 +17,7 @@ class ExperimentsController < ApplicationController
   # GET /experiments/1.json
   def show
     @experiment = Experiment.find(params[:id])
-
+    @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @experiment }
@@ -38,6 +38,7 @@ class ExperimentsController < ApplicationController
   # GET /experiments/1/edit
   def edit
     @experiment = Experiment.find(params[:id])
+    @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
   end
 
   # POST /experiments
