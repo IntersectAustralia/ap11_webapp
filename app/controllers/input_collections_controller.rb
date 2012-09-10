@@ -31,7 +31,7 @@ class InputCollectionsController < ApplicationController
 
   def edit
     @input_collection = InputCollection.find(params[:id])
-    #@experiment = Experiment.find(params[:experiment_id])
+    @experiment = Experiment.find(params[:experiment_id])
   end
 
   def create
@@ -69,7 +69,7 @@ class InputCollectionsController < ApplicationController
     @input_collection.destroy
 
     respond_to do |format|
-      format.html { redirect_to input_collections_url }
+      format.html { redirect_to edit_experiment_path(params[:experiment_id]) }
       format.json { head :no_content }
     end
   end
