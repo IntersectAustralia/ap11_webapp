@@ -1,4 +1,4 @@
-= form_for(@input_collection, :url => @input_collection.new_record? ? experiment_input_collections_path : experiment_input_collection_path ) do |f|
+= form_for(@input_collection, :url => experiment_input_collections_path) do |f|
   = render "shared/error_messages", :target => @input_collection
 
   .control-group

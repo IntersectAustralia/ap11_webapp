@@ -23,10 +23,6 @@ class InputCollectionsController < ApplicationController
   def new
     @input_collection = InputCollection.new
     @experiment = Experiment.find(params[:experiment_id])
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @input_collection }
-    end
   end
 
   def edit
@@ -38,15 +34,12 @@ class InputCollectionsController < ApplicationController
     @input_collection = InputCollection.new(params[:input_collection])
     experiment_id = params[:experiment_id]
     @input_collection.experiment_id = experiment_id
+    @experiment = Experiment.find(experiment_id)
 
-    respond_to do |format|
-      if @input_collection.save
-        format.html { redirect_to edit_experiment_path(experiment_id), notice: 'Input collection was successfully created.' }
-        format.json { render json: @input_collection, status: :created, location: @input_collection }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @input_collection.errors, status: :unprocessable_entity }
-      end
+    if @input_collection.save
+      redirect_to edit_experiment_path(experiment_id), notice: 'Input collection was successfully created.'
+    else
+      render action: "new"
     end
   end
 
