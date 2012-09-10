@@ -4,20 +4,10 @@ class InputCollectionsController < ApplicationController
 
   def index
     @input_collections = InputCollection.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @input_collections }
-    end
   end
 
   def show
     @input_collection = InputCollection.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @input_collection }
-    end
   end
 
   def new
@@ -31,8 +21,9 @@ class InputCollectionsController < ApplicationController
   end
 
   def create
-    @input_collection = InputCollection.new(params[:input_collection])
     experiment_id = params[:experiment_id]
+
+    @input_collection = InputCollection.new(params[:input_collection])
     @input_collection.experiment_id = experiment_id
     @experiment = Experiment.find(experiment_id)
 
@@ -44,27 +35,23 @@ class InputCollectionsController < ApplicationController
   end
 
   def update
-    @input_collection = InputCollection.find(params[:id])
+    experiment_id = params[:experiment_id]
 
-    respond_to do |format|
-      if @input_collection.update_attributes(params[:input_collection])
-        format.html { redirect_to @input_collection, notice: 'Input collection was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @input_collection.errors, status: :unprocessable_entity }
-      end
+    @input_collection = InputCollection.find(params[:id])
+    @input_collection.experiment_id = experiment_id
+    @experiment = Experiment.find(experiment_id)
+
+    if @input_collection.update_attributes(params[:input_collection])
+      redirect_to edit_experiment_path(experiment_id), notice: 'Input collection was successfully updated.'
+    else
+      render action: "edit"
     end
   end
 
   def destroy
     @input_collection = InputCollection.find(params[:id])
     @input_collection.destroy
-
-    respond_to do |format|
-      format.html { redirect_to edit_experiment_path(params[:experiment_id]) }
-      format.json { head :no_content }
-    end
+    redirect_to edit_experiment_path(params[:experiment_id])
   end
 
   def load_static_data

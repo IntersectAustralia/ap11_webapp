@@ -16,8 +16,7 @@
       %td= collection.access_rights
       %td= collection.location
       %td= collection.for_code1
-      %td= 'Edit'
-      //%td= link_to 'Edit', edit_experiment_input_collection_path(@experiment, collection)
+      %td= link_to 'Edit', edit_experiment_input_collection_path(@experiment, collection)
       %td
         %a{"data-toggle" => "modal", :href => "#myModal#{collection.id}"} Delete
         .modal.hide{:id => "myModal#{collection.id}"}
