@@ -1,41 +1,22 @@
 class ExperimentsController < ApplicationController
 
   before_filter :load_static_data, :only => [:new, :edit, :create, :update]
+  before_filter :authenticate_user!
+  load_and_authorize_resource
 
-  # GET /experiments
-  # GET /experiments.json
   def index
     @experiments = Experiment.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @experiments }
-    end
   end
 
-  # GET /experiments/1
-  # GET /experiments/1.json
   def show
     @experiment = Experiment.find(params[:id])
     @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @experiment }
-    end
   end
 
-  # GET /experiments/new
-  # GET /experiments/new.json
   def new
     @experiment = Experiment.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @experiment }
-    end
   end
 
-  # GET /experiments/1/edit
   def edit
     @experiment = Experiment.find(params[:id])
     @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)

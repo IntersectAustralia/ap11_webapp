@@ -1,6 +1,8 @@
 class InputCollectionsController < ApplicationController
 
   before_filter :load_static_data, :only => [:new, :create, :edit, :update]
+  before_filter :authenticate_user!
+  load_and_authorize_resource
 
   def index
     @input_collections = InputCollection.all
