@@ -43,9 +43,9 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
     t.text     "license"
     t.text     "access_rights"
     t.text     "location"
-    t.integer  "for_code1"
-    t.integer  "for_code2"
-    t.integer  "for_code3"
+    t.string   "for_code1"
+    t.string   "for_code2"
+    t.string   "for_code3"
     t.string   "website_name"
     t.string   "url"
     t.integer  "experiment_id"
@@ -66,8 +66,8 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
   end
 
   create_table "research_subject_codes", :force => true do |t|
-    t.integer "subject_code"
-    t.string  "subject_name"
+    t.string "subject_code"
+    t.string "subject_name"
   end
 
   create_table "roles", :force => true do |t|
@@ -103,9 +103,9 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
     t.string   "title"
     t.text     "description"
     t.string   "home_page"
-    t.integer  "for_code1"
-    t.integer  "for_code2"
-    t.integer  "for_code3"
+    t.string   "for_code1"
+    t.string   "for_code2"
+    t.string   "for_code3"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

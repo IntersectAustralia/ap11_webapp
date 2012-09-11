@@ -6,9 +6,9 @@ class CreateInputCollections < ActiveRecord::Migration
       t.text    :license
       t.text    :access_rights
       t.text    :location
-      t.integer :for_code1
-      t.integer :for_code2
-      t.integer :for_code3
+      t.string  :for_code1
+      t.string  :for_code2
+      t.string  :for_code3
       t.string  :website_name
       t.string  :url
       t.integer :experiment_id
