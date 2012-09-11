@@ -10,6 +10,7 @@ class InputCollectionsController < ApplicationController
 
   def show
     @input_collection = InputCollection.find(params[:id])
+    @experiment = Experiment.find(@input_collection.experiment_id)
   end
 
   def new

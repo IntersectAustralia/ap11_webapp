@@ -1,12 +1,53 @@
-%p#notice= notice
+- content_for :breadcrumb do
+  %h1 Experiments / Input Collections / #{@input_collection.name}
 
-%p
-  %b Experiment:
-  = @input_collection.experiment_id
-%p
-  %b Collection:
-  = @input_collection.collection_id
+%table.table.table-striped
+  %thead
+    %th
+  %tbody
+    %tr
 
-= link_to 'Edit', edit_input_collection_path(@input_collection)
+  %tr
+    %th Name
+    %th
+      = @input_collection.name
+  %tr
+    %th Description
+    %th
+      = @input_collection.description
+  %tr
+    %th License
+    %th
+      = @input_collection.license
+  %tr
+    %th Access rights
+    %th
+      = @input_collection.access_rights
+  %tr
+    %th Location
+    %th
+      = @input_collection.location
+  %tr
+    %th FOR code
+    %th
+      = @input_collection.for_code1
+  %tr
+    %th FOR code
+    %th
+      = @input_collection.for_code2
+  %tr
+    %th FOR code
+    %th
+      = @input_collection.for_code3
+  %tr
+    %th Website name
+    %th
+      = @input_collection.website_name
+  %tr
+    %th Website URL
+    %th
+      = @input_collection.url
+
+= link_to 'Edit', edit_experiment_input_collection_path(@experiment, @input_collection)
 \|
-= link_to 'Back', input_collections_path
+= link_to 'Back', edit_experiment_path(@experiment)
