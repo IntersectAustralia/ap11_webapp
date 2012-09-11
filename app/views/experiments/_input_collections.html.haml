@@ -5,7 +5,8 @@
       %th License
       %th Access Rights
       %th Location
-      %th FOR Code
+      %th FOR Code(s)
+      %th
       %th
       %th
 
@@ -15,7 +16,13 @@
       %td= collection.license
       %td= collection.access_rights
       %td= collection.location
-      %td= collection.for_code1
+      %td
+        %div= collection.for_code1
+        - unless collection.for_code2.empty?
+          %div= collection.for_code2
+        - unless collection.for_code3.empty?
+          %div= collection.for_code3
+      %td= link_to 'Show', experiment_input_collection_path(@experiment, collection)
       %td= link_to 'Edit', edit_experiment_input_collection_path(@experiment, collection)
       %td
         %a{"data-toggle" => "modal", :href => "#myModal#{collection.id}"} Delete
