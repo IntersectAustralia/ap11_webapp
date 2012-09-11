@@ -35,7 +35,7 @@ end
   end
 
   resources :experiments do
-    resources :input_collections do
+    resources :input_collections, :except => [:index] do
     end
   end
 
