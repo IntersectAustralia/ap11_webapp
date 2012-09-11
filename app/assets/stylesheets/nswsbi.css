@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 body {
     color: #333333;
@@ -23,7 +22,7 @@ body {
 #content_home01 {
     font-size: 16px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 #content_para1 {
     margin: 0;
@@ -254,4 +253,3 @@ table tr.even {
 #video {
     margin-bottom: 30px;
 }
-

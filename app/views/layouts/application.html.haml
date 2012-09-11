@@ -6,18 +6,5 @@
   %body
     = render 'layouts/content'
 
-  - if content_for?(:breadcrumb)
-    = yield :breadcrumb
-
-  -#content
-    -# if content_for?(:breadcrumb)
-      = yield :breadcrumb
-
-      -# flash.each do |name, msg|
-        %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
-          %a.close{"data-dismiss" => "alert"} ×
-          = msg
-        = yield
-
   %footer
     = render 'layouts/footer'
