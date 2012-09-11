@@ -15,6 +15,10 @@
 //= require_tree .
 //= require bootstrap
 //= require ckeditor/init
-
-
 //bkLib.onDomLoaded(nicEditors.allTextAreas);
+
+$(function(){
+    $(".datepicker").datepicker({
+        format: 'yyyy-mm-dd'
+    })
+});

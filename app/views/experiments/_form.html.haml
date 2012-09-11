@@ -10,8 +10,7 @@
   .control-group
     = f.label :date, "Date", :class => "control-label"
     .controls
-      = f.date_select :date
-
+      = f.text_field :date, :class => "datepicker"
   .control-group
     = f.label :user, "Owner", :class => "control-label"
     .controls
