@@ -2,12 +2,15 @@
 %html
   %head
     = render 'layouts/head'
-  %body
     = render 'layouts/banner'
+  %body
+    = render 'layouts/content'
 
-    .container.main_content
-      %h1= yield :title
 
+    -#content_home01
+      = yield :title
+
+    -#content
       - flash.each do |name, msg|
         %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
           %a.close{"data-dismiss" => "alert"} ×

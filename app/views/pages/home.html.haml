@@ -1,7 +1,6 @@
-.container
-  - title 'Home'
-  - if !user_signed_in?
-    = simple_form_for("user", :url => user_session_path) do |f|
-      = render(:partial => 'devise/sessions/form', :locals => { :f => f })
-  - else
-    .h2 Welcome
+- title 'Home'
+- if !user_signed_in?
+  = simple_form_for("user", :url => user_session_path) do |f|
+    = render(:partial => 'devise/sessions/form', :locals => { :f => f })
+- else
+  .h2 Welcome

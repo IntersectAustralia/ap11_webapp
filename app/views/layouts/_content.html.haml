@@ -1,0 +1,20 @@
+%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+  %tbody
+    %tr
+      %td{:align => "center", :valign => "top"}
+        %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "880"}
+          %tbody
+            %tr
+              %td{:align => "left", :rowspan => "3", :valign => "bottom", :width => "220"}
+                = render 'layouts/user_menu'
+              %td{:align => "left", :valign => "top", :width => "660"}
+
+                #content_home01
+                  = yield :title
+                %p
+                #content
+                  - flash.each do |name, msg|
+                    %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
+                      %a.close{"data-dismiss" => "alert"} ×
+                      = msg
+                  = yield
