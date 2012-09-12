@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/galetahub/ckeditor
-  revision: 3ab5eb54a4bb70e90339a8d8105783ef038f219b
-  specs:
-    ckeditor (3.7.3)
-      mime-types
-      orm_adapter
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,6 +64,9 @@ GEM
       rake
       ruby_parser (~> 2.3)
       sexp_processor (~> 3.0)
+    ckeditor (3.7.1)
+      mime-types
+      orm_adapter
     cocaine (0.3.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -302,7 +297,7 @@ DEPENDENCIES
   capistrano-ext
   capistrano_colors
   capybara
-  ckeditor!
+  ckeditor (= 3.7.1)
   coffee-rails (~> 3.2.1)
   colorize
   cucumber
