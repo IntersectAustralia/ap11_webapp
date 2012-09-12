@@ -15,6 +15,7 @@ class ExperimentsController < ApplicationController
 
   def new
     @experiment = Experiment.new
+    @date = Date.current
   end
 
   def edit
@@ -42,7 +43,7 @@ class ExperimentsController < ApplicationController
   # PUT /experiments/1.json
   def update
     @experiment = Experiment.find(params[:id])
-
+    @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
     respond_to do |format|
       if @experiment.update_attributes(params[:experiment])
         format.html { redirect_to experiments_path, notice: 'Experiment was successfully updated.' }

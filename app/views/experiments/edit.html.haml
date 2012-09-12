@@ -1,5 +1,38 @@
 -title "Editing experiment"
 
-= render 'form'
+= form_for(@experiment) do |f|
+
+  = render "shared/error_messages", :target => @experiment
+
+  .control-group
+    = f.label :title, "Title", :class => "control-label"
+    .controls
+      = f.text_field :title
+
+  .control-group
+    = f.label :date, "Date", :class => "control-label"
+    .controls
+      = f.text_field :date, :class => "datepicker"
+  .control-group
+    = f.label :user, "Owner", :class => "control-label"
+    .controls
+      = f.collection_select :user_id, @users, :id, :full_name
+  .control-group
+    = f.label :collections, "Input Collections", :class => "control-label"
+    = render 'input_collections'
+    .controls
+      %a{:class => "btn btn-primary btn-small", :href => new_experiment_input_collection_path(@experiment.id)}
+        %i{:class => "icon-plus icon-white"}
+        Add Collection
+  .control-group
+    = f.label :collections, "Output Collections", :class => "control-label"
+    .controls
+      Nothing
+      -#%a{:class => "btn btn-primary", :href => "#"}
+      -#  %i{:class => "icon-plus icon-white"}
+      -#  Add Collection
+  .form-actions
+    = f.submit "Edit Experiment", :class => "btn btn-primary"
+    %a.btn{:href => experiments_path} Cancel
 
 = link_to 'Show', @experiment

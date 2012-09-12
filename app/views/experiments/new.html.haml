@@ -1,3 +1,24 @@
 %h1 New experiment
 
-= render 'form'
+= form_for(@experiment) do |f|
+
+  = render "shared/error_messages", :target => @experiment
+
+  .control-group
+    = f.label :title, "Title", :class => "control-label"
+    .controls
+      = f.text_field :title
+
+  .control-group
+    = f.label :date, "Date", :class => "control-label"
+    .controls
+      = f.text_field :date, :class => "datepicker", :value => @date
+  .control-group
+    = f.label :user, "Owner", :class => "control-label"
+    .controls
+      = f.collection_select :user_id, @users, :id, :full_name
+
+  .form-actions
+    = f.submit "Create Experiment", :class => "btn btn-primary"
+    %a.btn{:href => experiments_path} Cancel
+
