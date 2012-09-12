@@ -1,5 +1,5 @@
 - content_for :breadcrumb do
-  %h1 Experiments / Input Collections / #{@input_collection.name}
+  -title "Experiments / Input Collections / #{@input_collection.name}"
 
 %table.table.table-striped
   %thead
@@ -48,6 +48,6 @@
     %th
       = @input_collection.url
 
-= link_to 'Edit', edit_experiment_input_collection_path(@experiment, @input_collection)
-\|
-= link_to 'Back', edit_experiment_path(@experiment)
+.form-actions
+  %a.btn.btn-primary{:href => edit_experiment_input_collection_path(@experiment, @input_collection)} Edit Input Collection
+  %a.btn{:href => edit_experiment_path(@experiment)} Back

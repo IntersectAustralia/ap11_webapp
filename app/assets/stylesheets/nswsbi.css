@@ -22,7 +22,7 @@ body {
 #content_home01 {
     font-size: 16px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #content_para1 {
     margin: 0;
@@ -184,9 +184,12 @@ a:hover {
 #footer {
     color: #666666;
     font-size: 9px;
-    height: 20px;
     padding: 5px 0 0 10px;
     text-align: right;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
 }
 #footer a {
     color: #666666;
@@ -222,7 +225,7 @@ h1 {
     color: #00355F;
     font-size: 16px;
     font-weight: normal;
-    margin-top: 40px;
+    line-height: 20px;
 }
 .heading1 {
     font-size: 12px;

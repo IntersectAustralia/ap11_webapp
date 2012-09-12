@@ -1,3 +1,6 @@
+- content_for :breadcrumb do
+  -title "Experiments / #{@experiment.title}"
+
 %table.table
   %tr
     %th Title
@@ -21,7 +24,5 @@
     %th None
 
 .form-actions
-
-= link_to 'Edit', edit_experiment_path(@experiment)
-\|
-= link_to 'Back', experiments_path
+  %a.btn.btn-primary{:href => edit_experiment_path(@experiment)} Edit Experiment
+  %a.btn{:href => experiments_path} Back
