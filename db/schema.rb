@@ -47,10 +47,10 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
     t.string   "for_code2"
     t.string   "for_code3"
     t.string   "website_name",  :limit => 512
-    t.string   "url",           :limit => 512
+    t.string   "url",           :limit => 2000
     t.integer  "experiment_id"
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "output_collections", :id => false, :force => true do |t|
