@@ -68,4 +68,4 @@ gem "simplecov", ">=0.3.8", :require => false, :group => :test
 gem "wicked"
 gem "paperclip"
 gem 'google-analytics-rails'
-gem 'ckeditor', '3.7.1'
+gem 'ckeditor', '3.7.2'
