@@ -13,10 +13,6 @@ gem 'pg'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -36,8 +32,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-    
-gem "therubyracer" # TODO should this be in group :assets ?
+
 group :development, :test do
   gem "rspec-rails"
   gem "factory_girl_rails"
@@ -55,7 +50,7 @@ group :test do
   gem "shoulda"
 end
 
-gem 'google-analytics-rails'
+gem 'therubyracer', :platforms => :ruby
 gem "haml"
 gem "haml-rails"
 gem "bootstrap-sass"
@@ -70,6 +65,7 @@ gem "rvm-capistrano"
 gem "colorize"
 gem "metrical"
 gem "simplecov", ">=0.3.8", :require => false, :group => :test
-gem 'ckeditor', :git => 'https://github.com/galetahub/ckeditor'
 gem "wicked"
 gem "paperclip"
+gem 'google-analytics-rails'
+gem 'ckeditor', :git => 'https://github.com/galetahub/ckeditor'
