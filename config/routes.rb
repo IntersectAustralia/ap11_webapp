@@ -1,6 +1,4 @@
 Ap11::Application.routes.draw do
-  mount Ckeditor::Engine => '/ckeditor'
-
   mount Ckeditor::Engine => "/ckeditor"
 
   #resources :output_collections

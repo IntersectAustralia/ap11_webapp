@@ -2,6 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  ckeditor:
+      page_title: "CKEditor Files Manager"
+      confirm_delete: "Delete file?"
+      buttons:
+        cancel: "Cancel"
+        upload: "Upload"
+        delete: "Delete"
   activerecord:
     attributes:
       user:
