@@ -16,7 +16,10 @@ Ap11::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS
-  config.assets.compress = true
+  # Supposed to be set to true -
+  # This is a temporary workaround because ckeditor doesn't load in IE when compressed
+  # Also note a solution was created for 3.7.1 but we have issues with that.
+  config.assets.compress = false
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
