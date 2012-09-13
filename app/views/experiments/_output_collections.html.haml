@@ -1,0 +1,38 @@
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      %th Name
+      %th License
+      %th Access Rights
+      %th Location
+      %th FOR Code(s)
+      %th Actions
+      %th
+      %th
+
+  - @output_collections.each do |collection|
+    %tr
+      %td= collection.name
+      %td= collection.license
+      %td= collection.access_rights
+      %td= collection.location
+      %td
+        %div= collection.for_code1
+        - unless collection.for_code2.empty?
+          %div= collection.for_code2
+        - unless collection.for_code3.empty?
+          %div= collection.for_code3
+      %td= link_to 'Show', experiment_input_collection_path(@experiment, collection)
+      %td= link_to 'Edit', edit_experiment_input_collection_path(@experiment, collection)
+      %td
+        %a{"data-toggle" => "modal", :href => "#myModal#{collection.id}"} Delete
+        .modal.hide{:id => "myModal#{collection.id}"}
+          .modal-header
+            %button.close{"data-dismiss" => "modal", :type => "button"} ×
+            %h3 #{collection.name}
+          .modal-body
+            %i.icon-exclamation-sign.icon-black
+            Are you sure you want to delete output collection #{collection.name}?
+          .modal-footer
+            %a.btn{"data-dismiss" => "modal", :href => '#'} Close
+            %a.btn.btn-danger{:href => '/experiments/' + @experiment.id.to_s + '/output_collections/' + collection.id.to_s, "data-method" => "delete"} Delete

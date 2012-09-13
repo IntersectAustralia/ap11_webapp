@@ -35,6 +35,9 @@ end
   resources :experiments do
     resources :input_collections, :except => [:index] do
     end
+
+    resources :output_collections, :except => [:index] do
+    end
   end
 
   root :to => "pages#home"

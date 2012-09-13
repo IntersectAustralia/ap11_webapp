@@ -53,9 +53,20 @@ ActiveRecord::Schema.define(:version => 20120902184658) do
     t.datetime "updated_at",                    :null => false
   end
 
-  create_table "output_collections", :id => false, :force => true do |t|
-    t.integer "experiment_id"
-    t.integer "collection_id"
+  create_table "output_collections", :force => true do |t|
+    t.string   "name",          :limit => 512
+    t.text     "description"
+    t.text     "license"
+    t.text     "access_rights"
+    t.text     "location"
+    t.string   "for_code1"
+    t.string   "for_code2"
+    t.string   "for_code3"
+    t.string   "website_name",  :limit => 512
+    t.string   "url",           :limit => 2000
+    t.integer  "experiment_id"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "permissions", :force => true do |t|

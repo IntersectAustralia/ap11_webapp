@@ -21,26 +21,19 @@ class ExperimentsController < ApplicationController
   def edit
     @experiment = Experiment.find(params[:id])
     @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
+    @output_collections = OutputCollection.find_all_by_experiment_id(@experiment.id)
   end
 
-  # POST /experiments
-  # POST /experiments.json
   def create
     @experiment = Experiment.new(params[:experiment])
 
-    respond_to do |format|
-      if @experiment.save
-        format.html { redirect_to experiments_path, notice: 'Experiment was successfully created.' }
-        format.json { render json: @experiment, status: :created, location: @experiment }
-      else
-        format.html { render action: "new"}
-        format.json { render json: @experiment.errors, status: :unprocessable_entity }
-      end
+    if @experiment.save
+      redirect_to experiments_path, notice: 'Experiment was successfully created.'
+    else
+      render action: "new"
     end
   end
 
-  # PUT /experiments/1
-  # PUT /experiments/1.json
   def update
     @experiment = Experiment.find(params[:id])
     @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
@@ -55,8 +48,6 @@ class ExperimentsController < ApplicationController
     end
   end
 
-  # DELETE /experiments/1
-  # DELETE /experiments/1.json
   def destroy
     @experiment = Experiment.find(params[:id])
     @experiment.destroy
