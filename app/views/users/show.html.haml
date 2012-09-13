@@ -49,10 +49,10 @@
   = render_field "Role", (@user.role ? @user.role.name : "")
   = render_field_with_block "Status" do
     - if @user.status == 'A'
-      Active
+      %span.label.label-success Active
     - elsif @user.status == 'D'
-      Deactivated
+      %span.label.label-important Deactivated
     - elsif @user.status == 'U'
-      Pending Approval
+      %span.label.label-info Pending Approval
     - elsif @user.status == 'R'
-      Rejected
+      %span.label.label-inverse Rejected

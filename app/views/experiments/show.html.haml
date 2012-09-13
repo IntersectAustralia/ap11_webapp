@@ -4,24 +4,25 @@
 %table.table
   %tr
     %th Title
-    %th
+    %th.table-value
       = @experiment.title
   %tr
     %th Date
-    %th
+    %th.table-value
       = @experiment.date
   %tr
     %th Owner
-    %th
+    %th.table-value
       = @experiment.user.full_name
   %tr
     %th Input Collections
-    %th
+    %th.table-value
       - @input_collections.each do |input|
-        %div= input.name
+        %div= link_to input.name, experiment_input_collection_path(@experiment, input)
   %tr
     %th Output Collection
-    %th None
+    %th.table-value
+      None
 
 .form-actions
   %a.btn.btn-primary{:href => edit_experiment_path(@experiment)} Edit Experiment
