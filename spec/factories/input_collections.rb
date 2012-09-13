@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :input_collection do
-    experiment_id 1
-    collection_id 1
+    association :experiment
+    for_code1 123456
   end
 end
