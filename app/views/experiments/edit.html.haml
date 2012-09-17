@@ -17,20 +17,22 @@
     = f.label :user, "Owner", :class => "control-label"
     .controls
       = f.collection_select :user_id, @users, :id, :full_name
-  .control-group
-    = f.label :collections, "Input Collections", :class => "control-label"
-    = render 'input_collections'
-    .controls
-      %a{:class => "btn btn-primary btn-small", :href => new_experiment_input_collection_path(@experiment.id)}
-        %i{:class => "icon-plus icon-white"}
-        Add Collection
-  .control-group
-    = f.label :collections, "Output Collections", :class => "control-label"
-    .controls
-      = render 'output_collections'
-      %a{:class => "btn btn-primary btn-small", :href => new_experiment_output_collection_path(@experiment.id)}
-        %i{:class => "icon-plus icon-white"}
-        Add Collection
+  .well.well-large
+    .control-group
+      %h4= "Input Collections"
+      = render 'input_collections'
+      .controls
+        %a{:class => "btn btn-primary btn-small", :href => new_experiment_input_collection_path(@experiment.id)}
+          %i{:class => "icon-plus icon-white"}
+          Add Collection
+  .well.well-large
+    .control-group
+      %h4= "Output Collections"
+      .controls
+        = render 'output_collections'
+        %a{:class => "btn btn-primary btn-small", :href => new_experiment_output_collection_path(@experiment.id)}
+          %i{:class => "icon-plus icon-white"}
+          Add Collection
   .form-actions
     = f.submit "Edit Experiment", :class => "btn btn-primary"
     %a.btn{:href => experiments_path} Cancel

@@ -1,12 +1,53 @@
-%p#notice= notice
+- content_for :breadcrumb do
+  -title "Experiments / Output Collections / #{@output_collection.name}"
 
-%p
-  %b Experiment:
-  = @output_collection.experiment_id
-%p
-  %b Collection:
-  = @output_collection.collection_id
+%table.table.table-striped
+  %thead
+    %th
+  %tbody
+    %tr
 
-= link_to 'Edit', edit_output_collection_path(@output_collection)
-\|
-= link_to 'Back', output_collections_path
+  %tr
+    %th Name
+    %th.table-value
+      = @output_collection.name
+  %tr
+    %th Description
+    %th.table-value
+      = @output_collection.description
+  %tr
+    %th License
+    %th.table-value
+      = @output_collection.license
+  %tr
+    %th Access rights
+    %th.table-value
+      = @output_collection.access_rights
+  %tr
+    %th Location
+    %th.table-value
+      = @output_collection.location
+  %tr
+    %th FOR code
+    %th.table-value
+      = @output_collection.for_code1
+  %tr
+    %th FOR code
+    %th.table-value
+      = @output_collection.for_code2
+  %tr
+    %th FOR code
+    %th.table-value
+      = @output_collection.for_code3
+  %tr
+    %th Website name
+    %th.table-value
+      = @output_collection.website_name
+  %tr
+    %th Website URL
+    %th.table-value
+      = @output_collection.url
+
+.form-actions
+  %a.btn.btn-primary{:href => edit_experiment_output_collection_path(@experiment, @output_collection)} Edit Output Collection
+  %a.btn{:href => edit_experiment_path(@experiment)} Back

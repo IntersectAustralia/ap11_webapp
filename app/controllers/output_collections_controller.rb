@@ -54,7 +54,7 @@ class OutputCollectionsController < ApplicationController
   def destroy
     @output_collection = OutputCollection.find(params[:id])
     @output_collection.destroy
-    redirect_to output_collections_url
+    redirect_to edit_experiment_path(params[:experiment_id])
   end
 
   def load_static_data
