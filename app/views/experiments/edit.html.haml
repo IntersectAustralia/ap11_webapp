@@ -27,12 +27,13 @@
           Add Collection
   .well.well-large
     .control-group
-      %h4= "Output Collections"
+      %h4= "Output Collection"
       .controls
         = render 'output_collections'
-        %a{:class => "btn btn-primary btn-small", :href => new_experiment_output_collection_path(@experiment.id)}
-          %i{:class => "icon-plus icon-white"}
-          Add Collection
+        - unless @experiment.has_output_collection?
+          %a{:class => "btn btn-primary btn-small", :href => new_experiment_output_collection_path(@experiment.id)}
+            %i{:class => "icon-plus icon-white"}
+            Add Collection
   .form-actions
     = f.submit "Edit Experiment", :class => "btn btn-primary"
     %a.btn{:href => experiments_path} Cancel

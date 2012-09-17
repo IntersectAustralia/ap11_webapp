@@ -8,4 +8,10 @@ class Experiment < ActiveRecord::Base
 
   validates :date,  :presence => true
   validates :title, :presence => true
+
+  def has_output_collection?
+    exp = OutputCollection.find_all_by_experiment_id(self)
+    exp.length >= 1
+  end
+
 end

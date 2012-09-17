@@ -29,11 +29,12 @@ class OutputCollectionsController < ApplicationController
     @output_collection = OutputCollection.new(params[:output_collection])
     @output_collection.experiment_id = experiment_id
     @experiment = Experiment.find(experiment_id)
-
-    if @output_collection.save
-      redirect_to edit_experiment_path(experiment_id), notice: 'Output collection was successfully created.'
-    else
-      render action: "new"
+    unless @experiment.has_output_collection?
+      if @output_collection.save
+        redirect_to edit_experiment_path(experiment_id), notice: 'Output collection was successfully created.'
+      else
+        render action: "new"
+      end
     end
   end
 
@@ -56,6 +57,8 @@ class OutputCollectionsController < ApplicationController
     @output_collection.destroy
     redirect_to edit_experiment_path(params[:experiment_id])
   end
+
+  private
 
   def load_static_data
     @subject_codes = ResearchSubjectCode.all
