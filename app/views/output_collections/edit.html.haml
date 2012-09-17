@@ -1,7 +1,8 @@
-%h1 Editing output_collection
+- content_for :breadcrumb do
+  -title "Experiments / Input Collections / Edit Output Collection"
+
 
 = render 'form'
 
-= link_to 'Show', @output_collection
-\|
-= link_to 'Back', output_collections_path
+= link_to 'Back', experiments_path
+

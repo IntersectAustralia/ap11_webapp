@@ -1,5 +1,6 @@
-%h1 New output_collection
+- content_for :breadcrumb do
+  -title "Experiments / Output Collections / New Output Collection"
 
 = render 'form'
 
-= link_to 'Back', output_collections_path
+= link_to 'Back', experiments_path

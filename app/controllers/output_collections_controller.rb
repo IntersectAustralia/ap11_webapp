@@ -1,5 +1,6 @@
 class OutputCollectionsController < ApplicationController
 
+  before_filter :load_static_data, :only => [:new, :create, :edit, :update]
   before_filter :authenticate_user!
   load_and_authorize_resource
 
@@ -9,31 +10,42 @@ class OutputCollectionsController < ApplicationController
 
   def show
     @output_collection = OutputCollection.find(params[:id])
+    @experiment = Experiment.find(@output_collection.experiment_id)
   end
 
   def new
     @output_collection = OutputCollection.new
+    @experiment = Experiment.find(params[:experiment_id])
   end
 
   def edit
     @output_collection = OutputCollection.find(params[:id])
+    @experiment = Experiment.find(params[:experiment_id])
   end
 
   def create
+    experiment_id = params[:experiment_id]
+
     @output_collection = OutputCollection.new(params[:output_collection])
+    @output_collection.experiment_id = experiment_id
+    @experiment = Experiment.find(experiment_id)
 
     if @output_collection.save
-      redirect_to @output_collection, notice: 'Output collection was successfully created.'
+      redirect_to edit_experiment_path(experiment_id), notice: 'Output collection was successfully created.'
     else
       render action: "new"
     end
   end
 
   def update
+    experiment_id = params[:experiment_id]
+
     @output_collection = OutputCollection.find(params[:id])
+    @output_collection.experiment_id = experiment_id
+    @experiment = Experiment.find(experiment_id)
 
     if @output_collection.update_attributes(params[:output_collection])
-      redirect_to @output_collection, notice: 'Output collection was successfully updated.'
+      redirect_to edit_experiment_path(experiment_id), notice: 'Output collection was successfully updated.'
     else
       render action: "edit"
     end
@@ -43,5 +55,9 @@ class OutputCollectionsController < ApplicationController
     @output_collection = OutputCollection.find(params[:id])
     @output_collection.destroy
     redirect_to output_collections_url
+  end
+
+  def load_static_data
+    @subject_codes = ResearchSubjectCode.all
   end
 end

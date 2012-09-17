@@ -22,8 +22,8 @@
           %div= collection.for_code2
         - unless collection.for_code3.empty?
           %div= collection.for_code3
-      %td= link_to 'Show', experiment_input_collection_path(@experiment, collection)
-      %td= link_to 'Edit', edit_experiment_input_collection_path(@experiment, collection)
+      %td= link_to 'Show', experiment_output_collection_path(@experiment, collection)
+      %td= link_to 'Edit', edit_experiment_output_collection_path(@experiment, collection)
       %td
         %a{"data-toggle" => "modal", :href => "#myModal#{collection.id}"} Delete
         .modal.hide{:id => "myModal#{collection.id}"}
