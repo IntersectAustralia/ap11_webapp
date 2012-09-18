@@ -1,9 +1,6 @@
 Ap11::Application.routes.draw do
   mount Ckeditor::Engine => "/ckeditor"
 
-  #resources :output_collections
-  #resources :input_collections
-
   devise_for :users, controllers: {registrations: "user_registers", passwords: "user_passwords"}
 devise_scope :user do
   get "/users/profile", :to => "user_registers#profile" #page which gives options to edit details or change password
@@ -35,10 +32,13 @@ end
   resources :experiments do
     resources :input_collections, :except => [:index] do
     end
-
-    resources :output_collections, :except => [:index] do
-    end
   end
+
+  resources :output_collections, :except => [:index]
+
+  resources :input_collections
+
+  resources :party_records
 
   root :to => "pages#home"
 
