@@ -15,7 +15,7 @@ describe InputCollection do
     it { should ensure_length_of(:url).is_at_most(2000) }
 
     it "should be invalid if url is supplied but no website name exists" do
-      c = FactoryGirl.create(:input_collection)
+      c = FactoryGirl.create(:input_collection, :for_code1 => '101010')
       c.send(:url=, "http://www.ap11.com")
       c.should_not be_valid
       c.errors[:website_name].should eq ["can't be blank"]

@@ -19,5 +19,55 @@
 $(function(){
     $(".datepicker").datepicker({
         format: 'yyyy-mm-dd'
-    })
+    });
+
+    function clearCollectionFields()
+    {
+        $("#input_collection_license").val('');
+        $("#input_collection_access_rights").val('');
+        $("#input_collection_location").val('');
+        $("#input_collection_website_name").val('');
+        $("#input_collection_url").val('');
+    }
+
+    function onLoad()
+    {
+        $('#myModal').modal('hide');
+
+        $(".radio-field").hide();
+        val = $(".collection_type:checked").val();
+        if (val == 'Local')
+        {
+            $("#collection_form").hide();
+        }
+        else if (val == 'Remote')
+        {
+            $("#collection_form").show();
+        }
+        else //on new
+        {
+            $("#collection_form").hide();
+        }
+    }onLoad();
+
+    $("#input_type_remote").click(function(){
+        $("#radio_remote").click();
+    });
+
+    $("#input_type_local").click(function(){
+        $("#radio_local").click();
+    });
+
+    $(".collection_type").change(function(){
+        val = $(".collection_type:checked").val();
+        if (val == 'Local')
+        {
+            $("#collection_form").hide();
+        }
+        else if (val == 'Remote')
+        {
+            $("#collection_form").show();
+        }
+    });
 });
+
