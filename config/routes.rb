@@ -31,8 +31,8 @@ Ap11::Application.routes.draw do
   end
 
   resources :experiments do
-    resources :input_collections, :except => [:index] do
-    end
+    resources :input_collections, :except => [:index]
+    resources :output_collections, :except => [:index]
   end
 
   resources :party_records
