@@ -7,6 +7,10 @@
       .controls
         = f.text_field :name
     .control-group
+      = f.label :description, "Description", :class => "control-label"
+      .controls
+        = f.cktext_area :description, :toolbar => 'Full'
+    .control-group
       = f.label :for_code1, "FOR code", :class => "control-label"
       .controls
         = f.collection_select :for_code1, @subject_codes, :display_name, :display_name, :include_blank => "None", :required => true
@@ -18,10 +22,6 @@
       = f.label :for_code3, "FOR code (optional)", :class => "control-label"
       .controls
         = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => "None"
-    .control-group
-      = f.label :description, "Description", :class => "control-label"
-      .controls
-        = f.cktext_area :description, :toolbar => 'Full'
     .control-group
       = f.label :collection_type, "Collection type", :class => "control-label"
       .controls

@@ -6,6 +6,10 @@
     .controls
       = f.text_field :name
   .control-group
+    = f.label :description, "Description", :class => "control-label"
+    .controls
+      = f.cktext_area :description, :toolbar => 'Full'
+  .control-group
     = f.label :license, "License", :class => "control-label"
     .controls
       = f.text_area :license, :rows => 5
@@ -37,10 +41,6 @@
     = f.label :url, "Website URL", :name => "control-label"
     .controls
       = f.text_field :url
-  .control-group
-    = f.label :description, "Description", :class => "control-label"
-    .controls
-      = f.cktext_area :description, :toolbar => 'Full'
   .form-actions
     = f.submit "#{@output_collection.new_record? ? 'Create' : 'Update'} Output Collection", :class => "btn btn-primary"
     %a.btn{:href => edit_experiment_path(@experiment)} Cancel
