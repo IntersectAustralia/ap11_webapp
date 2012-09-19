@@ -32,17 +32,17 @@ $(function(){
 
     function onLoad()
     {
-        $('#myModal').modal('hide');
-
         $(".radio-field").hide();
         val = $(".collection_type:checked").val();
         if (val == 'Local')
         {
             $("#collection_form").hide();
+            $("#input_type_local").addClass('active');
         }
         else if (val == 'Remote')
         {
             $("#collection_form").show();
+            $("#input_type_remote").addClass('active');
         }
         else //on new
         {
