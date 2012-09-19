@@ -2,11 +2,12 @@ Ap11::Application.routes.draw do
   mount Ckeditor::Engine => "/ckeditor"
 
   devise_for :users, controllers: {registrations: "user_registers", passwords: "user_passwords"}
-devise_scope :user do
-  get "/users/profile", :to => "user_registers#profile" #page which gives options to edit details or change password
-  get "/users/edit_password", :to => "user_registers#edit_password" #allow users to edit their own password
-  put "/users/update_password", :to => "user_registers#update_password" #allow users to edit their own password
-end
+
+  devise_scope :user do
+    get "/users/profile", :to => "user_registers#profile" #page which gives options to edit details or change password
+    get "/users/edit_password", :to => "user_registers#edit_password" #allow users to edit their own password
+    put "/users/update_password", :to => "user_registers#update_password" #allow users to edit their own password
+  end
 
   resources :users, :only => [:show] do
 
@@ -33,10 +34,6 @@ end
     resources :input_collections, :except => [:index] do
     end
   end
-
-  resources :output_collections, :except => [:index]
-
-  resources :input_collections
 
   resources :party_records
 
