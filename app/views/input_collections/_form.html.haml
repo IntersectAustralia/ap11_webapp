@@ -24,19 +24,12 @@
         = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => "None"
     .control-group
       = f.label :collection_type, "Collection type", :class => "control-label"
-      .controls
-        .btn-group{"data-toggle" => "buttons-radio"}
-          %button.btn.btn-info{:type => "button", :id => "input_type_remote"}
-            %i.icon-upload.icon-white
-            Remote
-          %button.btn{:type => "button", :id => "input_type_local"}
-            %i.icon-hdd
-            Local
-        %span.radio-field
-          = f.radio_button :collection_type, 'Remote', :id => 'radio_remote', :class => "collection_type"
-        %span.radio-field
-          = f.radio_button :collection_type, 'Local', :id => 'radio_local', :class => "collection_type"
-
+      %label.radio
+        = f.radio_button :collection_type, "Remote", :class => "collection_type"
+        Remote
+      %label.radio
+        = f.radio_button :collection_type, "Local", :class => "collection_type"
+        Local
   .well{:id => 'collection_form'}
     .control-group
       = f.label :license, "License", :class => "control-label"

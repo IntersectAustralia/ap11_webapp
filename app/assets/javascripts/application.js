@@ -32,17 +32,14 @@ $(function(){
 
     function onLoad()
     {
-        $(".radio-field").hide();
         val = $(".collection_type:checked").val();
         if (val == 'Local')
         {
             $("#collection_form").hide();
-            $("#input_type_local").addClass('active');
         }
         else if (val == 'Remote')
         {
             $("#collection_form").show();
-            $("#input_type_remote").addClass('active');
         }
         else //on new
         {
@@ -50,13 +47,6 @@ $(function(){
         }
     }onLoad();
 
-    $("#input_type_remote").click(function(){
-        $("#radio_remote").click();
-    });
-
-    $("#input_type_local").click(function(){
-        $("#radio_local").click();
-    });
 
     $(".collection_type").change(function(){
         val = $(".collection_type:checked").val();
