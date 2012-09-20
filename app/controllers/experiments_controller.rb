@@ -11,6 +11,7 @@ class ExperimentsController < ApplicationController
   def show
     @experiment = Experiment.find(params[:id])
     @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
+    @output_collections = OutputCollection.find_all_by_experiment_id(@experiment.id)
   end
 
   def new

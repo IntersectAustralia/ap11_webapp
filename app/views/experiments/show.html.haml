@@ -22,7 +22,8 @@
   %tr
     %th Output Collection
     %th.table-value
-      None
+      - @output_collections.each do |output|
+        %div= link_to output.name, experiment_output_collection_path(@experiment, output)
 
 .form-actions
   %a.btn.btn-primary{:href => edit_experiment_path(@experiment)} Edit Experiment
