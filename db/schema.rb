@@ -75,14 +75,14 @@ ActiveRecord::Schema.define(:version => 20120921002656) do
     t.string   "full_name"
     t.text     "description"
     t.text     "address"
-    t.string   "url",         :limit => 2000
+    t.string   "url",           :limit => 2000
     t.string   "for_code1"
     t.string   "for_code2"
     t.string   "for_code3"
     t.text     "access_rights"
     t.text     "license"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "permissions", :force => true do |t|

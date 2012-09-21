@@ -1,0 +1,49 @@
+- content_for :breadcrumb do
+  -title "Party Records / #{@party_record.abbreviation}"
+
+%table.table
+  %tr
+    %th Abbreviation
+    %th.table-value
+      = @party_record.abbreviation
+  %tr
+    %th Full Name
+    %th.table-value
+      = @party_record.full_name
+  %tr
+    %th Description
+    %th.table-value
+      = @party_record.description
+  %tr
+    %th Address
+    %th.table-value
+      = @party_record.address
+  %tr
+    %th URL
+    %th.table-value
+      = @party_record.address
+  %tr
+    %th FOR code
+    %th.table-value
+      = @party_record.for_code1
+  %tr
+    %th FOR code
+    %th.table-value
+      = @party_record.for_code2
+  %tr
+    %th FOR code
+    %th.table-value
+      = @party_record.for_code3
+  %tr
+    %th Access Rights
+    %th.table-value
+      = @party_record.access_rights
+  %tr
+    %th License
+    %th.table-value
+      = @party_record.license
+
+
+.form-actions
+  %a.btn.btn-primary{:href => edit_party_record_path(@party_record)} Edit Record
+  %a.btn{:href => party_records_path} Back

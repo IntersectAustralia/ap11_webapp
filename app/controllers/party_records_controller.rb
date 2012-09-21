@@ -12,6 +12,10 @@ class PartyRecordsController < ApplicationController
     @party_record = PartyRecord.new
   end
 
+   def show
+    @party_record = PartyRecord.find(params[:id])
+  end
+
   def create
     @party_record = PartyRecord.new(params[:party_record])
 
@@ -23,15 +27,29 @@ class PartyRecordsController < ApplicationController
   end
 
   def edit
-
   end
 
   def update
-
+    @party_record = PartyRecord.find(params[:id])
+    respond_to do |format|
+      if @party_record.update_attributes(params[:party_record])
+        format.html { redirect_to party_records_path, notice: 'Party Record was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @party_record.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
+    @party_record = PartyRecord.find(params[:id])
+    @party_record.destroy
 
+    respond_to do |format|
+      format.html { redirect_to party_records_url }
+      format.json { head :no_content }
+    end
   end
 
   private
