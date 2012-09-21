@@ -5,7 +5,7 @@ class PartyRecordsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    #AP11-93
+    @party_records = PartyRecord.all
   end
 
   def new

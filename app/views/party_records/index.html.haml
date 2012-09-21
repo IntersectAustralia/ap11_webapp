@@ -1,7 +1,22 @@
 -title  'Listing party records'
 
 TODO: Will be implemented in AP11-93
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      %th Abbreviated name
+      %th Full name
+      %th
+      %th
+      %th
 
+  - @party_records.each do |record|
+    %tr
+      %td= record.abbreviation
+      %td= record.full_name
+      %td= 'Show'
+      %td= 'Edit'
+      %td= 'Delete'
 %br
 
 %a{:class => "btn btn-primary", :href => new_party_record_path}
