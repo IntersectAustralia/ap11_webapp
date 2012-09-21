@@ -1,5 +1,6 @@
 class Role < ActiveRecord::Base
   ADMIN_ROLE = 'admin'
+  RESEARCHER_ROLE = 'researcher'
 
   attr_accessible :name
 
@@ -22,6 +23,10 @@ class Role < ActiveRecord::Base
 
   def admin?
     self.name == ADMIN_ROLE
+  end
+
+  def researcher?
+    self.name == RESEARCHER_ROLE
   end
 
 end
