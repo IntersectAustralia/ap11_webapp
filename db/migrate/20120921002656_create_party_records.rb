@@ -5,7 +5,7 @@ class CreatePartyRecords < ActiveRecord::Migration
       t.string :full_name
       t.text :description
       t.text :address
-      t.string :url
+      t.string :url,          :limit => '2000'
       t.string :for_code1
       t.string :for_code2
       t.string :for_code3
