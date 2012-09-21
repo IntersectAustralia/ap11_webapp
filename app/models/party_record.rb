@@ -1,6 +1,6 @@
 class PartyRecord < ActiveRecord::Base
-  attr_accessible :abbreviation, :full_name, :description, :for_code1, :for_code2, :for_code3,
-                  :url, :address,  :license, :access_rights
+  attr_accessible :abbreviation, :access_rights, :address, :description, :for_code1, :for_code2, :for_code3,
+                  :full_name, :license, :url
 
   validates_presence_of :abbreviation
   validates_presence_of :full_name

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120918033841) do
+ActiveRecord::Schema.define(:version => 20120921002656) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -68,6 +68,21 @@ ActiveRecord::Schema.define(:version => 20120918033841) do
     t.integer  "experiment_id"
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "party_records", :force => true do |t|
+    t.string   "abbreviation"
+    t.string   "full_name"
+    t.text     "description"
+    t.text     "address"
+    t.string   "url"
+    t.string   "for_code1"
+    t.string   "for_code2"
+    t.string   "for_code3"
+    t.text     "access_rights"
+    t.text     "license"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "permissions", :force => true do |t|

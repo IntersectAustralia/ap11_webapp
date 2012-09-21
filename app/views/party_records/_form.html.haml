@@ -1,4 +1,4 @@
-= form_for [@party_record] do |f|
+= form_for(@party_record) do |f|
   = render "shared/error_messages", :target => @party_record
 
   .control-group
@@ -14,12 +14,12 @@
   .control-group
     = f.label :description, "Description", :class => "control-label"
     .controls
-      = f.cktext_area :description, :toolbar => 'Full'
+      = f.text_area :description, :toolbar => 'Full', :class => "editor"
 
   .control-group
     = f.label :address, "Address", :class => "control-label"
     .controls
-      = f.cktext_area :address, :toolbar => 'Full'
+      = f.text_area :address, :toolbar => 'Full', :class => "editor"
 
   .control-group
     = f.label :url, "URL", :class => "control-label"
@@ -48,5 +48,5 @@
       = f.text_area :license, :rows => '5'
 
   .form-actions
-    = f.submit "#{@parties.new_record? ? 'Create' : 'Edit'} Party Record", :class => "btn btn-primary"
-    %a.btn{:href => experiments_path} Cancel
+    = f.submit "#{@party_record.new_record? ? 'Create' : 'Edit'} Party Record", :class => "btn btn-primary"
+    %a.btn{:href => party_records_path} Cancel

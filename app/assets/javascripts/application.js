@@ -21,6 +21,11 @@ $(function(){
         format: 'yyyy-mm-dd'
     });
 
+    // To instantiate multiple CKEditors on the party records page
+    $('textarea.editor').each(function() {
+        CKEDITOR.replace($(this).attr('id'));
+    });
+
     function clearCollectionFields()
     {
         $("#input_collection_license").val('');
