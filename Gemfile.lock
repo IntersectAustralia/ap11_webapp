@@ -250,10 +250,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip
     sexp_processor (3.2.0)
-    shoulda (3.1.1)
-      shoulda-context (~> 1.0)
-      shoulda-matchers (~> 1.2)
-    shoulda-context (1.0.0)
     shoulda-matchers (1.2.0)
       activesupport (>= 3.0.0)
     simple_form (2.0.2)
@@ -318,7 +314,7 @@ DEPENDENCIES
   rspec-rails
   rvm-capistrano
   sass-rails (~> 3.2.3)
-  shoulda
+  shoulda-matchers
   simple_form
   simplecov (>= 0.3.8)
   therubyracer
