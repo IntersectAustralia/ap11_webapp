@@ -4,7 +4,8 @@ Feature: Navigation
   I want to have a working navigation panel
 
   Background:
-    Given I have a user "georgina@intersect.org.au"
+    Given I have the usual roles and permissions
+    Given I have a user "georgina@intersect.org.au" with role "admin"
     And I am on the login page
     And I am logged in as "georgina@intersect.org.au"
 
@@ -31,17 +32,17 @@ Feature: Navigation
 
   Scenario: View experiments link takes user to experiments page
     Given I am on the home page
-    And I Follow "View Experiments"
+    And I follow "View Experiments"
     Then I should be on the list experiments page
 
   Scenario: View User link takes user to users page
     Given I am on the home page
-    And I Follow "View Users"
+    And I follow "View Users"
     Then I should be on the list users page
 
    Scenario: View Access Requests link takes user to requests page
     Given I am on the home page
-    And I Follow "View Access Requests"
+    And I follow "View Access Requests"
     Then I should be on the access requests page
 
 
