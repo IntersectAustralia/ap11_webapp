@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :experiment do
-    title "MyString"
+    title "Proteome"
     date "2012-08-13"
     association :user
   end

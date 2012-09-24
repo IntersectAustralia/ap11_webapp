@@ -19,6 +19,6 @@
       = f.collection_select :user_id, @users, :id, :full_name
 
   .form-actions
-    = f.submit "Create Experiment", :class => "btn btn-primary"
+    = f.submit "Create Experiment", :class => "btn btn-primary", :value => "Create Experiment"
     %a.btn{:href => experiments_path} Cancel
 
