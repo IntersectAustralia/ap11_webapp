@@ -30,9 +30,34 @@ Feature: Experiments
     And I should see "2012-09-24"
     And I should see "Fred Bloggs"
 
-  @wip
   Scenario: Edit experiment
     Given I am on the home page
     And I have an experiment "Old proteome"
     And I follow "View Experiments"
+    Then I should see "Old proteome"
+    And I should see "2012-01-01"
+    Then I follow "Edit"
+    Then I should see "Input Collections"
+    Then I should see "Output Collection"
+    And I fill in "Title" with "Proteome"
+    And I fill in "Date" with "2012-09-24"
+    And I press "Edit Experiment"
+    And I should see "Proteome"
+    And I should see "2012-09-24"
+
+  Scenario: Show experiment
+    Given I am on the home page
+    And I have an experiment "Old proteome"
+    And I follow "View Experiments"
     Then I follow "Show"
+    Then I should see "Old proteome"
+    And I should see "2012-01-01"
+    And I should see "Fred Bloggs"
+
+  Scenario: Delete experiment
+    Given I am on the home page
+    And I have an experiment "Proteome"
+    And I follow "View Experiments"
+    Then I follow "Delete"
+    And I delete the experiment
+    Then I should not see "Proteome"
