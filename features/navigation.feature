@@ -15,7 +15,7 @@ Feature: Navigation
     Then I should see "QUICK LINKS"
     And I should see "Home"
     And I should see "Login/Sign up"
-    And I follow "Home"
+    And I follow the home page
     Then I should be on the home page
     And I follow "Login/Sign up"
     Then I should be on the home page

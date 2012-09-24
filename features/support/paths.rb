@@ -46,6 +46,10 @@ module NavigationHelpers
     when /the list experiments page/
       experiments_path
 
+    # Party records paths
+    when /the create party record page/
+      new_party_record_path
+
 # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
