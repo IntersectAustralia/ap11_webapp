@@ -16,6 +16,8 @@ class InputCollection < ActiveRecord::Base
   validates_presence_of :url, :if => :website_name_exists?
   validates_presence_of :website_name, :if => :url_exists?
 
+  validates_uniqueness_of :name, :scope => :experiment_id, :case_sensitive => false
+
   def website_name_exists?
     !website_name.blank?
   end
