@@ -106,6 +106,10 @@ namespace :deploy do
     restart
   end
 
+  task :qa_data do
+    run "cd #{current_path} && rake db:data:load"
+  end
+
   task :bundle_update do
     run "cd #{current_path} && bundle update"
     restart

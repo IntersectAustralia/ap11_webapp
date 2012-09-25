@@ -1,0 +1,2298 @@
+
+---
+experiments:
+  columns:
+  - id
+  - title
+  - date
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - '1'
+    - Test Experiment
+    - '2012-09-24'
+    - '2012-09-24 05:09:58.366899'
+    - '2012-09-24 05:09:58.366899'
+    - '3'
+  - - '2'
+    - QA Experiment 2
+    - '2012-08-27'
+    - '2012-09-25 00:26:43.370417'
+    - '2012-09-25 00:26:43.370417'
+    - '3'
+  - - '3'
+    - Test Experiment 3 (No Collections)
+    - '2012-09-02'
+    - '2012-09-25 00:37:09.38216'
+    - '2012-09-25 00:37:09.38216'
+    - '1'
+  - - '4'
+    - Test Experiment 4 (No Collections)
+    - '2012-09-10'
+    - '2012-09-25 00:37:24.487332'
+    - '2012-09-25 00:37:24.487332'
+    - '4'
+  - - '5'
+    - Test Experiment 5 (No Collections)
+    - '2012-09-25'
+    - '2012-09-25 00:37:33.252494'
+    - '2012-09-25 00:37:33.252494'
+    - '1'
+  - - '6'
+    - Test Experiment 6 (No Collections)
+    - '2012-09-09'
+    - '2012-09-25 00:37:45.516857'
+    - '2012-09-25 00:37:45.516857'
+    - '3'
+  - - '11'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ }Test 256'
+    - '2012-09-25'
+    - '2012-09-25 00:41:37.292956'
+    - '2012-09-25 00:41:37.292956'
+    - '3'
+  - - '12'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ }Test 256'
+    - '2012-09-25'
+    - '2012-09-25 00:41:39.739441'
+    - '2012-09-25 00:41:39.739441'
+    - '3'
+
+---
+input_collections:
+  columns:
+  - id
+  - name
+  - description
+  - license
+  - access_rights
+  - location
+  - for_code1
+  - for_code2
+  - for_code3
+  - website_name
+  - url
+  - experiment_id
+  - created_at
+  - updated_at
+  - collection_type
+  records: 
+  - - '1'
+    - QA Test Input Collection 1 - Local
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p style=\"color: rgb(0, 0, 0); font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\tHello Computer (text)</p>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\tDeux premi&egrave;res parties ce soir pour faire patienter. Une
+      charmante irlandaise,&nbsp;<strong>Carly Sings</strong>, monte d&rsquo;abord
+      sur sc&egrave;ne accompagn&eacute;e de deux gar&ccedil;ons &agrave; la basse
+      et &agrave; la guitare. La jeune fille habite en France&nbsp;<a href=\"http://google.com/\"
+      style=\"color: rgb(194, 30, 59); text-decoration: none; \">depuis</a>un peu
+      plus d&rsquo;un an mais, de son propre aveu, elle est un peu intimid&eacute;e
+      (probablement par le cadre magnifique du Trianon) et pr&eacute;f&egrave;re souvent
+      s&rsquo;exprimer en anglais. Fan de Jacno et Ellis, la voix fluette, elle nous
+      propose une musique folk sympathique. Le public n&rsquo;accroche que l&eacute;g&egrave;rement,
+      la salle manquant d&rsquo;intimit&eacute; pour ce type de concerts. (copy/paste
+      wordpress)</p>\r\n<p align=\"RIGHT\" style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר
+      לתושבים</b></font>-&nbsp;<font face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת
+      השבוע</font>.</p>\r\n<p align=\"RIGHT\" style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים עם סיום הלימודים</font>,&nbsp;<font
+      face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p align=\"RIGHT\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"color: rgb(0, 0,
+      0); font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste
+      from&nbsp;<a href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<strong>J&#39;aime pas le gras</strong></p>\r\n<p style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<a href=\"http://www.google.com/\" style=\"color: rgb(194, 30,
+      59); text-decoration: none; \" target=\"_blank\"><img alt=\"while my guitar...\"
+      src=\"http://i54.tinypic.com/donc5v.jpg\" style=\"border: 0px solid; margin:
+      3px; width: 278px; height: 278px; \" /></a></p>\r\n<p style=\"color: rgb(0,
+      0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<img alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\tTable is working</p>\r\n<table border=\"1\" cellpadding=\"1\"
+      cellspacing=\"1\" style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;Inserting code the first time didn&#39;t work and duplicate
+      all the content</p>\r\n<div class=\"codecaption\" style=\"font-size: 11px; padding:
+      0px 10px; position: relative; bottom: -5px; display: inline; border-width: 1px
+      1px 0px; border-top-style: solid; border-right-style: solid; border-left-style:
+      solid; border-top-color: rgb(105, 105, 105); border-right-color: rgb(105, 105,
+      105); border-left-color: rgb(105, 105, 105); margin: 0px; color: rgb(105, 105,
+      105); background-color: rgb(245, 245, 245); font-weight: bold; font-family:
+      Arial, Helvetica, sans-serif; \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror
+      CodeMirror-wrap codelisting\" style=\"overflow: hidden; max-width: 990px; line-height:
+      15px; font-family: Arial, Helvetica, sans-serif; background-color: rgb(245,
+      245, 245); border: 1px dashed rgb(105, 105, 105); cursor: text; clear: both;
+      padding: 0px; margin: 4px 0px; color: rgb(0, 0, 0); height: auto; \">\r\n\t<div
+      style=\"overflow: hidden; position: relative; width: auto; height: auto; top:
+      5.800048828125px; left: 5.79998779296875px; \">\r\n\t\t<textarea autocapitalize=\"off\"
+      autocorrect=\"off\" style=\"background-color: rgb(249, 223, 226); color: rgb(0,
+      0, 0); border-color: rgb(251, 153, 158) rgb(249, 240, 240) rgb(249, 240, 240)
+      rgb(251, 153, 158); outline: none !important; position: absolute; padding: 0px;
+      width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div class=\"CodeMirror-scroll
+      cm-s-default\" style=\"overflow: hidden; height: auto; position: relative; outline:
+      none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div style=\"position: relative;
+      height: auto; width: auto; \">\r\n\t\t\t<div style=\"position: relative; top:
+      0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding: 0.4em;
+      white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - ''
+    - ''
+    - ''
+    - 010000 - Mathematical Sciences
+    - 010101 - Algebra and Number Theory
+    - 030302 - Nanochemistry and Supramolecular Chemistry
+    - ''
+    - ''
+    - '1'
+    - '2012-09-24 05:11:27.817054'
+    - '2012-09-25 00:25:12.18722'
+    - Local
+  - - '2'
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - 010101 - Algebra and Number Theory
+    - ''
+    - ''
+    - ''
+    - ''
+    - '1'
+    - '2012-09-24 05:15:08.445307'
+    - '2012-09-24 05:15:08.445307'
+    - Local
+  - - '3'
+    - Kali Remote Input Collection
+    - ! "<p>\r\n\tTest Description</p>\r\n"
+    - ''
+    - ''
+    - ''
+    - 010100 - Pure Mathematics
+    - ''
+    - ''
+    - ''
+    - ''
+    - '1'
+    - '2012-09-24 05:38:11.694066'
+    - '2012-09-24 05:38:11.694066'
+    - Local
+  - - '4'
+    - Test Input Collection 2 Remote
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">Hello Computer (text)</span></p>\r\n<p style=\"font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; \">\r\n\tDeux premi&egrave;res parties ce soir
+      pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly Sings</strong>,
+      monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux gar&ccedil;ons
+      &agrave; la basse et &agrave; la guitare. La jeune fille habite en France&nbsp;<a
+      href=\"http://google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre aveu, elle
+      est un peu intimid&eacute;e (probablement par le cadre magnifique du Trianon)
+      et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan de Jacno et
+      Ellis, la voix fluette, elle nous propose une musique folk sympathique. Le public
+      n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - Test License
+    - Test access
+    - Test Location
+    - 010100 - Pure Mathematics
+    - 010102 - Algebraic and Differential Geometry
+    - 010102 - Algebraic and Differential Geometry
+    - Test Website Name
+    - Test@intersect.org.au
+    - '1'
+    - '2012-09-24 05:40:55.92729'
+    - '2012-09-25 00:25:36.301371'
+    - Remote
+  - - '5'
+    - Test Experiment 2 Local Input
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">Hello Computer (text)</span></p>\r\n<p style=\"font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; \">\r\n\tDeux premi&egrave;res parties ce soir
+      pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly Sings</strong>,
+      monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux gar&ccedil;ons
+      &agrave; la basse et &agrave; la guitare. La jeune fille habite en France&nbsp;<a
+      href=\"http://google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre aveu, elle
+      est un peu intimid&eacute;e (probablement par le cadre magnifique du Trianon)
+      et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan de Jacno et
+      Ellis, la voix fluette, elle nous propose une musique folk sympathique. Le public
+      n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - ''
+    - ''
+    - ''
+    - 010101 - Algebra and Number Theory
+    - 020303 - Fluid Physics
+    - ''
+    - ''
+    - ''
+    - '2'
+    - '2012-09-25 00:27:19.660639'
+    - '2012-09-25 00:27:19.660639'
+    - Local
+  - - '6'
+    - Test Input Experiment 2 Collection 2 Remote
+    - ! "<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; \">Hello Computer (text)</span></p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - Remote 2 License
+    - Remote 2 Access Rights
+    - Remote 2 Location
+    - 010101 - Algebra and Number Theory
+    - 020600 - Quantum Physics
+    - 020304 - Thermodynamics and Statistical Physics
+    - Remote 2 Web site
+    - http://gsw1-ap11-qa-vm.intersect.org.au/experiments/2/input_collections/new
+    - '2'
+    - '2012-09-25 00:29:17.585339'
+    - '2012-09-25 00:29:17.585339'
+    - Remote
+  - - '7'
+    - Input 3
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">Hello Computer (text)</span></p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - ''
+    - ''
+    - ''
+    - 010101 - Algebra and Number Theory
+    - ''
+    - ''
+    - ''
+    - ''
+    - '2'
+    - '2012-09-25 00:31:44.63161'
+    - '2012-09-25 00:31:44.63161'
+    - Local
+  - - '8'
+    - Input 4
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">Hello Computer (text)</span></p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - ''
+    - ''
+    - ''
+    - 020304 - Thermodynamics and Statistical Physics
+    - ''
+    - ''
+    - ''
+    - ''
+    - '2'
+    - '2012-09-25 00:32:15.389114'
+    - '2012-09-25 00:32:15.389114'
+    - Remote
+  - - '9'
+    - Input 5
+    - ''
+    - test
+    - test
+    - Test Location
+    - 010101 - Algebra and Number Theory
+    - 030302 - Nanochemistry and Supramolecular Chemistry
+    - ''
+    - Test Website Name
+    - Test@intersect.org.au
+    - '2'
+    - '2012-09-25 00:33:02.065838'
+    - '2012-09-25 00:33:02.065838'
+    - Remote
+  - - '10'
+    - QA Test Input Collection 6
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">Hello Computer (text)</span></p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - ''
+    - ''
+    - ''
+    - 010101 - Algebra and Number Theory
+    - ''
+    - ''
+    - ''
+    - ''
+    - '2'
+    - '2012-09-25 00:33:34.632223'
+    - '2012-09-25 00:33:34.632223'
+    - Local
+  - - '11'
+    - Test Input Collection 7 Remote
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">Hello Computer (text)</span></p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - test 7
+    - test 7
+    - Test Location 7
+    - 030302 - Nanochemistry and Supramolecular Chemistry
+    - ''
+    - ''
+    - Test Website Name 7
+    - Test@intersect.org.au
+    - '2'
+    - '2012-09-25 00:34:45.336181'
+    - '2012-09-25 00:34:45.336181'
+    - Remote
+  - - '12'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t` ~ @ # $ % ^ &amp; * ( ) _ - + = { [ } ]
+      | \\ : ; &rdquo; &rsquo; &lt; , &gt; . ? / 64 Te Test Test Test Test Test Test
+      Test Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test
+      Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test 256</p>\r\n"
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - 010101 - Algebra and Number Theory
+    - ''
+    - ''
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - '2'
+    - '2012-09-25 00:42:24.481378'
+    - '2012-09-25 00:42:24.481378'
+    - Remote
+  - - '13'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! "<p>\r\n\tTest Test</p>\r\n"
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - 010100 - Pure Mathematics
+    - 010101 - Algebra and Number Theory
+    - 010101 - Algebra and Number Theory
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - '1'
+    - '2012-09-25 00:52:00.722931'
+    - '2012-09-25 00:52:00.722931'
+    - Remote
+
+---
+research_subject_codes:
+  columns:
+  - id
+  - subject_code
+  - subject_name
+  records: 
+  - - '1'
+    - '010000'
+    - Mathematical Sciences
+  - - '2'
+    - '010100'
+    - Pure Mathematics
+  - - '3'
+    - '010101'
+    - Algebra and Number Theory
+  - - '4'
+    - '010102'
+    - Algebraic and Differential Geometry
+  - - '5'
+    - '020303'
+    - Fluid Physics
+  - - '6'
+    - '020304'
+    - Thermodynamics and Statistical Physics
+  - - '7'
+    - '020500'
+    - Optical Physics
+  - - '8'
+    - '020600'
+    - Quantum Physics
+  - - '9'
+    - '030302'
+    - Nanochemistry and Supramolecular Chemistry
+  - - '10'
+    - '030400'
+    - Medicinal and Biomolecular Chemistry
+
+---
+output_collections:
+  columns:
+  - id
+  - name
+  - description
+  - license
+  - access_rights
+  - location
+  - for_code1
+  - for_code2
+  - for_code3
+  - website_name
+  - url
+  - experiment_id
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - Output Collection 1
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">Hello Computer (text)</span></p>\r\n<p style=\"font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; \">\r\n\tDeux premi&egrave;res parties ce soir
+      pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly Sings</strong>,
+      monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux gar&ccedil;ons
+      &agrave; la basse et &agrave; la guitare. La jeune fille habite en France&nbsp;<a
+      href=\"http://google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre aveu, elle
+      est un peu intimid&eacute;e (probablement par le cadre magnifique du Trianon)
+      et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan de Jacno et
+      Ellis, la voix fluette, elle nous propose une musique folk sympathique. Le public
+      n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - Test License Output
+    - Test Access Rights Output
+    - Test Location Output
+    - 010102 - Algebraic and Differential Geometry
+    - 020500 - Optical Physics
+    - 010100 - Pure Mathematics
+    - Test Website Name Output
+    - testurl@output.com
+    - '1'
+    - '2012-09-24 05:42:20.831822'
+    - '2012-09-25 00:25:53.840945'
+  - - '2'
+    - QA Experiment 2 Output Collection
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">Hello Computer (text)</span></p>\r\n<p>\r\n\t&nbsp;</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nMy code works fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - Test License Output Experiment 2
+    - Test Access Rights Experiment 2 Output
+    - Test Location Experiment 2 Output
+    - 010102 - Algebraic and Differential Geometry
+    - 020500 - Optical Physics
+    - 030400 - Medicinal and Biomolecular Chemistry
+    - Test Website Name Output
+    - http://www.goopal.org/google-sites-html/wysiwyg-html-examples/html-google-gadgets
+    - '2'
+    - '2012-09-25 00:31:21.263818'
+    - '2012-09-25 00:31:21.263818'
+
+---
+party_records:
+  columns:
+  - id
+  - abbreviation
+  - full_name
+  - description
+  - address
+  - url
+  - for_code1
+  - for_code2
+  - for_code3
+  - access_rights
+  - license
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - Test ABBREV
+    - Test Full Name of Party
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">Test Hello Computer (text)</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nmMy code works
+      fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">Test Hello Computer (text)</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tDeux
+      premi&egrave;res parties ce soir pour faire patienter. Une charmante irlandaise,&nbsp;<strong>Carly
+      Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne accompagn&eacute;e de deux
+      gar&ccedil;ons &agrave; la basse et &agrave; la guitare. La jeune fille habite
+      en France&nbsp;<a href=\"http://google.com/\" style=\"color: rgb(194, 30, 59);
+      text-decoration: none; \">depuis</a>un peu plus d&rsquo;un an mais, de son propre
+      aveu, elle est un peu intimid&eacute;e (probablement par le cadre magnifique
+      du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer en anglais. Fan
+      de Jacno et Ellis, la voix fluette, elle nous propose une musique folk sympathique.
+      Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la salle manquant d&rsquo;intimit&eacute;
+      pour ce type de concerts. (copy/paste wordpress)</p>\r\n<p align=\"RIGHT\" style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לתושבים</b></font>-&nbsp;<font
+      face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת השבוע</font>.</p>\r\n<p align=\"RIGHT\"
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom:
+      0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים
+      עם סיום הלימודים</font>,&nbsp;<font face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p
+      align=\"RIGHT\" style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"font-family: Arial,
+      Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste from&nbsp;<a
+      href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<strong>J&#39;aime
+      pas le gras</strong></p>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px; \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je
+      suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<a
+      href=\"http://www.google.com/\" style=\"color: rgb(194, 30, 59); text-decoration:
+      none; \" target=\"_blank\"><img alt=\"while my guitar...\" src=\"http://i54.tinypic.com/donc5v.jpg\"
+      style=\"border: 0px solid; margin: 3px; width: 278px; height: 278px; \" /></a></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<img
+      alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tTable
+      is working</p>\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t&nbsp;Inserting
+      code the first time didn&#39;t work and duplicate all the content</p>\r\n<div
+      class=\"codecaption\" style=\"font-size: 11px; padding: 0px 10px; position:
+      relative; bottom: -5px; display: inline; border-width: 1px 1px 0px; border-top-style:
+      solid; border-right-style: solid; border-left-style: solid; border-top-color:
+      rgb(105, 105, 105); border-right-color: rgb(105, 105, 105); border-left-color:
+      rgb(105, 105, 105); margin: 0px; color: rgb(105, 105, 105); background-color:
+      rgb(245, 245, 245); font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+      \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror CodeMirror-wrap codelisting\"
+      style=\"overflow: hidden; max-width: 990px; line-height: 15px; font-family:
+      Arial, Helvetica, sans-serif; background-color: rgb(245, 245, 245); border:
+      1px dashed rgb(105, 105, 105); cursor: text; clear: both; padding: 0px; margin:
+      4px 0px; height: auto; \">\r\n\t<div style=\"overflow: hidden; position: relative;
+      width: auto; height: auto; top: 5.800048828125px; left: 5.79998779296875px;
+      \">\r\n\t\t<textarea autocapitalize=\"off\" autocorrect=\"off\" style=\"background-color:
+      rgb(249, 223, 226); color: rgb(0, 0, 0); border-color: rgb(251, 153, 158) rgb(249,
+      240, 240) rgb(249, 240, 240) rgb(251, 153, 158); outline: none !important; position:
+      absolute; padding-top: 0px; padding-left: 0px; width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div
+      class=\"CodeMirror-scroll cm-s-default\" style=\"overflow: hidden; height: auto;
+      position: relative; outline: none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div
+      style=\"position: relative; height: auto; width: auto; \">\r\n\t\t\t<div style=\"position:
+      relative; top: 0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding:
+      0.4em; white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nmMy code works
+      fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - Test URL http://gsw1-ap11-qa-vm.intersect.org.au/party_records/new
+    - 020303 - Fluid Physics
+    - 010102 - Algebraic and Differential Geometry
+    - 010000 - Mathematical Sciences
+    - Test Default Party Record Access Rights
+    - ! 'Test Default Party Record License` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] |
+      \ : ; ” ’ < , > . ? / 64 Te Test Test Test Test Test Test Test Te50 Test Test
+      Test Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test
+      Test Te50 Test Test Test Test Test Test Test Test Test 256'
+    - '2012-09-25 01:01:30.389816'
+    - '2012-09-25 01:01:30.389816'
+  - - '2'
+    - ! '`~@#$ %^ &* ) _-+ {[\'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 st Test
+      Test Test Test Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test
+      Test Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test
+      Test 256'
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t` ~ @ # $ % ^ &amp; * ( ) _ - + = { [ } ]
+      | \\ : ; &rdquo; &rsquo; &lt; , &gt; . ? / 64 Te Test Test Test Test Test Test
+      Test Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test
+      Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test 256</p>\r\n"
+    - ! "<p>\r\n\t&nbsp;</p>\r\n<p>\r\n\t` ~ @ # $ % ^ &amp; * ( ) _ - + = { [ } ]
+      | \\ : ; &rdquo; &rsquo; &lt; , &gt; . ? / 64 Te Test Test Test Test Test Test
+      Test Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test
+      Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test 256</p>\r\n"
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - 010102 - Algebraic and Differential Geometry
+    - ''
+    - ''
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - ! '` ~ @ # $ % ^ & * ( ) _ - + = { [ } ] | \ : ; ” ’ < , > . ? / 64 Te Test
+      Test Test Test Test Test Test Te50 Test Test Test Test Test Test Test Test Test
+      Te50 Test Test Test Test Test Test Test Test Test Te50 Test Test Test Test Test
+      Test Test Test Test 256'
+    - '2012-09-25 01:03:10.709585'
+    - '2012-09-25 01:03:10.709585'
+
+---
+permissions:
+  columns:
+  - id
+  - entity
+  - action
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - User
+    - read
+    - '2012-09-24 03:46:27.133478'
+    - '2012-09-24 03:46:27.133478'
+  - - '2'
+    - User
+    - update_role
+    - '2012-09-24 03:46:27.183216'
+    - '2012-09-24 03:46:27.183216'
+  - - '3'
+    - User
+    - activate_deactivate
+    - '2012-09-24 03:46:27.189158'
+    - '2012-09-24 03:46:27.189158'
+  - - '4'
+    - User
+    - admin
+    - '2012-09-24 03:46:27.193999'
+    - '2012-09-24 03:46:27.193999'
+  - - '5'
+    - User
+    - reject
+    - '2012-09-24 03:46:27.200116'
+    - '2012-09-24 03:46:27.200116'
+  - - '6'
+    - User
+    - approve
+    - '2012-09-24 03:46:27.207481'
+    - '2012-09-24 03:46:27.207481'
+
+---
+roles:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - admin
+    - '2012-09-24 03:46:27.117489'
+    - '2012-09-24 03:46:27.117489'
+  - - '2'
+    - researcher
+    - '2012-09-24 03:46:27.123571'
+    - '2012-09-24 03:46:27.123571'
+
+---
+roles_permissions:
+  columns:
+  - role_id
+  - permission_id
+  records: 
+  - - '1'
+    - '1'
+  - - '1'
+    - '2'
+  - - '1'
+    - '3'
+  - - '1'
+    - '4'
+  - - '1'
+    - '5'
+  - - '1'
+    - '6'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - failed_attempts
+  - locked_at
+  - first_name
+  - last_name
+  - status
+  - role_id
+  - created_at
+  - updated_at
+  - title
+  - description
+  - home_page
+  - for_code1
+  - for_code2
+  - for_code3
+  records: 
+  - - '1'
+    - sean@intersect.org.au
+    - $2a$10$8E0QOwmHHpa.WH/XMjFszOjACU8H/reqgyhrd6H8SNwy6Ri9Y0cli
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - Sean
+    - McCarthy
+    - A
+    - '1'
+    - '2012-09-24 03:47:01.422655'
+    - '2012-09-24 03:47:02.310517'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - '2'
+    - georgina@intersect.org.au
+    - $2a$10$ZG9lT132iQyZ4g1UdxQVzObbtO7z.dlr2BLR2cmlJRnXYvjGh6sRW
+    - 
+    - 
+    - 
+    - '1'
+    - '2012-09-25 00:55:26.707285'
+    - '2012-09-25 00:55:26.707285'
+    - 202.7.176.94
+    - 202.7.176.94
+    - '0'
+    - 
+    - Georgina
+    - Edwards
+    - A
+    - '1'
+    - '2012-09-24 03:47:01.616567'
+    - '2012-09-25 00:55:26.708378'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - '3'
+    - kali@intersect.org.au
+    - $2a$10$BU0SgAkID.uU79bL7OS1MupoBceCfxfwi7NuMRgz/z5Pk3kIYSe9.
+    - 
+    - 
+    - 
+    - '8'
+    - '2012-09-24 23:42:55.210266'
+    - '2012-09-24 06:05:12.323827'
+    - 124.169.143.8
+    - 202.7.176.94
+    - '0'
+    - 
+    - Kali
+    - Waterford
+    - A
+    - '1'
+    - '2012-09-24 03:47:01.748422'
+    - '2012-09-25 00:58:58.64361'
+    - Ms
+    - ! "<p>\r\n\t<span style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; \">Hello Computer (text)</span></p>\r\n<p style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">\r\n\tDeux premi&egrave;res parties ce soir pour faire patienter. Une charmante
+      irlandaise,&nbsp;<strong>Carly Sings</strong>, monte d&rsquo;abord sur sc&egrave;ne
+      accompagn&eacute;e de deux gar&ccedil;ons &agrave; la basse et &agrave; la guitare.
+      La jeune fille habite en France&nbsp;<a href=\"http://google.com/\" style=\"color:
+      rgb(194, 30, 59); text-decoration: none; \">depuis</a>un peu plus d&rsquo;un
+      an mais, de son propre aveu, elle est un peu intimid&eacute;e (probablement
+      par le cadre magnifique du Trianon) et pr&eacute;f&egrave;re souvent s&rsquo;exprimer
+      en anglais. Fan de Jacno et Ellis, la voix fluette, elle nous propose une musique
+      folk sympathique. Le public n&rsquo;accroche que l&eacute;g&egrave;rement, la
+      salle manquant d&rsquo;intimit&eacute; pour ce type de concerts. (copy/paste
+      wordpress)</p>\r\n<p align=\"RIGHT\" style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>יום העצמאות אבטליון&nbsp;</b></font><b>2012</b></p>\r\n<p
+      align=\"RIGHT\" style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>פלייר
+      לתושבים</b></font>-&nbsp;<font face=\"Tahoma\">חגית תפרסם פלייר לתושבים בתחילת
+      השבוע</font>.</p>\r\n<p align=\"RIGHT\" style=\"color: rgb(0, 0, 0); font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; margin-bottom: 0cm; \">\r\n\t<font
+      face=\"Tahoma\"><b>פלייר לנוער</b>&nbsp;&ndash; הגעת התלמידים עם סיום הלימודים</font>,&nbsp;<font
+      face=\"Tahoma\">מתנדבים להפעלת הדוכנים</font>.</p>\r\n<p align=\"RIGHT\" style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      margin-bottom: 0cm; \">\r\n\t<font face=\"Tahoma\"><b>מתנדבים</b>&nbsp;&ndash;
+      מתנדבים להקמה ופירוק</font>,&nbsp;<font face=\"Tahoma\">חשוב שהיו גם גברים וגם
+      נשים</font>,&nbsp;<font face=\"Tahoma\">לדבר עם ירון רכז נוער</font>,&nbsp;<font
+      face=\"Tahoma\">צריך את עזרת הנוער</font>.</p>\r\n<p style=\"color: rgb(0, 0,
+      0); font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t(copy/paste
+      from&nbsp;<a href=\"http://dev.tiki.org/WYSIWYG_torture+test\">http://dev.tiki.org/WYSIWYG_torture+test</a>)</p>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<strong>J&#39;aime pas le gras</strong></p>\r\n<p style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">\r\n\t<em>Je penche&nbsp;<strike>et</strike></em><b>&nbsp;je suis gras&nbsp;</b><em>et&nbsp;<strike>je</strike>&nbsp;repenche</em></p>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<a href=\"http://www.google.com/\" style=\"color: rgb(194, 30,
+      59); text-decoration: none; \" target=\"_blank\"><img alt=\"while my guitar...\"
+      src=\"http://i54.tinypic.com/donc5v.jpg\" style=\"border: 0px solid; margin:
+      3px; width: 278px; height: 278px; \" /></a></p>\r\n<p style=\"color: rgb(0,
+      0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<object
+      classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\"
+      height=\"200\" width=\"320\"><param name=\"quality\" value=\"high\" /><param
+      name=\"movie\" value=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      /><embed height=\"200\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"
+      quality=\"high\" src=\"&quot;http://www.gmodules.com/ig/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/106323307000219006410/goopal-toolbar12.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=200&amp;amp;title=&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js&quot;\"
+      type=\"application/x-shockwave-flash\" width=\"320\"></embed></object></p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tBUGS: ?</div>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<img alt=\"heart\" height=\"20\" src=\"http://dev.tiki.org/lib/ckeditor/plugins/smiley/images/heart.gif\"
+      style=\"border: 0px; \" title=\"heart\" width=\"20\" /></p>\r\n<ol style=\"color:
+      rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height: 18px;
+      \">\r\n\t<li>\r\n\t\tone</li>\r\n\t<li>\r\n\t\ttwo</li>\r\n\t<li>\r\n\t\tthree</li>\r\n\t<li>\r\n\t\tfour</li>\r\n</ol>\r\n<ul
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<li>\r\n\t\tun</li>\r\n\t<li>\r\n\t\tdeux</li>\r\n\t<li>\r\n\t\ttrois</li>\r\n\t<li>\r\n\t\tquatre</li>\r\n</ul>\r\n<p>\r\n\thttp://www.youtube.com/watch?v=1i2ZnU4iR24&amp;feature=player_embedded</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\tWarning: Any warnings
+      display?</div>\r\n<p style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; \">\r\n\t&nbsp;</p>\r\n<div>\r\n\tposition:absolute;top:145px;right:120px;</div>\r\n<div>\r\n\t-moz-border-radius-topleft:5px;</div>\r\n<div>\r\n\t-moz-border-radius-topright:5px;</div>\r\n<div>\r\n\tborder-color:#696969
+      #696969 -moz-use-text-color;</div>\r\n<div>\r\n\tborder-style:solid solid none;</div>\r\n<div>\r\n\tborder-width:1px
+      1px 0;</div>\r\n<div>\r\n\tpadding:0.25em 1em;</div>\r\n<div>\r\n\ttext-align:center;</div>\r\n<div>\r\n\tfont-weight:bold;</div>\r\n<div>\r\n\tcolor:#000000;}</div>\r\n<div>\r\n\t&nbsp;</div>\r\n<p>\r\n\t&nbsp;</p>\r\n<div
+      class=\"titlebar\" style=\"border: rgb(195, 30, 59); background-color: rgb(246,
+      205, 210); color: rgb(139, 25, 50); font-weight: bold; padding: 1px 8px; font-family:
+      Arial, Helvetica, sans-serif; line-height: 18px; \">\r\n\t<em>Fl<span style=\"color:
+      rgb(255, 215, 0); \">o</span><span style=\"color: rgb(238, 130, 238); \">w</span>er
+      p<span style=\"color: rgb(0, 0, 255); \">o</span>w<span style=\"color: rgb(255,
+      0, 0); \">e</span>r</em></div>\r\n<div class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;</div>\r\n<p class=\"titlebar\" style=\"border: rgb(195,
+      30, 59); background-color: rgb(246, 205, 210); color: rgb(139, 25, 50); font-weight:
+      bold; padding: 1px 8px; font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t<span style=\"color: rgb(255, 0, 0); \">ONCE YOU USE A STYLE
+      IT&#39;S HARD TO GET RID OF IT ! (E.g stuck with &quot;Title bar&quot; even
+      if we try to change and style show &quot;Normal&quot;). Only using the &quot;remove
+      format&quot;, option was I able to get back to normal format.&nbsp;</span></p>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\tTable is working</p>\r\n<table border=\"1\" cellpadding=\"1\"
+      cellspacing=\"1\" style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica,
+      sans-serif; line-height: 18px; width: 500px; \">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\tsdsadf</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfsadf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\tsdfs</td>\r\n\t\t\t<td style=\"vertical-align: top; \">\r\n\t\t\t\tsdfsf</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td
+      style=\"vertical-align: top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t\t<td style=\"vertical-align:
+      top; \">\r\n\t\t\t\t&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<p
+      style=\"color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; line-height:
+      18px; \">\r\n\t&nbsp;Inserting code the first time didn&#39;t work and duplicate
+      all the content</p>\r\n<div class=\"codecaption\" style=\"font-size: 11px; padding:
+      0px 10px; position: relative; bottom: -5px; display: inline; border-width: 1px
+      1px 0px; border-top-style: solid; border-right-style: solid; border-left-style:
+      solid; border-top-color: rgb(105, 105, 105); border-right-color: rgb(105, 105,
+      105); border-left-color: rgb(105, 105, 105); margin: 0px; color: rgb(105, 105,
+      105); background-color: rgb(245, 245, 245); font-weight: bold; font-family:
+      Arial, Helvetica, sans-serif; \">\r\n\tcode 2 test</div>\r\n<div class=\"CodeMirror
+      CodeMirror-wrap codelisting\" style=\"overflow: hidden; max-width: 990px; line-height:
+      15px; font-family: Arial, Helvetica, sans-serif; background-color: rgb(245,
+      245, 245); border: 1px dashed rgb(105, 105, 105); cursor: text; clear: both;
+      padding: 0px; margin: 4px 0px; color: rgb(0, 0, 0); height: auto; \">\r\n\t<div
+      style=\"overflow: hidden; position: relative; width: auto; height: auto; top:
+      5.800048828125px; left: 5.79998779296875px; \">\r\n\t\t<textarea autocapitalize=\"off\"
+      autocorrect=\"off\" style=\"background-color: rgb(249, 223, 226); color: rgb(0,
+      0, 0); border-color: rgb(251, 153, 158) rgb(249, 240, 240) rgb(249, 240, 240)
+      rgb(251, 153, 158); outline: none !important; position: absolute; padding: 0px;
+      width: 1px; height: 1em; \" wrap=\"off\"></textarea></div>\r\n\t<div class=\"CodeMirror-scroll
+      cm-s-default\" style=\"overflow: hidden; height: auto; position: relative; outline:
+      none; width: 583px; \" tabindex=\"-1\">\r\n\t\t<div style=\"position: relative;
+      height: auto; width: auto; \">\r\n\t\t\t<div style=\"position: relative; top:
+      0px; \">\r\n\t\t\t\t<div class=\"CodeMirror-lines\" style=\"padding: 0.4em;
+      white-space: pre; \">\r\n\t\t\t\t\t<div style=\"position: relative; z-index:
+      0; outline: none; \">\r\n\t\t\t\t\t\t<div style=\"position: absolute; width:
+      573px; height: 0px; overflow: hidden; visibility: hidden; \">\r\n\t\t\t\t\t\t\t&nbsp;</div>\r\n\t\t\t\t\t\t<pre
+      class=\"CodeMirror-cursor\" style=\"font-size: 1em !important; border-top-left-radius:
+      0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius:
+      0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px;
+      background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; z-index: 10; position:
+      absolute; visibility: hidden; border-left-style: solid; border-left-color: black;
+      border-right-style: none; width: 0px; top: 0px; left: 0px; \">\r\n</pre>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t<pre
+      style=\"font-size: 1em !important; border-top-left-radius: 0px; border-top-right-radius:
+      0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width:
+      0px; background-color: transparent; font-family: inherit; padding: 0px; margin-top:
+      0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; line-height:
+      1.2em !important; color: inherit; word-break: normal; \">\r\nmMy code works
+      fine</pre>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<p>\r\n\t&nbsp;</p>\r\n"
+    - http://gsw1-ap11-qa-vm.intersect.org.au/users/edit
+    - '020600'
+    - '020303'
+    - '030400'
+  - - '4'
+    - charles@intersect.org.au
+    - $2a$10$uv7azCjWplye1O.Wrrn8lehwISUhQJMC4yj5TGPcUGEtVwYvRKTgu
+    - 
+    - 
+    - 
+    - '3'
+    - '2012-09-25 04:20:11.700881'
+    - '2012-09-25 00:14:24.936941'
+    - 127.0.0.1
+    - 202.7.176.94
+    - '0'
+    - 
+    - Charles
+    - Shao
+    - A
+    - '1'
+    - '2012-09-24 03:47:01.877371'
+    - '2012-09-25 04:20:11.70215'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - '5'
+    - unapproved1@intersect.org.au
+    - $2a$10$/sJ2Ag/ZVywNQpy1JKvD0OviT2gHqXe83d6N3fd.9uaEDjkMsgQqy
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - Unapproved
+    - One
+    - U
+    - 
+    - '2012-09-24 03:47:02.087726'
+    - '2012-09-24 03:47:02.087726'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - '6'
+    - unapproved2@intersect.org.au
+    - $2a$10$AnLRqg6FmK.1H6zOe3hrmuhAf/tneqEbhQG21t.jmO45yHtEI4KTm
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - Unapproved
+    - Two
+    - U
+    - 
+    - '2012-09-24 03:47:02.229165'
+    - '2012-09-24 03:47:02.229165'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - '7'
+    - kaliwaterford@intersect.org.au
+    - $2a$10$wMK5G73WT3R5fJuT1sBLkORlvdhfedC4FAlvXqDHNYROd.YNMcT/2
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - 
+    - 
+    - 
+    - '0'
+    - 
+    - Kali
+    - Waterford
+    - A
+    - '2'
+    - '2012-09-24 06:00:48.04202'
+    - '2012-09-25 00:26:06.154068'
+    - ''
+    - 
+    - 
+    - 
+    - 
+    - 

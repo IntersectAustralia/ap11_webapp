@@ -69,3 +69,4 @@ gem "wicked"
 gem "paperclip"
 gem 'google-analytics-rails'
 gem 'ckeditor', '3.7.2'
+gem 'yaml_db'

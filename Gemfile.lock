@@ -282,6 +282,7 @@ GEM
       rails (>= 3.0.7)
     xpath (0.1.4)
       nokogiri (~> 1.3)
+    yaml_db (0.2.3)
 
 PLATFORMS
   ruby
@@ -320,3 +321,4 @@ DEPENDENCIES
   therubyracer
   uglifier (>= 1.0.3)
   wicked
+  yaml_db
