@@ -9,12 +9,12 @@
 .control-group
   = f.label :for_code1, "FOR Code", :class => "control-label"
   .controls
-    = f.collection_select :for_code1, @subject_codes, :subject_code, :display_name, :include_blank => "None", :required => true
+    = f.collection_select :for_code1, @subject_codes, :display_name, :display_name, :include_blank => "None", :required => true
 .control-group
   = f.label :for_code2, "FOR Code (optional)", :class => "control-label"
   .controls
-    = f.collection_select :for_code2, @subject_codes, :subject_code, :display_name, :include_blank => "None"
+    = f.collection_select :for_code2, @subject_codes, :display_name, :display_name, :include_blank => "None"
 .control-group
   = f.label :for_code3, "FOR Code (optional)", :class => "control-label"
   .controls
-    = f.collection_select :for_code3, @subject_codes, :subject_code, :display_name, :include_blank => "None"
+    = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => "None"

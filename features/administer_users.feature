@@ -24,11 +24,16 @@ Feature: Administer users
     Given "raul@intersect.org.au" has role "Researcher"
     And I am on the list users page
     When I follow "View Details" for "raul@intersect.org.au"
-    Then I should see field "Email" with value "raul@intersect.org.au"
-    And I should see field "First name" with value "Raul"
-    And I should see field "Last name" with value "Carrizo"
-    And I should see field "Role" with value "Researcher"
-    And I should see field "Status" with value "Active"
+    Then I should see "user" table with
+      | Email          | raul@intersect.org.au |
+      | First name     | Raul                  |
+      | Last name      | Carrizo               |
+      | Last logged in | Never logged in       |
+      | Role           | Researcher            |
+      | Status         | Active                |
+      | Home page      |                       |
+      | Description    |                       |
+      | FOR code(s)    |                       |
 
   Scenario: Go back from user details
     Given I am on the list users page
@@ -45,7 +50,16 @@ Feature: Administer users
     And I press "Save"
     Then I should be on the user details page for raul@intersect.org.au
     And I should see "The role for raul@intersect.org.au was successfully updated."
-    And I should see field "Role" with value "admin"
+    Then I should see "user" table with
+      | Email          | raul@intersect.org.au |
+      | First name     | Raul                  |
+      | Last name      | Carrizo               |
+      | Last logged in | Never logged in       |
+      | Role           | admin                 |
+      | Status         | Active                |
+      | Home page      |                       |
+      | Description    |                       |
+      | FOR code(s)    |                       |
 
   Scenario: Edit role from list page
     Given "raul@intersect.org.au" has role "Researcher"
@@ -55,7 +69,16 @@ Feature: Administer users
     And I press "Save"
     Then I should be on the user details page for raul@intersect.org.au
     And I should see "The role for raul@intersect.org.au was successfully updated."
-    And I should see field "Role" with value "admin"
+    Then I should see "user" table with
+      | Email          | raul@intersect.org.au |
+      | First name     | Raul                  |
+      | Last name      | Carrizo               |
+      | Last logged in | Never logged in       |
+      | Role           | admin                 |
+      | Status         | Active                |
+      | Home page      |                       |
+      | Description    |                       |
+      | FOR code(s)    |                       |
 
   Scenario: Cancel out of editing roles
     Given "raul@intersect.org.au" has role "Researcher"
@@ -65,7 +88,16 @@ Feature: Administer users
     And I select "admin" from "Role"
     And I follow "Back"
     Then I should be on the user details page for raul@intersect.org.au
-    And I should see field "Role" with value "Researcher"
+    Then I should see "user" table with
+      | Email          | raul@intersect.org.au |
+      | First name     | Raul                  |
+      | Last name      | Carrizo               |
+      | Last logged in | Never logged in       |
+      | Role           | Researcher            |
+      | Status         | Active                |
+      | Home page      |                       |
+      | Description    |                       |
+      | FOR code(s)    |                       |
 
   Scenario: Role should be mandatory when editing Role
     And I am on the list users page
@@ -95,7 +127,8 @@ Feature: Administer users
     When I follow "View Details" for "georgina@intersect.org.au"
     And I follow "Deactivate"
     Then I should see "You cannot deactivate this account as it is the only account with admin privileges."
-    And I should see field "Status" with value "Active"
+    And I should see fields displayed
+      | Status  | Active  |
 
   Scenario: Editing own role has alert
     Given I am on the list users page

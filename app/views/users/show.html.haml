@@ -1,4 +1,6 @@
-- title 'User Details'
+- content_for :breadcrumb do
+  -title "User Details / #{@user.full_name}"
+
 %div
   - if @user.pending_approval?
     .user_details_menu
@@ -36,23 +38,53 @@
         &nbsp;
       = link_to 'Back', users_path
 
-#userdetails
-  = render_field "Email", @user.email
-  = render_field "First name", @user.first_name
-  = render_field "Last name", @user.last_name
-  - if !@user.pending_approval?
-    = render_field_with_block "Last Logged In" do
-      - if @user.last_sign_in_at.nil?
-        Never logged in
-      - else
-        = @user.last_sign_in_at.localtime.strftime("%d/%m/%Y %I:%M%p")
-  = render_field "Role", (@user.role ? @user.role.name : "")
-  = render_field_with_block "Status" do
-    - if @user.status == 'A'
-      %span.label.label-success Active
-    - elsif @user.status == 'D'
-      %span.label.label-important Deactivated
-    - elsif @user.status == 'U'
-      %span.label.label-info Pending Approval
-    - elsif @user.status == 'R'
-      %span.label.label-inverse Rejected
+%table.table.table-condensed{:id => "user"}
+  %tr{:id => "display_email"}
+    %th Email
+    %th.table-value
+      = @user.email
+  %tr{:id => "display_first_name"}
+    %th First name
+    %th.table-value
+      = @user.first_name
+  %tr{:id => "display_last_name"}
+    %th Last name
+    %th.table-value
+      = @user.last_name
+  %tr{:id => "display_last_logged_in"}
+    %th Last logged in
+    %th.table-value
+      - if !@user.pending_approval?
+        - if @user.last_sign_in_at.nil?
+          Never logged in
+        - else
+          = @user.last_sign_in_at.localtime.strftime("%d/%m/%Y %I:%M%p")
+  %tr{:id => "display_role"}
+    %th Role
+    %th.table-value
+      = (@user.role ? @user.role.name : "")
+  %tr{:id => "display_status"}
+    %th Status
+    %th.table-value
+      - if @user.status == 'A'
+        %span.label.label-success Active
+      - elsif @user.status == 'D'
+        %span.label.label-important Deactivated
+      - elsif @user.status == 'U'
+        %span.label.label-info Pending Approval
+      - elsif @user.status == 'R'
+        %span.label.label-inverse Rejected
+  %tr{:id => "display_home_page"}
+    %th Home page
+    %th.table-value
+      = @user.home_page
+  %tr{:id => "display_description"}
+    %th Description
+    %th.table-value
+      = @user.description.to_s.html_safe
+  %tr{:id => "display_for_codes"}
+    %th FOR code(s)
+    %th.table-value
+      %div= @user.for_code1
+      %div= @user.for_code2
+      %div= @user.for_code3

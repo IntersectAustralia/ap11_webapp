@@ -58,12 +58,16 @@ Feature: Approve access requests
   Scenario: View details of an access request
     Given I am on the access requests page
     When I follow "View Details" for "diego@intersect.org.au"
-    Then I should see "diego@intersect.org.au"
-    Then I should see field "Email" with value "diego@intersect.org.au"
-    Then I should see field "First name" with value "Diego"
-    Then I should see field "Last name" with value "Alonso de Marcos"
-    Then I should see field "Role" with value ""
-    Then I should see field "Status" with value "Pending Approval"
+    Then I should see "user" table with
+      | Email          | diego@intersect.org.au |
+      | First name     | Diego                  |
+      | Last name      | Alonso de Marcos       |
+      | Last logged in |                        |
+      | Role           |                        |
+      | Status         | Pending Approval       |
+      | Home page      |                        |
+      | Description    |                        |
+      | FOR code(s)    |                        |
 
   Scenario: Approve an access request from the view details page
     Given I am on the access requests page
@@ -120,4 +124,13 @@ Feature: Approve access requests
     And I press "Approve"
     And I am on the list users page
     When I follow "View Details" for "diego@intersect.org.au"
-    And I should see field "Role" with value "admin"
+    Then I should see "user" table with
+      | Email          | diego@intersect.org.au |
+      | First name     | Diego                  |
+      | Last name      | Alonso de Marcos       |
+      | Last logged in | Never logged in        |
+      | Role           | admin                  |
+      | Status         | Active                 |
+      | Home page      |                        |
+      | Description    |                        |
+      | FOR code(s)    |                        |
