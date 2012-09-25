@@ -1,7 +1,7 @@
 class CreateExperiments < ActiveRecord::Migration
   def change
     create_table :experiments do |t|
-      t.string :title
+      t.text :title
       t.date :date
       t.timestamps
     end
