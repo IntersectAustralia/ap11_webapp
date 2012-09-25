@@ -16,7 +16,7 @@
   .control-group
     = f.label :user, "Owner", :class => "control-label"
     .controls
-      = f.collection_select :user_id, @users, :id, :full_name
+      = f.collection_select :user_id, @users, :id, :full_name, {:selected => current_user.id}
 
   .form-actions
     = f.submit "Create Experiment", :class => "btn btn-primary", :value => "Create Experiment"
