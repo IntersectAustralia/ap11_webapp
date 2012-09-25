@@ -51,6 +51,20 @@
     %th Last name
     %th.table-value
       = @user.last_name
+  %tr{:id => "display_description"}
+    %th Description
+    %th.table-value
+      = @user.description.to_s.html_safe
+  %tr{:id => "display_home_page"}
+    %th Home page
+    %th.table-value
+      = @user.home_page
+  %tr{:id => "display_for_codes"}
+    %th FOR code(s)
+    %th.table-value
+      %div= @user.for_code1
+      %div= @user.for_code2
+      %div= @user.for_code3
   %tr{:id => "display_last_logged_in"}
     %th Last logged in
     %th.table-value
@@ -74,17 +88,3 @@
         %span.label.label-info Pending Approval
       - elsif @user.status == 'R'
         %span.label.label-inverse Rejected
-  %tr{:id => "display_home_page"}
-    %th Home page
-    %th.table-value
-      = @user.home_page
-  %tr{:id => "display_description"}
-    %th Description
-    %th.table-value
-      = @user.description.to_s.html_safe
-  %tr{:id => "display_for_codes"}
-    %th FOR code(s)
-    %th.table-value
-      %div= @user.for_code1
-      %div= @user.for_code2
-      %div= @user.for_code3

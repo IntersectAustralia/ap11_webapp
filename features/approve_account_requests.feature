@@ -62,12 +62,12 @@ Feature: Approve access requests
       | Email          | diego@intersect.org.au |
       | First name     | Diego                  |
       | Last name      | Alonso de Marcos       |
+      | Description    |                        |
+      | Home page      |                        |
+      | FOR code(s)    |                        |
       | Last logged in |                        |
       | Role           |                        |
       | Status         | Pending Approval       |
-      | Home page      |                        |
-      | Description    |                        |
-      | FOR code(s)    |                        |
 
   Scenario: Approve an access request from the view details page
     Given I am on the access requests page
@@ -128,9 +128,9 @@ Feature: Approve access requests
       | Email          | diego@intersect.org.au |
       | First name     | Diego                  |
       | Last name      | Alonso de Marcos       |
+      | Description    |                        |
+      | Home page      |                        |
+      | FOR code(s)    |                        |
       | Last logged in | Never logged in        |
       | Role           | admin                  |
       | Status         | Active                 |
-      | Home page      |                        |
-      | Description    |                        |
-      | FOR code(s)    |                        |

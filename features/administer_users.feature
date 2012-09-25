@@ -28,12 +28,12 @@ Feature: Administer users
       | Email          | raul@intersect.org.au |
       | First name     | Raul                  |
       | Last name      | Carrizo               |
+      | Description    |                       |
+      | Home page      |                       |
+      | FOR code(s)    |                       |
       | Last logged in | Never logged in       |
       | Role           | Researcher            |
       | Status         | Active                |
-      | Home page      |                       |
-      | Description    |                       |
-      | FOR code(s)    |                       |
 
   Scenario: Go back from user details
     Given I am on the list users page
@@ -54,12 +54,12 @@ Feature: Administer users
       | Email          | raul@intersect.org.au |
       | First name     | Raul                  |
       | Last name      | Carrizo               |
+      | Description    |                       |
+      | Home page      |                       |
+      | FOR code(s)    |                       |
       | Last logged in | Never logged in       |
       | Role           | admin                 |
       | Status         | Active                |
-      | Home page      |                       |
-      | Description    |                       |
-      | FOR code(s)    |                       |
 
   Scenario: Edit role from list page
     Given "raul@intersect.org.au" has role "Researcher"
@@ -73,12 +73,12 @@ Feature: Administer users
       | Email          | raul@intersect.org.au |
       | First name     | Raul                  |
       | Last name      | Carrizo               |
+      | Description    |                       |
+      | Home page      |                       |
+      | FOR code(s)    |                       |
       | Last logged in | Never logged in       |
       | Role           | admin                 |
       | Status         | Active                |
-      | Home page      |                       |
-      | Description    |                       |
-      | FOR code(s)    |                       |
 
   Scenario: Cancel out of editing roles
     Given "raul@intersect.org.au" has role "Researcher"
@@ -92,12 +92,12 @@ Feature: Administer users
       | Email          | raul@intersect.org.au |
       | First name     | Raul                  |
       | Last name      | Carrizo               |
+      | Description    |                       |
+      | Home page      |                       |
+      | FOR code(s)    |                       |
       | Last logged in | Never logged in       |
       | Role           | Researcher            |
       | Status         | Active                |
-      | Home page      |                       |
-      | Description    |                       |
-      | FOR code(s)    |                       |
 
   Scenario: Role should be mandatory when editing Role
     And I am on the list users page
