@@ -14,7 +14,7 @@
   %tr
     %th Description
     %th.table-value
-      = @input_collection.description
+      = @input_collection.description.to_s.html_safe
   %tr
     %th License
     %th.table-value
