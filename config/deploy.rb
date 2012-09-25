@@ -107,7 +107,7 @@ namespace :deploy do
   end
 
   task :qa_data do
-    run "cd #{current_path} && rake db:data:load"
+    run("cd #{current_path} && rake db:data:load", :env => {'RAILS_ENV' => "#{stage}"})
   end
 
   task :bundle_update do
