@@ -15,6 +15,7 @@
 //= require_tree .
 //= require bootstrap
 //= require ckeditor/init
+//= require select2
 
 $(function(){
     $(".datepicker").datepicker({

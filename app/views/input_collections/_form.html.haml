@@ -13,15 +13,15 @@
     .control-group
       = f.label :for_code1, "FOR code", :class => "control-label"
       .controls
-        = f.collection_select :for_code1, @subject_codes, :display_name, :display_name, :include_blank => "None", :required => true
+        = f.collection_select :for_code1, @subject_codes, :display_name, :display_name, :include_blank => "", :required => true
     .control-group
       = f.label :for_code2, "FOR code (optional)", :class => "control-label"
       .controls
-        = f.collection_select :for_code2, @subject_codes, :display_name, :display_name, :include_blank => "None"
+        = f.collection_select :for_code2, @subject_codes, :display_name, :display_name, :include_blank => ""
     .control-group
       = f.label :for_code3, "FOR code (optional)", :class => "control-label"
       .controls
-        = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => "None"
+        = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => ""
     .control-group
       = f.label :collection_type, "Collection type", :class => "control-label"
       %label.radio
