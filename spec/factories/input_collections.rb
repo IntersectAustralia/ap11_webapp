@@ -3,6 +3,7 @@
 FactoryGirl.define do
   factory :input_collection do
     association :experiment
+    name "Proteome"
     collection_type "Remote"
     for_code1 123456
   end
