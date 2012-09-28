@@ -73,4 +73,6 @@ Ap11::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   config.assets.precompile += Ckeditor.assets
+
+  GA.tracker = "UA-16667092-19"
 end

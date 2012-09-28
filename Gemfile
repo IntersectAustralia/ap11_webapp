@@ -50,6 +50,11 @@ group :test do
   gem "shoulda-matchers"
 end
 
+#group :production do
+ gem 'google-analytics-rails'
+#end
+
+
 gem 'therubyracer', :platforms => :ruby
 gem "haml"
 gem "haml-rails"
@@ -67,7 +72,6 @@ gem "metrical"
 gem "simplecov", ">=0.3.8", :require => false, :group => :test
 gem "wicked"
 gem "paperclip"
-gem 'google-analytics-rails'
 gem 'ckeditor', '3.7.2'
 gem 'yaml_db'
 gem 'select2-rails'
