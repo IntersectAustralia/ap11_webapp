@@ -57,6 +57,8 @@ class InputCollectionsController < ApplicationController
     redirect_to edit_experiment_path(params[:experiment_id])
   end
 
+  private
+
   def load_static_data
     @subject_codes = ResearchSubjectCode.all
   end

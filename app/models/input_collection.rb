@@ -3,6 +3,7 @@ class InputCollection < ActiveRecord::Base
                   :description, :website_name, :url, :collection_type
 
   belongs_to :experiment
+  before_validation :strip_whitespace
 
   validates_length_of :name, :maximum => 512
   validates_length_of :license, :maximum => 2000
@@ -11,6 +12,7 @@ class InputCollection < ActiveRecord::Base
   validates_length_of :website_name, :maximum => 512
   validates_length_of :url, :maximum => 2000
 
+  validates_presence_of :name
   validates_presence_of :for_code1
   validates_presence_of :collection_type
   validates_presence_of :url, :if => :website_name_exists?
@@ -24,5 +26,11 @@ class InputCollection < ActiveRecord::Base
 
   def url_exists?
     !url.blank?
+  end
+
+  protected
+
+  def strip_whitespace
+    self.name.strip! unless name.blank?
   end
 end
