@@ -1265,13 +1265,14 @@ input_collections:
     - '2012-09-25 00:52:00.722931'
     - Remote
 
+
 ---
 research_subject_codes:
   columns:
   - id
   - subject_code
   - subject_name
-  records: 
+  records:
   - - '1'
     - '010000'
     - Mathematical Sciences
@@ -1285,23 +1286,4251 @@ research_subject_codes:
     - '010102'
     - Algebraic and Differential Geometry
   - - '5'
+    - '010103'
+    - Category Theory, K Theory, Homological Algebra
+  - - '6'
+    - '010104'
+    - Combinatorics and Discrete Mathematics (Excl. Physical Combinatorics)
+  - - '7'
+    - '010105'
+    - Group Theory and Generalisations
+  - - '8'
+    - '010106'
+    - Lie Groups, Harmonic and Fourier Analysis
+  - - '9'
+    - '010107'
+    - Mathematical Logic, Set Theory, Lattices and Universal Algebra
+  - - '10'
+    - 010108
+    - Operator Algebras and Functional Analysis
+  - - '11'
+    - 010109
+    - ! "Ordinary Differential Equations, Difference Equations and\n Dynamical Systems"
+  - - '12'
+    - '010110'
+    - Partial Differential Equations
+  - - '13'
+    - '010111'
+    - Real and Complex Functions (Incl. Several Variables)
+  - - '14'
+    - '010112'
+    - Topology
+  - - '15'
+    - 010199
+    - Pure Mathematics Not Elsewhere Classified
+  - - '16'
+    - '010200'
+    - Applied Mathematics
+  - - '17'
+    - '010201'
+    - Approximation Theory and Asymptotic Methods
+  - - '18'
+    - '010202'
+    - Biological Mathematics
+  - - '19'
+    - '010203'
+    - Calculus of Variations, Systems Theory and Control Theory
+  - - '20'
+    - '010204'
+    - Dynamical Systems in Applications
+  - - '21'
+    - '010205'
+    - Financial Mathematics
+  - - '22'
+    - '010206'
+    - Operations Research
+  - - '23'
+    - '010207'
+    - Theoretical and Applied Mechanics
+  - - '24'
+    - 010299
+    - Applied Mathematics Not Elsewhere Classified
+  - - '25'
+    - '010300'
+    - Numerical and Computational Mathematics
+  - - '26'
+    - '010301'
+    - Numerical Analysis
+  - - '27'
+    - '010302'
+    - Numerical Solution of Differential and Integral Equations
+  - - '28'
+    - '010303'
+    - Optimisation
+  - - '29'
+    - 010399
+    - Numerical and Computational Mathematics Not Elsewhere Classified
+  - - '30'
+    - '010400'
+    - Statistics
+  - - '31'
+    - '010401'
+    - Applied Statistics
+  - - '32'
+    - '010402'
+    - Biostatistics
+  - - '33'
+    - '010403'
+    - Forensic Statistics
+  - - '34'
+    - '010404'
+    - Probability Theory
+  - - '35'
+    - '010405'
+    - Statistical Theory
+  - - '36'
+    - '010406'
+    - Stochastic Analysis and Modelling
+  - - '37'
+    - 010499
+    - Statistics Not Elsewhere Classified
+  - - '38'
+    - '010500'
+    - Mathematical Physics
+  - - '39'
+    - '010501'
+    - Algebraic Structures in Mathematical Physics
+  - - '40'
+    - '010502'
+    - Integrable Systems (Classical and Quantum)
+  - - '41'
+    - '010503'
+    - ! "Mathematical Aspects of Classical Mechanics, Quantum Mechanics and\n Quantum
+      Information Theory"
+  - - '42'
+    - '010504'
+    - Mathematical Aspects of General Relativity
+  - - '43'
+    - '010505'
+    - ! "Mathematical Aspects of Quantum and Conformal Field Theory, Quantum\n Gravity
+      and String Theory"
+  - - '44'
+    - '010506'
+    - ! "Statistical Mechanics, Physical Combinatorics and Mathematical Aspects\n
+      of Condensed Matter"
+  - - '45'
+    - 010599
+    - Mathematical Physics Not Elsewhere Classified
+  - - '46'
+    - 019900
+    - Other Mathematical Sciences
+  - - '47'
+    - 019999
+    - Mathematical Sciences Not Elsewhere Classified
+  - - '48'
+    - '020000'
+    - Physical Sciences
+  - - '49'
+    - '020100'
+    - Astronomical and Space Sciences
+  - - '50'
+    - '020101'
+    - Astrobiology
+  - - '51'
+    - '020102'
+    - Astronomical and Space Instrumentation
+  - - '52'
+    - '020103'
+    - Cosmology and Extragalactic Astronomy
+  - - '53'
+    - '020104'
+    - Galactic Astronomy
+  - - '54'
+    - '020105'
+    - General Relativity and Gravitational Waves
+  - - '55'
+    - '020106'
+    - High Energy Astrophysics; Cosmic Rays
+  - - '56'
+    - '020107'
+    - Mesospheric, Ionospheric and Magnetospheric Physics
+  - - '57'
+    - 020108
+    - Planetary Science (Excl. Extraterrestrial Geology)
+  - - '58'
+    - 020109
+    - Space and Solar Physics
+  - - '59'
+    - '020110'
+    - Stellar Astronomy and Planetary Systems
+  - - '60'
+    - 020199
+    - Astronomical and Space Sciences Not Elsewhere Classified
+  - - '61'
+    - '020200'
+    - Atomic, Molecular, Nuclear, Particle and Plasma Physics
+  - - '62'
+    - '020201'
+    - Atomic and Molecular Physics
+  - - '63'
+    - '020202'
+    - Nuclear Physics
+  - - '64'
+    - '020203'
+    - Particle Physics
+  - - '65'
+    - '020204'
+    - Plasma Physics; Fusion Plasmas; Electrical Discharges
+  - - '66'
+    - 020299
+    - ! "Atomic, Molecular, Nuclear, Particle and Plasma Physics Not Elsewhere\n Classified"
+  - - '67'
+    - '020300'
+    - Classical Physics
+  - - '68'
+    - '020301'
+    - Acoustics and Acoustical Devices; Waves
+  - - '69'
+    - '020302'
+    - Electrostatics and Electrodynamics
+  - - '70'
     - '020303'
     - Fluid Physics
-  - - '6'
+  - - '71'
     - '020304'
     - Thermodynamics and Statistical Physics
-  - - '7'
+  - - '72'
+    - 020399
+    - Classical Physics Not Elsewhere Classified
+  - - '73'
+    - '020400'
+    - Condensed Matter Physics
+  - - '74'
+    - '020401'
+    - Condensed Matter Characterisation Technique Development
+  - - '75'
+    - '020402'
+    - Condensed Matter Imaging
+  - - '76'
+    - '020403'
+    - Condensed Matter Modelling and Density Functional Theory
+  - - '77'
+    - '020404'
+    - ! "Electronic and Magnetic Properties of Condensed Matter;\n Superconductivity"
+  - - '78'
+    - '020405'
+    - Soft Condensed Matter
+  - - '79'
+    - '020406'
+    - Surfaces and Structural Properties of Condensed Matter
+  - - '80'
+    - 020499
+    - Condensed Matter Physics Not Elsewhere Classified
+  - - '81'
     - '020500'
     - Optical Physics
-  - - '8'
+  - - '82'
+    - '020501'
+    - Classical and Physical Optics
+  - - '83'
+    - '020502'
+    - Lasers and Quantum Electronics
+  - - '84'
+    - '020503'
+    - Nonlinear Optics and Spectroscopy
+  - - '85'
+    - '020504'
+    - Photonics, Optoelectronics and Optical Communications
+  - - '86'
+    - 020599
+    - Optical Physics Not Elsewhere Classified
+  - - '87'
     - '020600'
     - Quantum Physics
-  - - '9'
+  - - '88'
+    - '020601'
+    - Degenerate Quantum Gases and Atom Optics
+  - - '89'
+    - '020602'
+    - Field Theory and String Theory
+  - - '90'
+    - '020603'
+    - Quantum Information, Computation and Communication
+  - - '91'
+    - '020604'
+    - Quantum Optics
+  - - '92'
+    - 020699
+    - Quantum Physics Not Elsewhere Classified
+  - - '93'
+    - 029900
+    - Other Physical Sciences
+  - - '94'
+    - 029901
+    - Biological Physics
+  - - '95'
+    - 029902
+    - Complex Physical Systems
+  - - '96'
+    - 029903
+    - Medical Physics
+  - - '97'
+    - 029904
+    - Synchrotrons; Accelerators; Instruments and Techniques
+  - - '98'
+    - 029999
+    - Physical Sciences Not Elsewhere Classified
+  - - '99'
+    - '030000'
+    - Chemical Science
+  - - '100'
+    - '030100'
+    - Analytical Chemistry
+  - - '101'
+    - '030101'
+    - Analytical Spectrometry
+  - - '102'
+    - '030102'
+    - Electroanalytical Chemistry
+  - - '103'
+    - '030103'
+    - Flow Analysis
+  - - '104'
+    - '030104'
+    - Immunological and Bioassay Methods
+  - - '105'
+    - '030105'
+    - Instrumental Methods (Excl. Immunological and Bioassay Methods)
+  - - '106'
+    - '030106'
+    - ! "Quality Assurance, Chemometrics, Traceability and Metrological\n Chemistry"
+  - - '107'
+    - '030107'
+    - Sensor Technology (Chemical Aspects)
+  - - '108'
+    - 030108
+    - Separation Science
+  - - '109'
+    - 030199
+    - Analytical Chemistry Not Elsewhere Classified
+  - - '110'
+    - '030200'
+    - Inorganic Chemistry
+  - - '111'
+    - '030201'
+    - Bioinorganic Chemistry
+  - - '112'
+    - '030202'
+    - F-Block Chemistry
+  - - '113'
+    - '030203'
+    - Inorganic Green Chemistry
+  - - '114'
+    - '030204'
+    - Main Group Metal Chemistry
+  - - '115'
+    - '030205'
+    - Non-Metal Chemistry
+  - - '116'
+    - '030206'
+    - Solid State Chemistry
+  - - '117'
+    - '030207'
+    - Transition Metal Chemistry
+  - - '118'
+    - 030299
+    - Inorganic Chemistry Not Elsewhere Classified
+  - - '119'
+    - '030300'
+    - Macromolecular and Materials Chemistry
+  - - '120'
+    - '030301'
+    - Chemical Characterisation of Materials
+  - - '121'
     - '030302'
     - Nanochemistry and Supramolecular Chemistry
-  - - '10'
+  - - '122'
+    - '030303'
+    - Optical Properties of Materials
+  - - '123'
+    - '030304'
+    - Physical Chemistry of Materials
+  - - '124'
+    - '030305'
+    - Polymerisation Mechanisms
+  - - '125'
+    - '030306'
+    - Synthesis of Materials
+  - - '126'
+    - '030307'
+    - Theory and Design of Materials
+  - - '127'
+    - 030399
+    - Macromolecular and Materials Chemistry Not Elsewhere Classified
+  - - '128'
     - '030400'
     - Medicinal and Biomolecular Chemistry
+  - - '129'
+    - '030401'
+    - Biologically Active Molecules
+  - - '130'
+    - '030402'
+    - Biomolecular Modelling and Design
+  - - '131'
+    - '030403'
+    - Characterisation of Biological Macromolecules
+  - - '132'
+    - '030404'
+    - Cheminformatics and Quantitative Structure-Activity Relationships
+  - - '133'
+    - '030405'
+    - Molecular Medicine
+  - - '134'
+    - '030406'
+    - Proteins and Peptides
+  - - '135'
+    - 030499
+    - Medicinal and Biomolecular Chemistry Not Elsewhere Classified
+  - - '136'
+    - '030500'
+    - Organic Chemistry
+  - - '137'
+    - '030501'
+    - Free Radical Chemistry
+  - - '138'
+    - '030502'
+    - Natural Products Chemistry
+  - - '139'
+    - '030503'
+    - Organic Chemical Synthesis
+  - - '140'
+    - '030504'
+    - Organic Green Chemistry
+  - - '141'
+    - '030505'
+    - Physical Organic Chemistry
+  - - '142'
+    - 030599
+    - Organic Chemistry Not Elsewhere Classified
+  - - '143'
+    - '030600'
+    - Physical Chemistry (Incl. Structural)
+  - - '144'
+    - '030601'
+    - Catalysis and Mechanisms of Reactions
+  - - '145'
+    - '030602'
+    - Chemical Thermodynamics and Energetics
+  - - '146'
+    - '030603'
+    - Colloid and Surface Chemistry
+  - - '147'
+    - '030604'
+    - Electrochemistry
+  - - '148'
+    - '030605'
+    - Solution Chemistry
+  - - '149'
+    - '030606'
+    - Structural Chemistry and Spectroscopy
+  - - '150'
+    - '030607'
+    - Transport Properties and Non-Equilibrium Processes
+  - - '151'
+    - 030699
+    - Physical Chemistry Not Elsewhere Classified
+  - - '152'
+    - '030700'
+    - Theoretical and Computational Chemistry
+  - - '153'
+    - '030701'
+    - Quantum Chemistry
+  - - '154'
+    - '030702'
+    - Radiation and Matter
+  - - '155'
+    - '030703'
+    - Reaction Kinetics and Dynamics
+  - - '156'
+    - '030704'
+    - Statistical Mechanics in Chemistry
+  - - '157'
+    - 030799
+    - Theoretical and Computational Chemistry Not Elsewhere Classified
+  - - '158'
+    - 039900
+    - Other Chemical Sciences
+  - - '159'
+    - 039901
+    - Environmental Chemistry (Incl. Atmospheric Chemistry)
+  - - '160'
+    - 039902
+    - Forensic Chemistry
+  - - '161'
+    - 039903
+    - Industrial Chemistry
+  - - '162'
+    - 039904
+    - Organometallic Chemistry
+  - - '163'
+    - 039999
+    - Chemical Sciences Not Elsewhere Classified
+  - - '164'
+    - '040000'
+    - Earth Sciences
+  - - '165'
+    - '040100'
+    - Atmospheric Sciences
+  - - '166'
+    - '040101'
+    - Atmospheric Aerosols
+  - - '167'
+    - '040102'
+    - Atmospheric Dynamics
+  - - '168'
+    - '040103'
+    - Atmospheric Radiation
+  - - '169'
+    - '040104'
+    - Climate Change Processes
+  - - '170'
+    - '040105'
+    - Climatology (Excl. Climate Change Processes)
+  - - '171'
+    - '040106'
+    - Cloud Physics
+  - - '172'
+    - '040107'
+    - Meteorology
+  - - '173'
+    - 040108
+    - Tropospheric and Stratospheric Physics
+  - - '174'
+    - 040199
+    - Atmospheric Sciences Not Elsewhere Classified
+  - - '175'
+    - '040200'
+    - Geochemistry
+  - - '176'
+    - '040201'
+    - Exploration Geochemistry
+  - - '177'
+    - '040202'
+    - Inorganic Geochemistry
+  - - '178'
+    - '040203'
+    - Isotope Geochemistry
+  - - '179'
+    - '040204'
+    - Organic Geochemistry
+  - - '180'
+    - 040299
+    - Geochemistry Not Elsewhere Classified
+  - - '181'
+    - '040300'
+    - Geology
+  - - '182'
+    - '040301'
+    - Basin Analysis
+  - - '183'
+    - '040302'
+    - Extraterrestrial Geology
+  - - '184'
+    - '040303'
+    - Geochronology
+  - - '185'
+    - '040304'
+    - Igneous and Metamorphic Petrology
+  - - '186'
+    - '040305'
+    - Marine Geoscience
+  - - '187'
+    - '040306'
+    - Mineralogy and Crystallography
+  - - '188'
+    - '040307'
+    - Ore Deposit Petrology
+  - - '189'
+    - 040308
+    - Palaeontology (Incl. Palynology)
+  - - '190'
+    - 040309
+    - Petroleum and Coal Geology
+  - - '191'
+    - '040310'
+    - Sedimentology
+  - - '192'
+    - '040311'
+    - Stratigraphy (Incl. Biostratigraphy and Sequence Stratigraphy)
+  - - '193'
+    - '040312'
+    - Structural Geology
+  - - '194'
+    - '040313'
+    - Tectonics
+  - - '195'
+    - '040314'
+    - Volcanology
+  - - '196'
+    - 040399
+    - Geology Not Elsewhere Classified
+  - - '197'
+    - '040400'
+    - Geophysics
+  - - '198'
+    - '040401'
+    - Electrical and Electromagnetic Methods in Geophysics
+  - - '199'
+    - '040402'
+    - Geodynamics
+  - - '200'
+    - '040403'
+    - Geophysical Fluid Dynamics
+  - - '201'
+    - '040404'
+    - Geothermics and Radiometrics
+  - - '202'
+    - '040405'
+    - Gravimetrics
+  - - '203'
+    - '040406'
+    - Magnetism and Palaeomagnetism
+  - - '204'
+    - '040407'
+    - Seismology and Seismic Exploration
+  - - '205'
+    - 040499
+    - Geophysics Not Elsewhere Classified
+  - - '206'
+    - '040500'
+    - Oceanography
+  - - '207'
+    - '040501'
+    - Biological Oceanography
+  - - '208'
+    - '040502'
+    - Chemical Oceanography
+  - - '209'
+    - '040503'
+    - Physical Oceanography
+  - - '210'
+    - 040599
+    - Oceanography Not Elsewhere Classified
+  - - '211'
+    - '040600'
+    - Physical Geography and Environmental Geoscience
+  - - '212'
+    - '040601'
+    - Geomorphology and Regolith and Landscape Evolution
+  - - '213'
+    - '040602'
+    - Glaciology
+  - - '214'
+    - '040603'
+    - Hydrogeology
+  - - '215'
+    - '040604'
+    - Natural Hazards
+  - - '216'
+    - '040605'
+    - Palaeoclimatology
+  - - '217'
+    - '040606'
+    - Quaternary Environments
+  - - '218'
+    - '040607'
+    - Surface Processes
+  - - '219'
+    - 040608
+    - Surfacewater Hydrology
+  - - '220'
+    - 040699
+    - ! "Physical Geography and Environmental Geoscience Not Elsewhere\n Classified"
+  - - '221'
+    - 049900
+    - Other Earth Sciences
+  - - '222'
+    - 049999
+    - Earth Sciences Not Elsewhere Classified
+  - - '223'
+    - '050000'
+    - Environmental Sciences
+  - - '224'
+    - '050100'
+    - Ecological Applications
+  - - '225'
+    - '050101'
+    - Ecological Impacts of Climate Change
+  - - '226'
+    - '050102'
+    - Ecosystem Function
+  - - '227'
+    - '050103'
+    - Invasive Species Ecology
+  - - '228'
+    - '050104'
+    - Landscape Ecology
+  - - '229'
+    - 050199
+    - Ecological Applications Not Elsewhere Classified
+  - - '230'
+    - '050200'
+    - Environmental Science and Management
+  - - '231'
+    - '050201'
+    - Aboriginal and Torres Strait Islander Environmental Knowledge
+  - - '232'
+    - '050202'
+    - Conservation and Biodiversity
+  - - '233'
+    - '050203'
+    - Environmental Education and Extension
+  - - '234'
+    - '050204'
+    - Environmental Impact Assessment
+  - - '235'
+    - '050205'
+    - Environmental Management
+  - - '236'
+    - '050206'
+    - Environmental Monitoring
+  - - '237'
+    - '050207'
+    - Environmental Rehabilitation (Excl. Bioremediation)
+  - - '238'
+    - 050208
+    - Maori Environmental Knowledge
+  - - '239'
+    - 050209
+    - Natural Resource Management
+  - - '240'
+    - '050210'
+    - Pacific Peoples Environmental Knowledge
+  - - '241'
+    - '050211'
+    - Wildlife and Habitat Management
+  - - '242'
+    - 050299
+    - Environmental Science and Management Not Elsewhere Classified
+  - - '243'
+    - '050300'
+    - Soil Sciences
+  - - '244'
+    - '050301'
+    - Carbon Sequestration Science
+  - - '245'
+    - '050302'
+    - Land Capability and Soil Degradation
+  - - '246'
+    - '050303'
+    - Soil Biology
+  - - '247'
+    - '050304'
+    - Soil Chemistry (Excl. Carbon Sequestration Science)
+  - - '248'
+    - '050305'
+    - Soil Physics
+  - - '249'
+    - 050399
+    - Soil Sciences Not Elsewhere Classified
+  - - '250'
+    - 059900
+    - Other Environmental Sciences
+  - - '251'
+    - 059999
+    - Environmental Sciences Not Elsewhere Classified
+  - - '252'
+    - '060000'
+    - Biological Sciences
+  - - '253'
+    - '060100'
+    - Biochemistry and Cell Biology
+  - - '254'
+    - '060101'
+    - Analytical Biochemistry
+  - - '255'
+    - '060102'
+    - Bioinformatics
+  - - '256'
+    - '060103'
+    - Cell Development, Proliferation and Death
+  - - '257'
+    - '060104'
+    - Cell Metabolism
+  - - '258'
+    - '060105'
+    - Cell Neurochemistry
+  - - '259'
+    - '060106'
+    - Cellular Interactions (Incl. Adhesion, Matrix, Cell Wall)
+  - - '260'
+    - '060107'
+    - Enzymes
+  - - '261'
+    - 060108
+    - Protein Trafficking
+  - - '262'
+    - 060109
+    - Proteomics and Intermolecular Interactions (Excl. Medical Proteomics)
+  - - '263'
+    - '060110'
+    - Receptors and Membrane Biology
+  - - '264'
+    - '060111'
+    - Signal Transduction
+  - - '265'
+    - '060112'
+    - Structural Biology (Incl. Macromolecular Modelling)
+  - - '266'
+    - '060113'
+    - Synthetic Biology
+  - - '267'
+    - '060114'
+    - Systems Biology
+  - - '268'
+    - 060199
+    - Biochemistry and Cell Biology Not Elsewhere Classified
+  - - '269'
+    - '060200'
+    - Ecology
+  - - '270'
+    - '060201'
+    - Behavioural Ecology
+  - - '271'
+    - '060202'
+    - Community Ecology
+  - - '272'
+    - '060203'
+    - Ecological Physiology
+  - - '273'
+    - '060204'
+    - Freshwater Ecology
+  - - '274'
+    - '060205'
+    - Marine and Estuarine Ecology (Incl. Marine Ichthyology)
+  - - '275'
+    - '060206'
+    - Palaeoecology
+  - - '276'
+    - '060207'
+    - Population Ecology
+  - - '277'
+    - 060208
+    - Terrestrial Ecology
+  - - '278'
+    - 060299
+    - Ecology Not Elsewhere Classified
+  - - '279'
+    - '060300'
+    - Evolutionary Biology
+  - - '280'
+    - '060301'
+    - Animal Systematics and Taxonomy
+  - - '281'
+    - '060302'
+    - Biogeography and Phylogeography
+  - - '282'
+    - '060303'
+    - Biological Adaptation
+  - - '283'
+    - '060304'
+    - Ethology and Sociobiology
+  - - '284'
+    - '060305'
+    - Evolution of Developmental Systems
+  - - '285'
+    - '060306'
+    - Evolutionary Impacts of Climate Change
+  - - '286'
+    - '060307'
+    - Host-Parasite Interactions
+  - - '287'
+    - 060308
+    - Life Histories
+  - - '288'
+    - 060309
+    - Phylogeny and Comparative Analysis
+  - - '289'
+    - '060310'
+    - Plant Systematics and Taxonomy
+  - - '290'
+    - '060311'
+    - Speciation and Extinction
+  - - '291'
+    - 060399
+    - Evolutionary Biology Not Elsewhere Classified
+  - - '292'
+    - '060400'
+    - Genetics
+  - - '293'
+    - '060401'
+    - Anthropological Genetics
+  - - '294'
+    - '060402'
+    - Cell and Nuclear Division
+  - - '295'
+    - '060403'
+    - Developmental Genetics (Incl. Sex Determination)
+  - - '296'
+    - '060404'
+    - Epigenetics (Incl. Genome Methylation and Epigenomics)
+  - - '297'
+    - '060405'
+    - Gene Expression (Incl. Microarray and Other Genome-Wide Approaches)
+  - - '298'
+    - '060406'
+    - Genetic Immunology
+  - - '299'
+    - '060407'
+    - Genome Structure and Regulation
+  - - '300'
+    - 060408
+    - Genomics
+  - - '301'
+    - 060409
+    - Molecular Evolution
+  - - '302'
+    - '060410'
+    - Neurogenetics
+  - - '303'
+    - '060411'
+    - Population, Ecological and Evolutionary Genetics
+  - - '304'
+    - '060412'
+    - Quantitative Genetics (Incl. Disease and Trait Mapping Genetics
+  - - '305'
+    - 060499
+    - Genetics Not Elsewhere Classified
+  - - '306'
+    - '060500'
+    - Microbiology
+  - - '307'
+    - '060501'
+    - Bacteriology
+  - - '308'
+    - '060502'
+    - Infectious Agents
+  - - '309'
+    - '060503'
+    - Microbial Genetics
+  - - '310'
+    - '060504'
+    - Microbial Ecology
+  - - '311'
+    - '060505'
+    - Mycology
+  - - '312'
+    - '060506'
+    - Virology
+  - - '313'
+    - 060599
+    - Microbiology Not Elsewhere Classified
+  - - '314'
+    - '060600'
+    - Physiology
+  - - '315'
+    - '060601'
+    - Animal Physiology - Biophysics
+  - - '316'
+    - '060602'
+    - Animal Physiology - Cell
+  - - '317'
+    - '060603'
+    - Animal Physiology - Systems
+  - - '318'
+    - '060604'
+    - Comparative Physiology
+  - - '319'
+    - 060699
+    - Physiology Not Elsewhere Classified
+  - - '320'
+    - '060700'
+    - Plant Biology
+  - - '321'
+    - '060701'
+    - Phycology (Incl. Marine Grasses)
+  - - '322'
+    - '060702'
+    - Plant Cell and Molecular Biology
+  - - '323'
+    - '060703'
+    - Plant Developmental and Reproductive Biology
+  - - '324'
+    - '060704'
+    - Plant Pathology
+  - - '325'
+    - '060705'
+    - Plant Physiology
+  - - '326'
+    - 060799
+    - Plant Biology Not Elsewhere Classified
+  - - '327'
+    - 060800
+    - Zoology
+  - - '328'
+    - 060801
+    - Animal Behaviour
+  - - '329'
+    - 060802
+    - Animal Cell and Molecular Biology
+  - - '330'
+    - 060803
+    - Animal Developmental and Reproductive Biology
+  - - '331'
+    - 060804
+    - Animal Immunology
+  - - '332'
+    - 060805
+    - Animal Neurobiology
+  - - '333'
+    - 060806
+    - Animal Physiological Ecology
+  - - '334'
+    - 060807
+    - Animal Structure and Function
+  - - '335'
+    - 060808
+    - Invertebrate Biology
+  - - '336'
+    - 060809
+    - Vertebrate Biology
+  - - '337'
+    - 060899
+    - Zoology Not Elsewhere Classified
+  - - '338'
+    - 069900
+    - Other Biological Sciences
+  - - '339'
+    - 069901
+    - Forensic Biology
+  - - '340'
+    - 069902
+    - Global Change Biology
+  - - '341'
+    - 069999
+    - Biological Sciences Not Elsewhere Classified
+  - - '342'
+    - '070000'
+    - Agricultural and Veterinary Sciences
+  - - '343'
+    - '070100'
+    - Agriculture, Land and Farm Management
+  - - '344'
+    - '070101'
+    - Agricultural Land Management
+  - - '345'
+    - '070102'
+    - Agricultural Land Planning
+  - - '346'
+    - '070103'
+    - Agricultural Production Systems Simulation
+  - - '347'
+    - '070104'
+    - Agricultural Spatial Analysis and Modelling
+  - - '348'
+    - '070105'
+    - Agricultural Systems Analysis and Modelling
+  - - '349'
+    - '070106'
+    - Farm Management, Rural Management and Agribusiness
+  - - '350'
+    - '070107'
+    - Farming Systems Research
+  - - '351'
+    - 070108
+    - Sustainable Agricultural Development
+  - - '352'
+    - 070199
+    - Agriculture, Land and Farm Management Not Elsewhere Classified
+  - - '353'
+    - '070200'
+    - Animal Production
+  - - '354'
+    - '070201'
+    - Animal Breeding
+  - - '355'
+    - '070202'
+    - Animal Growth and Development
+  - - '356'
+    - '070203'
+    - Animal Management
+  - - '357'
+    - '070204'
+    - Animal Nutrition
+  - - '358'
+    - '070205'
+    - Animal Protection (Pests and Pathogens)
+  - - '359'
+    - '070206'
+    - Animal Reproduction
+  - - '360'
+    - '070207'
+    - Humane Animal Treatment
+  - - '361'
+    - 070299
+    - Animal Production Not Elsewhere Classified
+  - - '362'
+    - '070300'
+    - Crop and Pasture Production
+  - - '363'
+    - '070301'
+    - Agro-Ecosystem Function and Prediction
+  - - '364'
+    - '070302'
+    - Agronomy
+  - - '365'
+    - '070303'
+    - Crop and Pasture Biochemistry and Physiology
+  - - '366'
+    - '070304'
+    - Crop and Pasture Biomass and Bioproducts
+  - - '367'
+    - '070305'
+    - Crop and Pasture Improvement (Selection and Breeding)
+  - - '368'
+    - '070306'
+    - Crop and Pasture Nutrition
+  - - '369'
+    - '070307'
+    - ! "Crop and Pasture Post Harvest Technologies (Incl. Transportation\n and Storage)"
+  - - '370'
+    - 070308
+    - Crop and Pasture Protection (Pests, Diseases and Weeds)
+  - - '371'
+    - 070399
+    - Crop and Pasture Production Not Elsewhere Classified
+  - - '372'
+    - '070400'
+    - Fisheries Sciences
+  - - '373'
+    - '070401'
+    - Aquaculture
+  - - '374'
+    - '070402'
+    - Aquatic Ecosystem Studies and Stock Assessment
+  - - '375'
+    - '070403'
+    - Fisheries Management
+  - - '376'
+    - '070404'
+    - Fish Pests and Diseases
+  - - '377'
+    - '070405'
+    - Fish Physiology and Genetics
+  - - '378'
+    - '070406'
+    - Post-Harvest Fisheries Technologies (Incl. Transportation)
+  - - '379'
+    - 070499
+    - Fisheries Sciences Not Elsewhere Classified
+  - - '380'
+    - '070500'
+    - Forestry Sciences
+  - - '381'
+    - '070501'
+    - Agroforestry
+  - - '382'
+    - '070502'
+    - Forestry Biomass and Bioproducts
+  - - '383'
+    - '070503'
+    - Forestry Fire Management
+  - - '384'
+    - '070504'
+    - Forestry Management and Environment
+  - - '385'
+    - '070505'
+    - Forestry Pests, Health and Diseases
+  - - '386'
+    - '070506'
+    - Forestry Product Quality Assessment
+  - - '387'
+    - '070507'
+    - Tree Improvement (Selection and Breeding)
+  - - '388'
+    - 070508
+    - Tree Nutrition and Physiology
+  - - '389'
+    - 070509
+    - Wood Fibre Processing
+  - - '390'
+    - '070510'
+    - Wood Processing
+  - - '391'
+    - 070599
+    - Forestry Sciences Not Elsewhere Classified
+  - - '392'
+    - '070600'
+    - Horticultural Production
+  - - '393'
+    - '070601'
+    - Horticultural Crop Growth and Development
+  - - '394'
+    - '070602'
+    - Horticultural Crop Improvement (Selection and Breeding)
+  - - '395'
+    - '070603'
+    - Horticultural Crop Protection (Pests, Diseases and Weeds)
+  - - '396'
+    - '070604'
+    - Oenology and Viticulture
+  - - '397'
+    - '070605'
+    - ! "Post Harvest Horticultural Technologies (Incl. Transportation\n and Storage)"
+  - - '398'
+    - 070699
+    - Horticultural Production Not Elsewhere Classified
+  - - '399'
+    - '070700'
+    - Veterinary Sciences
+  - - '400'
+    - '070701'
+    - Veterinary Anaesthesiology and Intensive Care
+  - - '401'
+    - '070702'
+    - Veterinary Anatomy and Physiology
+  - - '402'
+    - '070703'
+    - Veterinary Diagnosis and Diagnostics
+  - - '403'
+    - '070704'
+    - Veterinary Epidemiology
+  - - '404'
+    - '070705'
+    - Veterinary Immunology
+  - - '405'
+    - '070706'
+    - Veterinary Medicine
+  - - '406'
+    - '070707'
+    - Veterinary Microbiology (Excl. Virology)
+  - - '407'
+    - 070708
+    - Veterinary Parasitology
+  - - '408'
+    - 070709
+    - Veterinary Pathology
+  - - '409'
+    - '070710'
+    - Veterinary Pharmacology
+  - - '410'
+    - '070711'
+    - Veterinary Surgery
+  - - '411'
+    - '070712'
+    - Veterinary Virology
+  - - '412'
+    - 070799
+    - Veterinary Sciences Not Elsewhere Classified
+  - - '413'
+    - 079900
+    - Other Agricultural and Veterinary Sciences
+  - - '414'
+    - 079901
+    - Agricultural Hydrology (Drainage, Flooding, Irrigation, Quality, Etc)
+  - - '415'
+    - 079902
+    - Fertilisers and Agrochemicals (Application Etc.)
+  - - '416'
+    - 079999
+    - Agricultural and Veterinary Sciences Not Elsewhere Classified
+  - - '417'
+    - 080000
+    - Information and Computing Sciences
+  - - '418'
+    - 080100
+    - Artificial Intelligence and Image Processing
+  - - '419'
+    - 080101
+    - Adaptive Agents and Intelligent Robotics
+  - - '420'
+    - 080102
+    - Artificial Life
+  - - '421'
+    - 080103
+    - Computer Graphics
+  - - '422'
+    - 080104
+    - Computer Vision
+  - - '423'
+    - 080105
+    - Expert Systems
+  - - '424'
+    - 080106
+    - Image Processing
+  - - '425'
+    - 080107
+    - Natural Language Processing
+  - - '426'
+    - 080108
+    - Neural, Evolutionary and Fuzzy Computation
+  - - '427'
+    - 080109
+    - Pattern Recognition and Data Mining
+  - - '428'
+    - 080110
+    - Simulation and Modelling
+  - - '429'
+    - 080111
+    - Virtual Reality and Related Simulation
+  - - '430'
+    - 080199
+    - Artificial Intelligence and Image Processing Not Elsewhere Classified
+  - - '431'
+    - 080200
+    - Computation Theory and Mathematics
+  - - '432'
+    - 080201
+    - Analysis of Algorithms and Complexity
+  - - '433'
+    - 080202
+    - Applied Discrete Mathematics
+  - - '434'
+    - 080203
+    - Computational Logic and Formal Languages
+  - - '435'
+    - 080204
+    - Mathematical Software
+  - - '436'
+    - 080205
+    - Numerical Computation
+  - - '437'
+    - 080299
+    - Computation Theory and Mathematics Not Elsewhere Classified
+  - - '438'
+    - 080300
+    - Computer Software
+  - - '439'
+    - 080301
+    - Bioinformatics Software
+  - - '440'
+    - 080302
+    - Computer System Architecture
+  - - '441'
+    - 080303
+    - Computer System Security
+  - - '442'
+    - 080304
+    - Concurrent Programming
+  - - '443'
+    - 080305
+    - Multimedia Programming
+  - - '444'
+    - 080306
+    - Open Software
+  - - '445'
+    - 080307
+    - Operating Systems
+  - - '446'
+    - 080308
+    - Programming Languages
+  - - '447'
+    - 080309
+    - Software Engineering
+  - - '448'
+    - 080399
+    - Computer Software Not Elsewhere Classified
+  - - '449'
+    - 080400
+    - Data Format
+  - - '450'
+    - 080401
+    - Coding and Information Theory
+  - - '451'
+    - 080402
+    - Data Encryption
+  - - '452'
+    - 080403
+    - Data Structures
+  - - '453'
+    - 080404
+    - Markup Languages
+  - - '454'
+    - 080499
+    - Data Format Not Elsewhere Classified
+  - - '455'
+    - 080500
+    - Distributed Computing
+  - - '456'
+    - 080501
+    - Distributed and Grid Systems
+  - - '457'
+    - 080502
+    - Mobile Technologies
+  - - '458'
+    - 080503
+    - Networking and Communications
+  - - '459'
+    - 080504
+    - Ubiquitous Computing
+  - - '460'
+    - 080505
+    - Web Technologies (Excl. Web Search)
+  - - '461'
+    - 080599
+    - Distributed Computing Not Elsewhere Classified
+  - - '462'
+    - 080600
+    - Information Systems
+  - - '463'
+    - 080601
+    - Aboriginal and Torres Strait Islander Information and Knowledge Systems
+  - - '464'
+    - 080602
+    - Computer-Human Interaction
+  - - '465'
+    - 080603
+    - Conceptual Modelling
+  - - '466'
+    - 080604
+    - Database Management
+  - - '467'
+    - 080605
+    - Decision Support and Group Support Systems
+  - - '468'
+    - 080606
+    - Global Information Systems
+  - - '469'
+    - 080607
+    - Information Engineering and Theory
+  - - '470'
+    - 080608
+    - Information Systems Development Methodologies
+  - - '471'
+    - 080609
+    - Information Systems Management
+  - - '472'
+    - 080610
+    - Information Systems Organisation
+  - - '473'
+    - 080611
+    - Information Systems Theory
+  - - '474'
+    - 080612
+    - Interorganisational Information Systems and Web Services
+  - - '475'
+    - 080613
+    - Maori Information and Knowledge Systems
+  - - '476'
+    - 080614
+    - Pacific Peoples Information and Knowledge Systems
+  - - '477'
+    - 080699
+    - Information Systems Not Elsewhere Classified
+  - - '478'
+    - 080700
+    - Library and Information Studies
+  - - '479'
+    - 080701
+    - Aboriginal and Torres Strait Islander Knowledge Management
+  - - '480'
+    - 080702
+    - Health Informatics
+  - - '481'
+    - 080703
+    - Human Information Behaviour
+  - - '482'
+    - 080704
+    - Information Retrieval and Web Search
+  - - '483'
+    - 080705
+    - Informetrics
+  - - '484'
+    - 080706
+    - Librarianship
+  - - '485'
+    - 080707
+    - Organisation of Information and Knowledge Resources
+  - - '486'
+    - 080708
+    - ! "Records and Information Management (Excl. Business Records and\n Information
+      Management)"
+  - - '487'
+    - 080709
+    - Social and Community Informatics
+  - - '488'
+    - 080799
+    - Library and Information Studies Not Elsewhere Classified
+  - - '489'
+    - 089900
+    - Other Information and Computing Sciences
+  - - '490'
+    - 089999
+    - Information and Computing Sciences Not Elsewhere Classified
+  - - '491'
+    - 090000
+    - Engineering
+  - - '492'
+    - 090100
+    - Aerospace Engineering
+  - - '493'
+    - 090101
+    - Aerodynamics (Excl. Hypersonic Aerodynamics)
+  - - '494'
+    - 090102
+    - Aerospace Materials
+  - - '495'
+    - 090103
+    - Aerospace Structures
+  - - '496'
+    - 090104
+    - Aircraft Performance and Flight Control Systems
+  - - '497'
+    - 090105
+    - Avionics
+  - - '498'
+    - 090106
+    - Flight Dynamics
+  - - '499'
+    - 090107
+    - Hypersonic Propulsion and Hypersonic Aerodynamics
+  - - '500'
+    - 090108
+    - Satellite, Space Vehicle and Missile Design and Testing
+  - - '501'
+    - 090199
+    - Aerospace Engineering Not Elsewhere Classified
+  - - '502'
+    - 090200
+    - Automotive Engineering
+  - - '503'
+    - 090201
+    - ! "Automotive Combustion and Fuel Engineering (Incl.\n Alternative/Renewable
+      Fuels)"
+  - - '504'
+    - 090202
+    - Automotive Engineering Materials
+  - - '505'
+    - 090203
+    - Automotive Mechatronics
+  - - '506'
+    - 090204
+    - Automotive Safety Engineering
+  - - '507'
+    - 090205
+    - Hybrid Vehicles and Powertrains
+  - - '508'
+    - 090299
+    - Automotive Engineering Not Elsewhere Classified
+  - - '509'
+    - 090300
+    - Biomedical Engineering
+  - - '510'
+    - 090301
+    - Biomaterials
+  - - '511'
+    - 090302
+    - Biomechanical Engineering
+  - - '512'
+    - 090303
+    - Biomedical Instrumentation
+  - - '513'
+    - 090304
+    - Medical Devices
+  - - '514'
+    - 090305
+    - Rehabilitation Engineering
+  - - '515'
+    - 090399
+    - Biomedical Engineering Not Elsewhere Classified
+  - - '516'
+    - 090400
+    - Chemical Engineering
+  - - '517'
+    - 090401
+    - Carbon Capture Engineering (Excl. Sequestration)
+  - - '518'
+    - 090402
+    - Catalytic Process Engineering
+  - - '519'
+    - 090403
+    - Chemical Engineering Design
+  - - '520'
+    - 090404
+    - Membrane and Separation Technologies
+  - - '521'
+    - 090405
+    - ! "Non-Automotive Combustion and Fuel Engineering (Incl.\n Alternative/Renewable
+      Fuels)"
+  - - '522'
+    - 090406
+    - Powder and Particle Technology
+  - - '523'
+    - 090407
+    - Process Control and Simulation
+  - - '524'
+    - 090408
+    - Rheology
+  - - '525'
+    - 090409
+    - Wastewater Treatment Processes
+  - - '526'
+    - 090410
+    - Water Treatment Processes
+  - - '527'
+    - 090499
+    - Chemical Engineering Not Elsewhere Classified
+  - - '528'
+    - 090500
+    - Civil Engineering
+  - - '529'
+    - 090501
+    - Civil Geotechnical Engineering
+  - - '530'
+    - 090502
+    - Construction Engineering
+  - - '531'
+    - 090503
+    - Construction Materials
+  - - '532'
+    - 090504
+    - Earthquake Engineering
+  - - '533'
+    - 090505
+    - Infrastructure Engineering and Asset Management
+  - - '534'
+    - 090506
+    - Structural Engineering
+  - - '535'
+    - 090507
+    - Transport Engineering
+  - - '536'
+    - 090508
+    - Water Quality Engineering
+  - - '537'
+    - 090509
+    - Water Resources Engineering
+  - - '538'
+    - 090599
+    - Civil Engineering Not Elsewhere Classified
+  - - '539'
+    - 090600
+    - Electrical and Electronic Engineering
+  - - '540'
+    - 090601
+    - Circuits and Systems
+  - - '541'
+    - 090602
+    - Control Systems, Robotics and Automation
+  - - '542'
+    - 090603
+    - Industrial Electronics
+  - - '543'
+    - 090604
+    - Microelectronics and Integrated Circuits
+  - - '544'
+    - 090605
+    - Photodetectors, Optical Sensors and Solar Cells
+  - - '545'
+    - 090606
+    - Photonics and Electro-Optical Engineering (Excl. Communications)
+  - - '546'
+    - 090607
+    - Power and Energy Systems Engineering (Excl. Renewable Power)
+  - - '547'
+    - 090608
+    - Renewable Power and Energy Systems Engineering (Excl. Solar Cells)
+  - - '548'
+    - 090609
+    - Signal Processing
+  - - '549'
+    - 090699
+    - Electrical and Electronic Engineering Not Elsewhere Classified
+  - - '550'
+    - 090700
+    - Environmental Engineering
+  - - '551'
+    - 090701
+    - Environmental Engineering Design
+  - - '552'
+    - 090702
+    - Environmental Engineering Modelling
+  - - '553'
+    - 090703
+    - Environmental Technologies
+  - - '554'
+    - 090799
+    - Environmental Engineering Not Elsewhere Classified
+  - - '555'
+    - 090800
+    - Food Sciences
+  - - '556'
+    - 090801
+    - Food Chemistry and Molecular Gastronomy (Excl. Wine)
+  - - '557'
+    - 090802
+    - Food Engineering
+  - - '558'
+    - 090803
+    - Food Nutritional Balance
+  - - '559'
+    - 090804
+    - Food Packaging, Preservation and Safety
+  - - '560'
+    - 090805
+    - Food Processing
+  - - '561'
+    - 090806
+    - Wine Chemistry and Wine Sensory Science
+  - - '562'
+    - 090899
+    - Food Sciences Not Elsewhere Classified
+  - - '563'
+    - 090900
+    - Geomatic Engineering
+  - - '564'
+    - 090901
+    - Cartography
+  - - '565'
+    - 090902
+    - Geodesy
+  - - '566'
+    - 090903
+    - Geospatial Information Systems
+  - - '567'
+    - 090904
+    - Navigation and Position Fixing
+  - - '568'
+    - 090905
+    - Photogrammetry and Remote Sensing
+  - - '569'
+    - 090906
+    - Surveying (Incl. Hydrographic Surveying)
+  - - '570'
+    - 090999
+    - Geomatic Engineering Not Elsewhere Classified
+  - - '571'
+    - 091000
+    - Manufacturing Engineering
+  - - '572'
+    - 091001
+    - Cad/Cam Systems
+  - - '573'
+    - 091002
+    - Flexible Manufacturing Systems
+  - - '574'
+    - 091003
+    - Machine Tools
+  - - '575'
+    - 091004
+    - Machining
+  - - '576'
+    - 091005
+    - Manufacturing Management
+  - - '577'
+    - 091006
+    - Manufacturing Processes and Technologies (Excl. Textiles)
+  - - '578'
+    - 091007
+    - Manufacturing Robotics and Mechatronics (Excl. Automotive Mechatronics)
+  - - '579'
+    - 091008
+    - Manufacturing Safety and Quality
+  - - '580'
+    - 091009
+    - Microtechnology
+  - - '581'
+    - 091010
+    - Packaging, Storage and Transportation
+  - - '582'
+    - 091011
+    - Precision Engineering
+  - - '583'
+    - 091012
+    - Textile Technology
+  - - '584'
+    - 091099
+    - Manufacturing Engineering Not Elsewhere Classified
+  - - '585'
+    - 091100
+    - Maritime Engineering
+  - - '586'
+    - 091101
+    - Marine Engineering
+  - - '587'
+    - 091102
+    - Naval Architecture
+  - - '588'
+    - 091103
+    - Ocean Engineering
+  - - '589'
+    - 091104
+    - Ship and Platform Hydrodynamics
+  - - '590'
+    - 091105
+    - Ship and Platform Structures
+  - - '591'
+    - 091106
+    - Special Vehicles
+  - - '592'
+    - 091199
+    - Maritime Engineering Not Elsewhere Classified
+  - - '593'
+    - 091200
+    - Materials Engineering
+  - - '594'
+    - 091201
+    - Ceramics
+  - - '595'
+    - 091202
+    - Composite and Hybrid Materials
+  - - '596'
+    - 091203
+    - Compound Semiconductors
+  - - '597'
+    - 091204
+    - Elemental Semiconductors
+  - - '598'
+    - 091205
+    - Functional Materials
+  - - '599'
+    - 091206
+    - Glass
+  - - '600'
+    - 091207
+    - Metals and Alloy Materials
+  - - '601'
+    - 091208
+    - Organic Semiconductors
+  - - '602'
+    - 091209
+    - Polymers and Plastics
+  - - '603'
+    - 091210
+    - Timber, Pulp and Paper
+  - - '604'
+    - 091299
+    - Materials Engineering Not Elsewhere Classified
+  - - '605'
+    - 091300
+    - Mechanical Engineering
+  - - '606'
+    - 091301
+    - Acoustics and Noise Control (Excl. Architectural Acoustics)
+  - - '607'
+    - 091302
+    - Automation and Control Engineering
+  - - '608'
+    - 091303
+    - Autonomous Vehicles
+  - - '609'
+    - 091304
+    - Dynamics, Vibration and Vibration Control
+  - - '610'
+    - 091305
+    - Energy Generation, Conversion and Storage Engineering
+  - - '611'
+    - 091306
+    - Microelectromechanical Systems (Mems)
+  - - '612'
+    - 091307
+    - Numerical Modelling and Mechanical Characterisation
+  - - '613'
+    - 091308
+    - Solid Mechanics
+  - - '614'
+    - 091309
+    - Tribology
+  - - '615'
+    - 091399
+    - Mechanical Engineering Not Elsewhere Classified
+  - - '616'
+    - 091400
+    - Resources Engineering and Extractive Metallurgy
+  - - '617'
+    - 091401
+    - Electrometallurgy
+  - - '618'
+    - 091402
+    - Geomechanics and Resources Geotechnical Engineering
+  - - '619'
+    - 091403
+    - Hydrometallurgy
+  - - '620'
+    - 091404
+    - Mineral Processing/Beneficiation
+  - - '621'
+    - 091405
+    - Mining Engineering
+  - - '622'
+    - 091406
+    - Petroleum and Reservoir Engineering
+  - - '623'
+    - 091407
+    - Pyrometallurgy
+  - - '624'
+    - 091499
+    - ! "Resources Engineering and Extractive Metallurgy Not Elsewhere\n Classified"
+  - - '625'
+    - 091500
+    - Interdisciplinary Engineering
+  - - '626'
+    - 091501
+    - Computational Fluid Dynamics
+  - - '627'
+    - 091502
+    - Computational Heat Transfer
+  - - '628'
+    - 091503
+    - Engineering Practice
+  - - '629'
+    - 091504
+    - Fluidisation and Fluid Mechanics
+  - - '630'
+    - 091505
+    - Heat and Mass Transfer Operations
+  - - '631'
+    - 091506
+    - ! "Nuclear Engineering (Incl. Fuel Enrichment and Waste Processing\n and Storage)"
+  - - '632'
+    - 091507
+    - Risk Engineering (Excl. Earthquake Engineering)
+  - - '633'
+    - 091508
+    - Turbulent Flows
+  - - '634'
+    - 091599
+    - Interdisciplinary Engineering Not Elsewhere Classified
+  - - '635'
+    - 099900
+    - Other Engineering
+  - - '636'
+    - 099901
+    - Agricultural Engineering
+  - - '637'
+    - 099902
+    - Engineering Instrumentation
+  - - '638'
+    - 099999
+    - Engineering Not Elsewhere Classified
+  - - '639'
+    - '100000'
+    - Technology
+  - - '640'
+    - '100100'
+    - Agricultural Biotechnology
+  - - '641'
+    - '100101'
+    - Agricultural Biotechnology Diagnostics (Incl. Biosensors)
+  - - '642'
+    - '100102'
+    - Agricultural Marine Biotechnology
+  - - '643'
+    - '100103'
+    - Agricultural Molecular Engineering of Nucleic Acids and Proteins
+  - - '644'
+    - '100104'
+    - Genetically Modified Animals
+  - - '645'
+    - '100105'
+    - Genetically Modified Field Crops and Pasture
+  - - '646'
+    - '100106'
+    - Genetically Modified Horticulture Plants
+  - - '647'
+    - '100107'
+    - Genetically Modified Trees
+  - - '648'
+    - '100108'
+    - Livestock Cloning
+  - - '649'
+    - '100109'
+    - Transgenesis
+  - - '650'
+    - '100199'
+    - Agricultural Biotechnology Not Elsewhere Classified
+  - - '651'
+    - '100200'
+    - Environmental Biotechnology
+  - - '652'
+    - '100201'
+    - Biodiscovery
+  - - '653'
+    - '100202'
+    - Biological Control
+  - - '654'
+    - '100203'
+    - Bioremediation
+  - - '655'
+    - '100204'
+    - Environmental Biotechnology Diagnostics (Incl. Biosensors)
+  - - '656'
+    - '100205'
+    - Environmental Marine Biotechnology
+  - - '657'
+    - '100206'
+    - Environmental Molecular Engineering of Nucleic Acids and Proteins
+  - - '658'
+    - '100299'
+    - Environmental Biotechnology Not Elsewhere Classified
+  - - '659'
+    - '100300'
+    - Industrial Biotechnology
+  - - '660'
+    - '100301'
+    - Biocatalysis and Enzyme Technology
+  - - '661'
+    - '100302'
+    - Bioprocessing, Bioproduction and Bioproducts
+  - - '662'
+    - '100303'
+    - Fermentation
+  - - '663'
+    - '100304'
+    - Industrial Biotechnology Diagnostics (Incl. Biosensors)
+  - - '664'
+    - '100305'
+    - Industrial Microbiology (Incl. Biofeedstocks)
+  - - '665'
+    - '100306'
+    - Industrial Molecular Engineering of Nucleic Acids and Proteins
+  - - '666'
+    - '100399'
+    - Industrial Biotechnology Not Elsewhere Classified
+  - - '667'
+    - '100400'
+    - Medical Biotechnology
+  - - '668'
+    - '100401'
+    - Gene and Molecular Therapy
+  - - '669'
+    - '100402'
+    - Medical Biotechnology Diagnostics (Incl. Biosensors)
+  - - '670'
+    - '100403'
+    - Medical Molecular Engineering of Nucleic Acids and Proteins
+  - - '671'
+    - '100404'
+    - Regenerative Medicine (Incl. Stem Cells and Tissue Engineering)
+  - - '672'
+    - '100499'
+    - Medical Biotechnology Not Elsewhere Classified
+  - - '673'
+    - '100500'
+    - Communications Technologies
+  - - '674'
+    - '100501'
+    - Antennas and Propagation
+  - - '675'
+    - '100502'
+    - Broadband and Modem Technology
+  - - '676'
+    - '100503'
+    - Computer Communications Networks
+  - - '677'
+    - '100504'
+    - Data Communications
+  - - '678'
+    - '100505'
+    - Microwave and Millimetrewave Theory and Technology
+  - - '679'
+    - '100506'
+    - Optical Fibre Communications
+  - - '680'
+    - '100507'
+    - Optical Networks and Systems
+  - - '681'
+    - '100508'
+    - Satellite Communications
+  - - '682'
+    - '100509'
+    - Video Communications
+  - - '683'
+    - '100510'
+    - Wireless Communications
+  - - '684'
+    - '100599'
+    - Communications Technologies Not Elsewhere Classified
+  - - '685'
+    - '100600'
+    - Computer Hardware
+  - - '686'
+    - '100601'
+    - Arithmetic and Logic Structures
+  - - '687'
+    - '100602'
+    - Input, Output and Data Devices
+  - - '688'
+    - '100603'
+    - Logic Design
+  - - '689'
+    - '100604'
+    - Memory Structures
+  - - '690'
+    - '100605'
+    - Performance Evaluation; Testing and Simulation of Reliability
+  - - '691'
+    - '100606'
+    - Processor Architectures
+  - - '692'
+    - '100699'
+    - Computer Hardware Not Elsewhere Classified
+  - - '693'
+    - '100700'
+    - Nanotechnology
+  - - '694'
+    - '100701'
+    - Environmental Nanotechnology
+  - - '695'
+    - '100702'
+    - Molecular and Organic Electronics
+  - - '696'
+    - '100703'
+    - Nanobiotechnology
+  - - '697'
+    - '100704'
+    - Nanoelectromechanical Systems
+  - - '698'
+    - '100705'
+    - Nanoelectronics
+  - - '699'
+    - '100706'
+    - Nanofabrication, Growth and Self Assembly
+  - - '700'
+    - '100707'
+    - Nanomanufacturing
+  - - '701'
+    - '100708'
+    - Nanomaterials
+  - - '702'
+    - '100709'
+    - Nanomedicine
+  - - '703'
+    - '100710'
+    - Nanometrology
+  - - '704'
+    - '100711'
+    - Nanophotonics
+  - - '705'
+    - '100712'
+    - Nanoscale Characterisation
+  - - '706'
+    - '100713'
+    - Nanotoxicology, Health and Safety
+  - - '707'
+    - '100799'
+    - Nanotechnology Not Elsewhere Classified
+  - - '708'
+    - '109900'
+    - Other Technology
+  - - '709'
+    - '109999'
+    - Technology Not Elsewhere Classified
+  - - '710'
+    - '110000'
+    - Medical and Health Sciences
+  - - '711'
+    - '110100'
+    - Medical Biochemistry and Metabolomics
+  - - '712'
+    - '110101'
+    - ! 'Medical Biochemistry: Amino Acids and Metabolites'
+  - - '713'
+    - '110102'
+    - ! 'Medical Biochemistry: Carbohydrates'
+  - - '714'
+    - '110103'
+    - ! 'Medical Biochemistry: Inorganic Elements and Compounds'
+  - - '715'
+    - '110104'
+    - ! 'Medical Biochemistry: Lipids'
+  - - '716'
+    - '110105'
+    - ! 'Medical Biochemistry: Nucleic Acids'
+  - - '717'
+    - '110106'
+    - ! 'Medical Biochemistry: Proteins and Peptides (Incl. Medical Proteomics)'
+  - - '718'
+    - '110107'
+    - Metabolic Medicine
+  - - '719'
+    - '110199'
+    - Medical Biochemistry and Metabolomics Not Elsewhere Classified
+  - - '720'
+    - '110200'
+    - Cardiovascular Medicine and Haematology
+  - - '721'
+    - '110201'
+    - Cardiology (Incl. Cardiovascular Diseases)
+  - - '722'
+    - '110202'
+    - Haematology
+  - - '723'
+    - '110203'
+    - Respiratory Diseases
+  - - '724'
+    - '110299'
+    - Cardiovascular Medicine and Haematology Not Elsewhere Classified
+  - - '725'
+    - '110300'
+    - Clinical Sciences
+  - - '726'
+    - '110301'
+    - Anaesthesiology
+  - - '727'
+    - '110302'
+    - Clinical Chemistry (Diagnostics)
+  - - '728'
+    - '110303'
+    - Clinical Microbiology
+  - - '729'
+    - '110304'
+    - Dermatology
+  - - '730'
+    - '110305'
+    - Emergency Medicine
+  - - '731'
+    - '110306'
+    - Endocrinology
+  - - '732'
+    - '110307'
+    - Gastroenterology and Hepatology
+  - - '733'
+    - '110308'
+    - Geriatrics and Gerontology
+  - - '734'
+    - '110309'
+    - Infectious Diseases
+  - - '735'
+    - '110310'
+    - Intensive Care
+  - - '736'
+    - '110311'
+    - Medical Genetics (Excl. Cancer Genetics)
+  - - '737'
+    - '110312'
+    - Nephrology and Urology
+  - - '738'
+    - '110313'
+    - Nuclear Medicine
+  - - '739'
+    - '110314'
+    - Orthopaedics
+  - - '740'
+    - '110315'
+    - Otorhinolaryngology
+  - - '741'
+    - '110316'
+    - Pathology
+  - - '742'
+    - '110317'
+    - Physiotherapy
+  - - '743'
+    - '110318'
+    - Podiatry
+  - - '744'
+    - '110319'
+    - Psychiatry (Incl. Psychotherapy)
+  - - '745'
+    - '110320'
+    - Radiology and Organ Imaging
+  - - '746'
+    - '110321'
+    - Rehabilitation and Therapy (Excl. Physiotherapy)
+  - - '747'
+    - '110322'
+    - Rheumatology and Arthritis
+  - - '748'
+    - '110323'
+    - Surgery
+  - - '749'
+    - '110324'
+    - Venereology
+  - - '750'
+    - '110399'
+    - Clinical Sciences Not Elsewhere Classified
+  - - '751'
+    - '110400'
+    - Complementary and Alternative Medicine
+  - - '752'
+    - '110401'
+    - Chiropractic
+  - - '753'
+    - '110402'
+    - Naturopathy
+  - - '754'
+    - '110403'
+    - ! "Traditional Aboriginal and Torres Strait Islander Medicine and\n Treatments"
+  - - '755'
+    - '110404'
+    - Traditional Chinese Medicine and Treatments
+  - - '756'
+    - '110405'
+    - Traditional Maori Medicine and Treatments
+  - - '757'
+    - '110499'
+    - Complementary and Alternative Medicine Not Elsewhere Classified
+  - - '758'
+    - '110500'
+    - Dentistry
+  - - '759'
+    - '110501'
+    - Dental Materials and Equipment
+  - - '760'
+    - '110502'
+    - Dental Therapeutics, Pharmacology and Toxicology
+  - - '761'
+    - '110503'
+    - Endodontics
+  - - '762'
+    - '110504'
+    - Oral and Maxillofacial Surgery
+  - - '763'
+    - '110505'
+    - Oral Medicine and Pathology
+  - - '764'
+    - '110506'
+    - Orthodontics and Dentofacial Orthopaedics
+  - - '765'
+    - '110507'
+    - Paedodontics
+  - - '766'
+    - '110508'
+    - Periodontics
+  - - '767'
+    - '110509'
+    - Special Needs Dentistry
+  - - '768'
+    - '110599'
+    - Dentistry Not Elsewhere Classified
+  - - '769'
+    - '110600'
+    - Human Movement and Sports Science
+  - - '770'
+    - '110601'
+    - Biomechanics
+  - - '771'
+    - '110602'
+    - Exercise Physiology
+  - - '772'
+    - '110603'
+    - Motor Control
+  - - '773'
+    - '110604'
+    - Sports Medicine
+  - - '774'
+    - '110699'
+    - Human Movement and Sports Science Not Elsewhere Classified
+  - - '775'
+    - '110700'
+    - Immunology
+  - - '776'
+    - '110701'
+    - Allergy
+  - - '777'
+    - '110702'
+    - ! "Applied Immunology (Incl. Antibody Engineering, Xenotransplantation and\n
+      T-Cell Therapies)"
+  - - '778'
+    - '110703'
+    - Autoimmunity
+  - - '779'
+    - '110704'
+    - Cellular Immunology
+  - - '780'
+    - '110705'
+    - Humoural Immunology and Immunochemistry
+  - - '781'
+    - '110706'
+    - Immunogenetics (Incl. Genetic Immunology)
+  - - '782'
+    - '110707'
+    - Innate Immunity
+  - - '783'
+    - '110708'
+    - Transplantation Immunology
+  - - '784'
+    - '110709'
+    - Tumour Immunology
+  - - '785'
+    - '110799'
+    - Immunology Not Elsewhere Classified
+  - - '786'
+    - '110800'
+    - Medical Microbiology
+  - - '787'
+    - '110801'
+    - Medical Bacteriology
+  - - '788'
+    - '110802'
+    - Medical Infection Agents (Incl. Prions)
+  - - '789'
+    - '110803'
+    - Medical Parasitology
+  - - '790'
+    - '110804'
+    - Medical Virology
+  - - '791'
+    - '110899'
+    - Medical Microbiology Not Elsewhere Classified
+  - - '792'
+    - '110900'
+    - Neurosciences
+  - - '793'
+    - '110901'
+    - Autonomic Nervous System
+  - - '794'
+    - '110902'
+    - Cellular Nervous System
+  - - '795'
+    - '110903'
+    - Central Nervous System
+  - - '796'
+    - '110904'
+    - Neurology and Neuromuscular Diseases
+  - - '797'
+    - '110905'
+    - Peripheral Nervous System
+  - - '798'
+    - '110906'
+    - Sensory Systems
+  - - '799'
+    - '110999'
+    - Neurosciences Not Elsewhere Classified
+  - - '800'
+    - '111000'
+    - Nursing
+  - - '801'
+    - '111001'
+    - Aged Care Nursing
+  - - '802'
+    - '111002'
+    - ! 'Clinical Nursing: Primary (Preventative)'
+  - - '803'
+    - '111003'
+    - ! 'Clinical Nursing: Secondary (Acute Care)'
+  - - '804'
+    - '111004'
+    - ! 'Clinical Nursing: Tertiary (Rehabilitative)'
+  - - '805'
+    - '111005'
+    - Mental Health Nursing
+  - - '806'
+    - '111006'
+    - Midwifery
+  - - '807'
+    - '111099'
+    - Nursing Not Elsewhere Classified
+  - - '808'
+    - '111100'
+    - Nutrition and Dietetics
+  - - '809'
+    - '111101'
+    - Clinical and Sports Nutrition
+  - - '810'
+    - '111102'
+    - Dietetics and Nutrigenomics
+  - - '811'
+    - '111103'
+    - Nutritional Physiology
+  - - '812'
+    - '111104'
+    - Public Nutrition Intervention
+  - - '813'
+    - '111199'
+    - Nutrition and Dietetics Not Elsewhere Classified
+  - - '814'
+    - '111200'
+    - Oncology and Carcinogenesis
+  - - '815'
+    - '111201'
+    - Cancer Cell Biology
+  - - '816'
+    - '111202'
+    - Cancer Diagnosis
+  - - '817'
+    - '111203'
+    - Cancer Genetics
+  - - '818'
+    - '111204'
+    - Cancer Therapy (Excl. Chemotherapy and Radiation Therapy)
+  - - '819'
+    - '111205'
+    - Chemotherapy
+  - - '820'
+    - '111206'
+    - Haematological Tumours
+  - - '821'
+    - '111207'
+    - Molecular Targets
+  - - '822'
+    - '111208'
+    - Radiation Therapy
+  - - '823'
+    - '111209'
+    - Solid Tumours
+  - - '824'
+    - '111299'
+    - Oncology and Carcinogenesis Not Elsewhere Classified
+  - - '825'
+    - '111300'
+    - Optometry and Ophthalmology
+  - - '826'
+    - '111301'
+    - Ophthalmology
+  - - '827'
+    - '111302'
+    - Optical Technology
+  - - '828'
+    - '111303'
+    - Vision Science
+  - - '829'
+    - '111399'
+    - Optometry and Ophthalmology Not Elsewhere Classified
+  - - '830'
+    - '111400'
+    - Paediatrics and Reproductive Medicine
+  - - '831'
+    - '111401'
+    - Foetal Development and Medicine
+  - - '832'
+    - '111402'
+    - Obstetrics and Gynaecology
+  - - '833'
+    - '111403'
+    - Paediatrics
+  - - '834'
+    - '111404'
+    - Reproduction
+  - - '835'
+    - '111499'
+    - Paediatrics and Reproductive Medicine Not Elsewhere Classified
+  - - '836'
+    - '111500'
+    - Pharmacology and Pharmaceutical Sciences
+  - - '837'
+    - '111501'
+    - Basic Pharmacology
+  - - '838'
+    - '111502'
+    - Clinical Pharmacology and Therapeutics
+  - - '839'
+    - '111503'
+    - Clinical Pharmacy and Pharmacy Practice
+  - - '840'
+    - '111504'
+    - Pharmaceutical Sciences
+  - - '841'
+    - '111505'
+    - Pharmacogenomics
+  - - '842'
+    - '111506'
+    - Toxicology (Incl. Clinical Toxicology)
+  - - '843'
+    - '111599'
+    - Pharmacology and Pharmaceutical Sciences Not Elsewhere Classified
+  - - '844'
+    - '111600'
+    - Medical Physiology
+  - - '845'
+    - '111601'
+    - Cell Physiology
+  - - '846'
+    - '111602'
+    - Human Biophysics
+  - - '847'
+    - '111603'
+    - Systems Physiology
+  - - '848'
+    - '111699'
+    - Medical Physiology Not Elsewhere Classified
+  - - '849'
+    - '111700'
+    - Public Health and Health Services
+  - - '850'
+    - '111701'
+    - Aboriginal and Torres Strait Islander Health
+  - - '851'
+    - '111702'
+    - Aged Health Care
+  - - '852'
+    - '111703'
+    - Care for Disabled
+  - - '853'
+    - '111704'
+    - Community Child Health
+  - - '854'
+    - '111705'
+    - Environmental and Occupational Health and Safety
+  - - '855'
+    - '111706'
+    - Epidemiology
+  - - '856'
+    - '111707'
+    - Family Care
+  - - '857'
+    - '111708'
+    - Health and Community Services
+  - - '858'
+    - '111709'
+    - Health Care Administration
+  - - '859'
+    - '111710'
+    - Health Counselling
+  - - '860'
+    - '111711'
+    - Health Information Systems (Incl. Surveillance)
+  - - '861'
+    - '111712'
+    - Health Promotion
+  - - '862'
+    - '111713'
+    - Maori Health
+  - - '863'
+    - '111714'
+    - Mental Health
+  - - '864'
+    - '111715'
+    - Pacific Peoples Health
+  - - '865'
+    - '111716'
+    - Preventive Medicine
+  - - '866'
+    - '111717'
+    - Primary Health Care
+  - - '867'
+    - '111718'
+    - Residential Client Care
+  - - '868'
+    - '111799'
+    - Public Health and Health Services Not Elsewhere Classified
+  - - '869'
+    - '119900'
+    - Other Medical and Health Sciences
+  - - '870'
+    - '119999'
+    - Medical and Health Sciences Not Elsewhere Classified
+  - - '871'
+    - '120000'
+    - Built Environment and Design
+  - - '872'
+    - '120100'
+    - Architecture
+  - - '873'
+    - '120101'
+    - Architectural Design
+  - - '874'
+    - '120102'
+    - Architectural Heritage and Conservation
+  - - '875'
+    - '120103'
+    - Architectural History and Theory
+  - - '876'
+    - '120104'
+    - ! "Architectural Science and Technology (Incl. Acoustics, Lighting,\n Structure
+      and Ecologically Sustainable Design)"
+  - - '877'
+    - '120105'
+    - Architecture Management
+  - - '878'
+    - '120106'
+    - Interior Design
+  - - '879'
+    - '120107'
+    - Landscape Architecture
+  - - '880'
+    - '120199'
+    - Architecture Not Elsewhere Classified
+  - - '881'
+    - '120200'
+    - Building
+  - - '882'
+    - '120201'
+    - Building Construction Management and Project Planning
+  - - '883'
+    - '120202'
+    - Building Science and Techniques
+  - - '884'
+    - '120203'
+    - Quantity Surveying
+  - - '885'
+    - '120299'
+    - Building Not Elsewhere Classified
+  - - '886'
+    - '120300'
+    - Design Practice and Management
+  - - '887'
+    - '120301'
+    - Design History and Theory
+  - - '888'
+    - '120302'
+    - Design Innovation
+  - - '889'
+    - '120303'
+    - Design Management and Studio and Professional Practice
+  - - '890'
+    - '120304'
+    - Digital and Interaction Design
+  - - '891'
+    - '120305'
+    - Industrial Design
+  - - '892'
+    - '120306'
+    - Textile and Fashion Design
+  - - '893'
+    - '120307'
+    - Visual Communication Design (Incl. Graphic Design)
+  - - '894'
+    - '120399'
+    - Design Practice and Management Not Elsewhere Classified
+  - - '895'
+    - '120400'
+    - Engineering Design
+  - - '896'
+    - '120401'
+    - Engineering Design Empirical Studies
+  - - '897'
+    - '120402'
+    - Engineering Design Knowledge
+  - - '898'
+    - '120403'
+    - Engineering Design Methods
+  - - '899'
+    - '120404'
+    - Engineering Systems Design
+  - - '900'
+    - '120405'
+    - Models of Engineering Design
+  - - '901'
+    - '120499'
+    - Engineering Design Not Elsewhere Classified
+  - - '902'
+    - '120500'
+    - Urban and Regional Planning
+  - - '903'
+    - '120501'
+    - Community Planning
+  - - '904'
+    - '120502'
+    - History and Theory of the Built Environment (Excl. Architecture)
+  - - '905'
+    - '120503'
+    - Housing Markets, Development, Management
+  - - '906'
+    - '120504'
+    - Land Use and Environmental Planning
+  - - '907'
+    - '120505'
+    - Regional Analysis and Development
+  - - '908'
+    - '120506'
+    - Transport Planning
+  - - '909'
+    - '120507'
+    - Urban Analysis and Development
+  - - '910'
+    - '120508'
+    - Urban Design
+  - - '911'
+    - '120599'
+    - Urban and Regional Planning Not Elsewhere Classified
+  - - '912'
+    - '129900'
+    - Other Built Environment and Design
+  - - '913'
+    - '129999'
+    - Built Environment and Design Not Elsewhere Classified
+  - - '914'
+    - '130000'
+    - Education
+  - - '915'
+    - '130100'
+    - Education Systems
+  - - '916'
+    - '130101'
+    - Continuing and Community Education
+  - - '917'
+    - '130102'
+    - Early Childhood Education (Excl. Maori)
+  - - '918'
+    - '130103'
+    - Higher Education
+  - - '919'
+    - '130104'
+    - Kura Kaupapa Maori (Maori Primary Education)
+  - - '920'
+    - '130105'
+    - Primary Education (Excl. Maori)
+  - - '921'
+    - '130106'
+    - Secondary Education
+  - - '922'
+    - '130107'
+    - Te Whariki (Maori Early Childhood Education)
+  - - '923'
+    - '130108'
+    - Technical, Further and Workplace Education
+  - - '924'
+    - '130199'
+    - Education Systems Not Elsewhere Classified
+  - - '925'
+    - '130200'
+    - Curriculum and Pedagogy
+  - - '926'
+    - '130201'
+    - Creative Arts, Media and Communication Curriculum and Pedagogy
+  - - '927'
+    - '130202'
+    - Curriculum and Pedagogy Theory and Development
+  - - '928'
+    - '130203'
+    - Economics, Business and Management Curriculum and Pedagogy
+  - - '929'
+    - '130204'
+    - ! "English and Literacy Curriculum and Pedagogy (Excl. Lote, Esl\n and Tesol)"
+  - - '930'
+    - '130205'
+    - ! "Humanities and Social Sciences Curriculum and Pedagogy (Excl.\n Economics,
+      Business and Management)"
+  - - '931'
+    - '130206'
+    - Kohanga Reo (Maori Language Curriculum and Pedagogy)
+  - - '932'
+    - '130207'
+    - Lote, Esl and Tesol Curriculum and Pedagogy (Excl. Maori)
+  - - '933'
+    - '130208'
+    - Mathematics and Numeracy Curriculum and Pedagogy
+  - - '934'
+    - '130209'
+    - Medicine, Nursing and Health Curriculum and Pedagogy
+  - - '935'
+    - '130210'
+    - Physical Education and Development Curriculum and Pedagogy
+  - - '936'
+    - '130211'
+    - Religion Curriculum and Pedagogy
+  - - '937'
+    - '130212'
+    - Science, Technology and Engineering Curriculum and Pedagogy
+  - - '938'
+    - '130213'
+    - Vocational Education and Training Curriculum and Pedagogy
+  - - '939'
+    - '130299'
+    - Curriculum and Pedagogy Not Elsewhere Classified
+  - - '940'
+    - '130300'
+    - Specialist Studies in Education
+  - - '941'
+    - '130301'
+    - Aboriginal and Torres Strait Islander Education
+  - - '942'
+    - '130302'
+    - Comparative and Cross-Cultural Education
+  - - '943'
+    - '130303'
+    - Education Assessment and Evaluation
+  - - '944'
+    - '130304'
+    - Educational Administration, Management and Leadership
+  - - '945'
+    - '130305'
+    - Educational Counselling
+  - - '946'
+    - '130306'
+    - Educational Technology and Computing
+  - - '947'
+    - '130307'
+    - ! "Ethnic Education (Excl. Aboriginal and Torres Strait Islander, Maori\n and
+      Pacific Peoples)"
+  - - '948'
+    - '130308'
+    - Gender, Sexuality and Education
+  - - '949'
+    - '130309'
+    - Learning Sciences
+  - - '950'
+    - '130310'
+    - Maori Education (Excl. Early Childhood and Primary Education)
+  - - '951'
+    - '130311'
+    - Pacific Peoples Education
+  - - '952'
+    - '130312'
+    - Special Education and Disability
+  - - '953'
+    - '130313'
+    - Teacher Education and Professional Development of Educators
+  - - '954'
+    - '130399'
+    - Specialist Studies in Education Not Elsewhere Classified
+  - - '955'
+    - '139900'
+    - Other Education
+  - - '956'
+    - '139999'
+    - Education Not Elsewhere Classified
+  - - '957'
+    - '140000'
+    - Economics
+  - - '958'
+    - '140101'
+    - History of Economic Thought
+  - - '959'
+    - '140102'
+    - Macroeconomic Theory
+  - - '960'
+    - '140103'
+    - Mathematical Economics
+  - - '961'
+    - '140104'
+    - Microeconomic Theory
+  - - '962'
+    - '140199'
+    - Economic Theory Not Elsewhere Classified
+  - - '963'
+    - '140200'
+    - Applied Economics
+  - - '964'
+    - '140201'
+    - Agricultural Economics
+  - - '965'
+    - '140202'
+    - Economic Development and Growth
+  - - '966'
+    - '140203'
+    - Economic History
+  - - '967'
+    - '140204'
+    - Economics of Education
+  - - '968'
+    - '140205'
+    - Environment and Resource Economics
+  - - '969'
+    - '140206'
+    - Experimental Economics
+  - - '970'
+    - '140207'
+    - Financial Economics
+  - - '971'
+    - '140208'
+    - Health Economics
+  - - '972'
+    - '140209'
+    - Industry Economics and Industrial Organisation
+  - - '973'
+    - '140210'
+    - International Economics and International Finance
+  - - '974'
+    - '140211'
+    - Labour Economics
+  - - '975'
+    - '140212'
+    - Macroeconomics (Incl. Monetary and Fiscal Theory)
+  - - '976'
+    - '140213'
+    - Public Economics- Public Choice
+  - - '977'
+    - '140214'
+    - Public Economics- Publically Provided Goods
+  - - '978'
+    - '140215'
+    - Public Economics- Taxation and Revenue
+  - - '979'
+    - '140216'
+    - Tourism Economics
+  - - '980'
+    - '140217'
+    - Transport Economics
+  - - '981'
+    - '140218'
+    - Urban and Regional Economics
+  - - '982'
+    - '140219'
+    - Welfare Economics
+  - - '983'
+    - '140299'
+    - Applied Economics Not Elsewhere Classified
+  - - '984'
+    - '140300'
+    - Econometrics
+  - - '985'
+    - '140302'
+    - Econometric and Statistical Methods
+  - - '986'
+    - '140303'
+    - Economic Models and Forecasting
+  - - '987'
+    - '140304'
+    - Panel Data Analysis
+  - - '988'
+    - '140305'
+    - Time-Series Analysis
+  - - '989'
+    - '140399'
+    - Econometrics Not Elsewhere Classified
+  - - '990'
+    - '149900'
+    - Other Economics
+  - - '991'
+    - '149901'
+    - Comparative Economic Systems
+  - - '992'
+    - '149902'
+    - Ecological Economics
+  - - '993'
+    - '149903'
+    - Heterodox Economics
+  - - '994'
+    - '149999'
+    - Economics Not Elsewhere Classified
+  - - '995'
+    - '150000'
+    - Commerce, Management, Tourism and Services
+  - - '996'
+    - '150100'
+    - Accounting, Auditing and Accountability
+  - - '997'
+    - '150101'
+    - Accounting Theory and Standards
+  - - '998'
+    - '150102'
+    - Auditing and Accountability
+  - - '999'
+    - '150103'
+    - Financial Accounting
+  - - '1000'
+    - '150104'
+    - International Accounting
+  - - '1001'
+    - '150105'
+    - Management Accounting
+  - - '1002'
+    - '150106'
+    - Sustainability Accounting and Reporting
+  - - '1003'
+    - '150107'
+    - Taxation Accounting
+  - - '1004'
+    - '150199'
+    - Accounting, Auditing and Accountability Not Elsewhere Classified
+  - - '1005'
+    - '150200'
+    - Banking, Finance and Investment
+  - - '1006'
+    - '150201'
+    - Finance
+  - - '1007'
+    - '150202'
+    - Financial Econometrics
+  - - '1008'
+    - '150203'
+    - Financial Institutions (Incl. Banking)
+  - - '1009'
+    - '150204'
+    - Insurance Studies
+  - - '1010'
+    - '150205'
+    - Investment and Risk Management
+  - - '1011'
+    - '150299'
+    - Banking, Finance and Investment Not Elsewhere Classified
+  - - '1012'
+    - '150300'
+    - Business and Management
+  - - '1013'
+    - '150301'
+    - ! "Business Information Management (Incl. Records, Knowledge and\n Information
+      Management, and Intelligence)"
+  - - '1014'
+    - '150302'
+    - Business Information Systems
+  - - '1015'
+    - '150303'
+    - Corporate Governance and Stakeholder Engagement
+  - - '1016'
+    - '150304'
+    - Entrepreneurship
+  - - '1017'
+    - '150305'
+    - Human Resources Management
+  - - '1018'
+    - '150306'
+    - Industrial Relations
+  - - '1019'
+    - '150307'
+    - Innovation and Technology Management
+  - - '1020'
+    - '150308'
+    - International Business
+  - - '1021'
+    - '150309'
+    - Logistics and Supply Chain Management
+  - - '1022'
+    - '150310'
+    - Organisation and Management Theory
+  - - '1023'
+    - '150311'
+    - Organisational Behaviour
+  - - '1024'
+    - '150312'
+    - Organisational Planning and Management
+  - - '1025'
+    - '150313'
+    - Quality Management
+  - - '1026'
+    - '150314'
+    - Small Business Management
+  - - '1027'
+    - '150399'
+    - Business and Management Not Elsewhere Classified
+  - - '1028'
+    - '150400'
+    - Commercial Services
+  - - '1029'
+    - '150401'
+    - Food and Hospitality Services
+  - - '1030'
+    - '150402'
+    - Hospitality Management
+  - - '1031'
+    - '150403'
+    - Real Estate and Valuation Services
+  - - '1032'
+    - '150404'
+    - Sport and Leisure Management
+  - - '1033'
+    - '150499'
+    - Commercial Services Not Elsewhere Classified
+  - - '1034'
+    - '150500'
+    - Marketing
+  - - '1035'
+    - '150501'
+    - Consumer-Oriented Product or Service Development
+  - - '1036'
+    - '150502'
+    - Marketing Communications
+  - - '1037'
+    - '150503'
+    - Marketing Management (Incl. Strategy and Customer Relations)
+  - - '1038'
+    - '150504'
+    - Marketing Measurement
+  - - '1039'
+    - '150505'
+    - Marketing Research Methodology
+  - - '1040'
+    - '150506'
+    - Marketing Theory
+  - - '1041'
+    - '150507'
+    - Pricing (Incl. Consumer Value Estimation)
+  - - '1042'
+    - '150599'
+    - Marketing Not Elsewhere Classified
+  - - '1043'
+    - '150600'
+    - Tourism
+  - - '1044'
+    - '150601'
+    - Impacts of Tourism
+  - - '1045'
+    - '150602'
+    - Tourism Forecasting
+  - - '1046'
+    - '150603'
+    - Tourism Management
+  - - '1047'
+    - '150604'
+    - Tourism Marketing
+  - - '1048'
+    - '150605'
+    - Tourism Resource Appraisal
+  - - '1049'
+    - '150606'
+    - Tourist Behaviour and Visitor Experience
+  - - '1050'
+    - '150699'
+    - Tourism Not Elsewhere Classified
+  - - '1051'
+    - '150700'
+    - Transportation and Freight Services
+  - - '1052'
+    - '150701'
+    - Air Transportation and Freight Services
+  - - '1053'
+    - '150702'
+    - Rail Transportation and Freight Services
+  - - '1054'
+    - '150703'
+    - Road Transportation and Freight Services
+  - - '1055'
+    - '150799'
+    - Transportation and Freight Services Not Elsewhere Classified
+  - - '1056'
+    - '159900'
+    - Other Commerce, Management, Tourism and Services
+  - - '1057'
+    - '159999'
+    - Commerce, Management, Tourism and Services Not Elsewhere Classified
+  - - '1058'
+    - '160000'
+    - Studies in Human Society
+  - - '1059'
+    - '160100'
+    - Anthropology
+  - - '1060'
+    - '160101'
+    - Anthropology of Development
+  - - '1061'
+    - '160102'
+    - Biological (Physical) Anthropology
+  - - '1062'
+    - '160103'
+    - Linguistic Anthropology
+  - - '1063'
+    - '160104'
+    - Social and Cultural Anthropology
+  - - '1064'
+    - '160199'
+    - Anthropology Not Elsewhere Classified
+  - - '1065'
+    - '160200'
+    - Criminology
+  - - '1066'
+    - '160201'
+    - Causes and Prevention of Crime
+  - - '1067'
+    - '160202'
+    - Correctional Theory, Offender Treatment and Rehabilitation
+  - - '1068'
+    - '160203'
+    - Courts and Sentencing
+  - - '1069'
+    - '160204'
+    - Criminological Theories
+  - - '1070'
+    - '160205'
+    - Police Administration, Procedures and Practice
+  - - '1071'
+    - '160206'
+    - Private Policing and Security Services
+  - - '1072'
+    - '160299'
+    - Criminology Not Elsewhere Classified
+  - - '1073'
+    - '160300'
+    - Demography
+  - - '1074'
+    - '160301'
+    - Family and Household Studies
+  - - '1075'
+    - '160302'
+    - Fertility
+  - - '1076'
+    - '160303'
+    - Migration
+  - - '1077'
+    - '160304'
+    - Mortality
+  - - '1078'
+    - '160305'
+    - Population Trends and Policies
+  - - '1079'
+    - '160399'
+    - Demography Not Elsewhere Classified
+  - - '1080'
+    - '160400'
+    - Human Geography
+  - - '1081'
+    - '160401'
+    - Economic Geography
+  - - '1082'
+    - '160402'
+    - Recreation, Leisure and Tourism Geography
+  - - '1083'
+    - '160403'
+    - Social and Cultural Geography
+  - - '1084'
+    - '160404'
+    - Urban and Regional Studies (Excl. Planning)
+  - - '1085'
+    - '160499'
+    - Human Geography Not Elsewhere Classified
+  - - '1086'
+    - '160500'
+    - Policy and Administration
+  - - '1087'
+    - '160501'
+    - Aboriginal and Torres Strait Islander Policy
+  - - '1088'
+    - '160502'
+    - Arts and Cultural Policy
+  - - '1089'
+    - '160503'
+    - Communications and Media Policy
+  - - '1090'
+    - '160504'
+    - Crime Policy
+  - - '1091'
+    - '160505'
+    - Economic Development Policy
+  - - '1092'
+    - '160506'
+    - Education Policy
+  - - '1093'
+    - '160507'
+    - Environment Policy
+  - - '1094'
+    - '160508'
+    - Health Policy
+  - - '1095'
+    - '160509'
+    - Public Administration
+  - - '1096'
+    - '160510'
+    - Public Policy
+  - - '1097'
+    - '160511'
+    - Research, Science and Technology Policy
+  - - '1098'
+    - '160512'
+    - Social Policy
+  - - '1099'
+    - '160513'
+    - Tourism Policy
+  - - '1100'
+    - '160514'
+    - Urban Policy
+  - - '1101'
+    - '160599'
+    - Policy and Administration Not Elsewhere Classified
+  - - '1102'
+    - '160600'
+    - Political Science
+  - - '1103'
+    - '160601'
+    - Australian Government and Politics
+  - - '1104'
+    - '160602'
+    - Citizenship
+  - - '1105'
+    - '160603'
+    - Comparative Government and Politics
+  - - '1106'
+    - '160604'
+    - Defence Studies
+  - - '1107'
+    - '160605'
+    - Environmental Politics
+  - - '1108'
+    - '160606'
+    - Government and Politics of Asia and the Pacific
+  - - '1109'
+    - '160607'
+    - International Relations
+  - - '1110'
+    - '160608'
+    - New Zealand Government and Politics
+  - - '1111'
+    - '160609'
+    - Political Theory and Political Philosophy
+  - - '1112'
+    - '160699'
+    - Political Science Not Elsewhere Classified
+  - - '1113'
+    - '160700'
+    - Social Work
+  - - '1114'
+    - '160701'
+    - Clinical Social Work Practice
+  - - '1115'
+    - '160702'
+    - Counselling, Welfare and Community Services
+  - - '1116'
+    - '160703'
+    - Social Program Evaluation
+  - - '1117'
+    - '160799'
+    - Social Work Not Elsewhere Classified
+  - - '1118'
+    - '160800'
+    - Sociology
+  - - '1119'
+    - '160801'
+    - Applied Sociology, Program Evaluation and Social Impact Assessment
+  - - '1120'
+    - '160802'
+    - Environmental Sociology
+  - - '1121'
+    - '160803'
+    - Race and Ethnic Relations
+  - - '1122'
+    - '160804'
+    - Rural Sociology
+  - - '1123'
+    - '160805'
+    - Social Change
+  - - '1124'
+    - '160806'
+    - Social Theory
+  - - '1125'
+    - '160807'
+    - Sociological Methodology and Research Methods
+  - - '1126'
+    - '160808'
+    - Sociology and Social Studies of Science and Technology
+  - - '1127'
+    - '160809'
+    - Sociology of Education
+  - - '1128'
+    - '160810'
+    - Urban Sociology and Community Studies
+  - - '1129'
+    - '160899'
+    - Sociology Not Elsewhere Classified
+  - - '1130'
+    - '169900'
+    - Other Studies in Human Society
+  - - '1131'
+    - '169901'
+    - Gender Specific Studies
+  - - '1132'
+    - '169902'
+    - Studies of Aboriginal and Torres Strait Islander Society
+  - - '1133'
+    - '169903'
+    - Studies of Asian Society
+  - - '1134'
+    - '169904'
+    - Studies of Maori Society
+  - - '1135'
+    - '169905'
+    - Studies of Pacific Peoples' Societies
+  - - '1136'
+    - '169999'
+    - Studies in Human Society Not Elsewhere Classified
+  - - '1137'
+    - '170000'
+    - Psychology and Cognitive Sciences
+  - - '1138'
+    - '170100'
+    - Psychology
+  - - '1139'
+    - '170101'
+    - ! "Biological Psychology (Neuropsychology, Psychopharmacology,\n Physiological
+      Psychology)"
+  - - '1140'
+    - '170102'
+    - Developmental Psychology and Ageing
+  - - '1141'
+    - '170103'
+    - Educational Psychology
+  - - '1142'
+    - '170104'
+    - Forensic Psychology
+  - - '1143'
+    - '170105'
+    - Gender Psychology
+  - - '1144'
+    - '170106'
+    - Health, Clinical and Counselling Psychology
+  - - '1145'
+    - '170107'
+    - Industrial and Organisational Psychology
+  - - '1146'
+    - '170108'
+    - Kaupapa Maori Psychology
+  - - '1147'
+    - '170109'
+    - Personality, Abilities and Assessment
+  - - '1148'
+    - '170110'
+    - Psychological Methodology, Design and Analysis
+  - - '1149'
+    - '170111'
+    - Psychology of Religion
+  - - '1150'
+    - '170112'
+    - Sensory Processes, Perception and Performance
+  - - '1151'
+    - '170113'
+    - Social and Community Psychology
+  - - '1152'
+    - '170114'
+    - Sport and Exercise Psychology
+  - - '1153'
+    - '170199'
+    - Psychology Not Elsewhere Classified
+  - - '1154'
+    - '170200'
+    - Cognitive Science
+  - - '1155'
+    - '170201'
+    - Computer Perception, Memory and Attention
+  - - '1156'
+    - '170202'
+    - Decision Making
+  - - '1157'
+    - '170203'
+    - Knowledge Representation and Machine Learning
+  - - '1158'
+    - '170204'
+    - Linguistic Processes (Incl. Speech Production and Comprehension)
+  - - '1159'
+    - '170205'
+    - Neurocognitive Patterns and Neural Networks
+  - - '1160'
+    - '170299'
+    - Cognitive Science Not Elsewhere Classified
+  - - '1161'
+    - '179900'
+    - Other Psychology and Cognitive Sciences
+  - - '1162'
+    - '179999'
+    - Psychology and Cognitive Sciences Not Elsewhere Classified
+  - - '1163'
+    - '180000'
+    - Law and Legal Studies
+  - - '1164'
+    - '180100'
+    - Law
+  - - '1165'
+    - '180101'
+    - Aboriginal and Torres Strait Islander Law
+  - - '1166'
+    - '180102'
+    - Access to Justice
+  - - '1167'
+    - '180103'
+    - Administrative Law
+  - - '1168'
+    - '180104'
+    - Civil Law and Procedure
+  - - '1169'
+    - '180105'
+    - Commercial and Contract Law
+  - - '1170'
+    - '180106'
+    - Comparative Law
+  - - '1171'
+    - '180107'
+    - Conflict of Laws (Private International Law)
+  - - '1172'
+    - '180108'
+    - Constitutional Law
+  - - '1173'
+    - '180109'
+    - Corporations and Associations Law
+  - - '1174'
+    - '180110'
+    - Criminal Law and Procedure
+  - - '1175'
+    - '180111'
+    - Environmental and Natural Resources Law
+  - - '1176'
+    - '180112'
+    - Equity and Trusts Law
+  - - '1177'
+    - '180113'
+    - Family Law
+  - - '1178'
+    - '180114'
+    - Human Rights Law
+  - - '1179'
+    - '180115'
+    - Intellectual Property Law
+  - - '1180'
+    - '180116'
+    - International Law (Excl. International Trade Law)
+  - - '1181'
+    - '180117'
+    - International Trade Law
+  - - '1182'
+    - '180118'
+    - Labour Law
+  - - '1183'
+    - '180119'
+    - Law and Society
+  - - '1184'
+    - '180120'
+    - Legal Institutions (Incl. Courts and Justice Systems)
+  - - '1185'
+    - '180121'
+    - Legal Practice, Lawyering and the Legal Profession
+  - - '1186'
+    - '180122'
+    - Legal Theory, Jurisprudence and Legal Interpretation
+  - - '1187'
+    - '180123'
+    - Litigation, Adjudication and Dispute Resolution
+  - - '1188'
+    - '180124'
+    - Property Law (Excl. Intellectual Property Law)
+  - - '1189'
+    - '180125'
+    - Taxation Law
+  - - '1190'
+    - '180126'
+    - Tort Law
+  - - '1191'
+    - '180199'
+    - Law Not Elsewhere Classified
+  - - '1192'
+    - '180200'
+    - Maori Law
+  - - '1193'
+    - '180201'
+    - Nga Tikanga Maori (Maori Customary Law)
+  - - '1194'
+    - '180202'
+    - Te Maori Whakakaere Rauemi (Maori Resource Law)
+  - - '1195'
+    - '180203'
+    - Te Tiriti O Waitangi (The Treaty of Waitangi)
+  - - '1196'
+    - '180204'
+    - Te Ture Whenua (Maori Land Law)
+  - - '1197'
+    - '180299'
+    - Maori Law Not Elsewhere Classified
+  - - '1198'
+    - '189900'
+    - Other Law and Legal Studies
+  - - '1199'
+    - '189999'
+    - Law and Legal Studies Not Elsewhere Classified
+  - - '1200'
+    - '190000'
+    - Studies in Creative Arts and Writing
+  - - '1201'
+    - '190100'
+    - Art Theory and Criticism
+  - - '1202'
+    - '190101'
+    - Art Criticism
+  - - '1203'
+    - '190102'
+    - Art History
+  - - '1204'
+    - '190103'
+    - Art Theory
+  - - '1205'
+    - '190104'
+    - Visual Cultures
+  - - '1206'
+    - '190199'
+    - Art Theory and Criticism Not Elsewhere Classified
+  - - '1207'
+    - '190200'
+    - Film, Television and Digital Media
+  - - '1208'
+    - '190201'
+    - Cinema Studies
+  - - '1209'
+    - '190202'
+    - Computer Gaming and Animation
+  - - '1210'
+    - '190203'
+    - Electronic Media Art
+  - - '1211'
+    - '190204'
+    - Film and Television
+  - - '1212'
+    - '190205'
+    - Interactive Media
+  - - '1213'
+    - '190299'
+    - Film, Television and Digital Media Not Elsewhere Classified
+  - - '1214'
+    - '190300'
+    - Journalism and Professional Writing
+  - - '1215'
+    - '190301'
+    - Journalism Studies
+  - - '1216'
+    - '190302'
+    - Professional Writing
+  - - '1217'
+    - '190303'
+    - Technical Writing
+  - - '1218'
+    - '190399'
+    - Journalism and Professional Writing Not Elsewhere Classified
+  - - '1219'
+    - '190400'
+    - Performing Arts and Creative Writing
+  - - '1220'
+    - '190401'
+    - Aboriginal and Torres Strait Islander Performing Arts
+  - - '1221'
+    - '190402'
+    - Creative Writing (Incl. Playwriting)
+  - - '1222'
+    - '190403'
+    - Dance
+  - - '1223'
+    - '190404'
+    - Drama, Theatre and Performance Studies
+  - - '1224'
+    - '190405'
+    - Maori Performing Arts
+  - - '1225'
+    - '190406'
+    - Music Composition
+  - - '1226'
+    - '190407'
+    - Music Performance
+  - - '1227'
+    - '190408'
+    - Music Therapy
+  - - '1228'
+    - '190409'
+    - Musicology and Ethnomusicology
+  - - '1229'
+    - '190410'
+    - Pacific Peoples Performing Arts
+  - - '1230'
+    - '190499'
+    - Performing Arts and Creative Writing Not Elsewhere Classified
+  - - '1231'
+    - '190500'
+    - Visual Arts and Crafts
+  - - '1232'
+    - '190501'
+    - Crafts
+  - - '1233'
+    - '190502'
+    - Fine Arts (Incl. Sculpture and Painting)
+  - - '1234'
+    - '190503'
+    - Lens-Based Practice
+  - - '1235'
+    - '190504'
+    - Performance and Installation Art
+  - - '1236'
+    - '190599'
+    - Visual Arts and Crafts Not Elsewhere Classified
+  - - '1237'
+    - '190999'
+    - Other Studies in Creative Arts and Writing
+  - - '1238'
+    - '199999'
+    - Studies in the Creative Arts and Writing Not Elsewhere Classified
+  - - '1239'
+    - '200000'
+    - Languages, Communication and Culture
+  - - '1240'
+    - '200100'
+    - Communication and Media Studies
+  - - '1241'
+    - '200101'
+    - Communication Studies
+  - - '1242'
+    - '200102'
+    - Communication Technology and Digital Media Studies
+  - - '1243'
+    - '200103'
+    - International and Development Communication
+  - - '1244'
+    - '200104'
+    - Media Studies
+  - - '1245'
+    - '200105'
+    - Organisational, Interpersonal and Intercultural Communication
+  - - '1246'
+    - '200199'
+    - Communication and Media Studies Not Elsewhere Classified
+  - - '1247'
+    - '200200'
+    - Cultural Studies
+  - - '1248'
+    - '200201'
+    - Aboriginal and Torres Strait Islander Cultural Studies
+  - - '1249'
+    - '200202'
+    - Asian Cultural Studies
+  - - '1250'
+    - '200203'
+    - Consumption and Everyday Life
+  - - '1251'
+    - '200204'
+    - Cultural Theory
+  - - '1252'
+    - '200205'
+    - Culture, Gender, Sexuality
+  - - '1253'
+    - '200206'
+    - Globalisation and Culture
+  - - '1254'
+    - '200207'
+    - Maori Cultural Studies
+  - - '1255'
+    - '200208'
+    - Migrant Cultural Studies
+  - - '1256'
+    - '200209'
+    - Multicultural, Intercultural and Cross-Cultural Studies
+  - - '1257'
+    - '200210'
+    - Pacific Cultural Studies
+  - - '1258'
+    - '200211'
+    - Postcolonial Studies
+  - - '1259'
+    - '200212'
+    - Screen and Media Culture
+  - - '1260'
+    - '200299'
+    - Cultural Studies Not Elsewhere Classified
+  - - '1261'
+    - '200300'
+    - Language Studies
+  - - '1262'
+    - '200301'
+    - Early English Languages
+  - - '1263'
+    - '200302'
+    - English Language
+  - - '1264'
+    - '200303'
+    - English as a Second Language
+  - - '1265'
+    - '200304'
+    - Central and Eastern European Languages (Incl. Russian)
+  - - '1266'
+    - '200305'
+    - Latin and Classical Greek Languages
+  - - '1267'
+    - '200306'
+    - French Language
+  - - '1268'
+    - '200307'
+    - German Language
+  - - '1269'
+    - '200308'
+    - Iberian Languages
+  - - '1270'
+    - '200309'
+    - Italian Language
+  - - '1271'
+    - '200310'
+    - Other European Languages
+  - - '1272'
+    - '200311'
+    - Chinese Languages
+  - - '1273'
+    - '200312'
+    - Japanese Language
+  - - '1274'
+    - '200313'
+    - Indonesian Languages
+  - - '1275'
+    - '200314'
+    - South-East Asian Languages (Excl. Indonesian)
+  - - '1276'
+    - '200315'
+    - Indian Languages
+  - - '1277'
+    - '200316'
+    - Korean Language
+  - - '1278'
+    - '200317'
+    - Other Asian Languages (Excl. South-East Asian)
+  - - '1279'
+    - '200318'
+    - Middle Eastern Languages
+  - - '1280'
+    - '200319'
+    - Aboriginal and Torres Strait Islander Languages
+  - - '1281'
+    - '200320'
+    - Pacific Languages
+  - - '1282'
+    - '200321'
+    - Te Reo Maori (Maori Language)
+  - - '1283'
+    - '200322'
+    - Comparative Language Studies
+  - - '1284'
+    - '200323'
+    - Translation and Interpretation Studies
+  - - '1285'
+    - '200399'
+    - Language Studies Not Elsewhere Classified
+  - - '1286'
+    - '200400'
+    - Linguistics
+  - - '1287'
+    - '200401'
+    - Applied Linguistics and Educational Linguistics
+  - - '1288'
+    - '200402'
+    - Computational Linguistics
+  - - '1289'
+    - '200403'
+    - Discourse and Pragmatics
+  - - '1290'
+    - '200404'
+    - Laboratory Phonetics and Speech Science
+  - - '1291'
+    - '200405'
+    - Language in Culture and Society (Sociolinguistics)
+  - - '1292'
+    - '200406'
+    - Language in Time and Space (Incl. Historical Linguistics, Dialectology)
+  - - '1293'
+    - '200407'
+    - Lexicography
+  - - '1294'
+    - '200408'
+    - Linguistic Structures (Incl. Grammar, Phonology, Lexicon, Semantics)
+  - - '1295'
+    - '200499'
+    - Linguistics Not Elsewhere Classified
+  - - '1296'
+    - '200500'
+    - Literary Studies
+  - - '1297'
+    - '200501'
+    - Aboriginal and Torres Strait Islander Literature
+  - - '1298'
+    - '200502'
+    - ! "Australian Literature (Excl. Aboriginal and Torres Strait Islander\n Literature)"
+  - - '1299'
+    - '200503'
+    - British and Irish Literature
+  - - '1300'
+    - '200504'
+    - Maori Literature
+  - - '1301'
+    - '200505'
+    - New Zealand Literature (Excl. Maori Literature)
+  - - '1302'
+    - '200506'
+    - North American Literature
+  - - '1303'
+    - '200507'
+    - Pacific Literature
+  - - '1304'
+    - '200508'
+    - Other Literatures in English
+  - - '1305'
+    - '200509'
+    - Central and Eastern European Literature (Incl. Russian)
+  - - '1306'
+    - '200510'
+    - Latin and Classical Greek Literature
+  - - '1307'
+    - '200511'
+    - Literature in French
+  - - '1308'
+    - '200512'
+    - Literature in German
+  - - '1309'
+    - '200513'
+    - Literature in Italian
+  - - '1310'
+    - '200514'
+    - Literature in Spanish and Portuguese
+  - - '1311'
+    - '200515'
+    - Other European Literature
+  - - '1312'
+    - '200516'
+    - Indonesian Literature
+  - - '1313'
+    - '200517'
+    - Literature in Chinese
+  - - '1314'
+    - '200518'
+    - Literature in Japanese
+  - - '1315'
+    - '200519'
+    - South-East Asian Literature (Excl. Indonesian)
+  - - '1316'
+    - '200520'
+    - Indian Literature
+  - - '1317'
+    - '200521'
+    - Korean Literature
+  - - '1318'
+    - '200522'
+    - Other Asian Literature (Excl. South-East Asian)
+  - - '1319'
+    - '200523'
+    - Middle Eastern Literature
+  - - '1320'
+    - '200524'
+    - Comparative Literature Studies
+  - - '1321'
+    - '200525'
+    - Literary Theory
+  - - '1322'
+    - '200526'
+    - Stylistics and Textual Analysis
+  - - '1323'
+    - '200599'
+    - Literary Studies Not Elsewhere Classified
+  - - '1324'
+    - '209900'
+    - Other Language, Communication and Culture
+  - - '1325'
+    - '209999'
+    - Language, Communication and Culture Not Elsewhere Classified
+  - - '1326'
+    - '210000'
+    - History and Archaeology
+  - - '1327'
+    - '210100'
+    - Archaeology
+  - - '1328'
+    - '210101'
+    - Aboriginal and Torres Strait Islander Archaeology
+  - - '1329'
+    - '210102'
+    - Archaeological Science
+  - - '1330'
+    - '210103'
+    - Archaeology of Asia, Africa and the Americas
+  - - '1331'
+    - '210104'
+    - Archaeology of Australia (Excl. Aboriginal and Torres Strait Islander)
+  - - '1332'
+    - '210105'
+    - Archaeology of Europe, the Mediterranean and the Levant
+  - - '1333'
+    - '210106'
+    - Archaeology of New Guinea and Pacific Islands (Excl. New Zealand)
+  - - '1334'
+    - '210107'
+    - Archaeology of New Zealand (Excl. Maori)
+  - - '1335'
+    - '210108'
+    - Historical Archaeology (Incl. Industrial Archaeology)
+  - - '1336'
+    - '210109'
+    - Maori Archaeology
+  - - '1337'
+    - '210110'
+    - Maritime Archaeology
+  - - '1338'
+    - '210199'
+    - Archaeology Not Elsewhere Classified
+  - - '1339'
+    - '210200'
+    - Curatorial and Related Studies
+  - - '1340'
+    - '210201'
+    - Archival, Repository and Related Studies
+  - - '1341'
+    - '210202'
+    - Heritage and Cultural Conservation
+  - - '1342'
+    - '210203'
+    - Materials Conservation
+  - - '1343'
+    - '210204'
+    - Museum Studies
+  - - '1344'
+    - '210299'
+    - Curatorial and Related Studies Not Elsewhere Classified
+  - - '1345'
+    - '210300'
+    - Historical Studies
+  - - '1346'
+    - '210301'
+    - Aboriginal and Torres Strait Islander History
+  - - '1347'
+    - '210302'
+    - Asian History
+  - - '1348'
+    - '210303'
+    - ! "Australian History (Excl. Aboriginal and Torres Strait Islander\n History)"
+  - - '1349'
+    - '210304'
+    - Biography
+  - - '1350'
+    - '210305'
+    - British History
+  - - '1351'
+    - '210306'
+    - Classical Greek and Roman History
+  - - '1352'
+    - '210307'
+    - European History (Excl. British, Classical Greek and Roman)
+  - - '1353'
+    - '210308'
+    - Latin American History
+  - - '1354'
+    - '210309'
+    - Maori History
+  - - '1355'
+    - '210310'
+    - Middle Eastern and African History
+  - - '1356'
+    - '210311'
+    - New Zealand History
+  - - '1357'
+    - '210312'
+    - North American History
+  - - '1358'
+    - '210313'
+    - Pacific History (Excl. New Zealand and Maori)
+  - - '1359'
+    - '210399'
+    - Historical Studies Not Elsewhere Classified
+  - - '1360'
+    - '219900'
+    - Other History and Archaeology
+  - - '1361'
+    - '219999'
+    - History and Archaeology Not Elsewhere Classified
+  - - '1362'
+    - '220000'
+    - Philosophy and Religious Studies
+  - - '1363'
+    - '220100'
+    - Applied Ethics
+  - - '1364'
+    - '220101'
+    - Bioethics (Human and Animal)
+  - - '1365'
+    - '220102'
+    - Business Ethics
+  - - '1366'
+    - '220103'
+    - Ethical Use of New Technology (E.G. Nanotechnology, Biotechnology)
+  - - '1367'
+    - '220104'
+    - Human Rights and Justice Issues
+  - - '1368'
+    - '220105'
+    - Legal Ethics
+  - - '1369'
+    - '220106'
+    - Medical Ethics
+  - - '1370'
+    - '220107'
+    - Professional Ethics (Incl. Police and Research Ethics)
+  - - '1371'
+    - '220199'
+    - Applied Ethics Not Elsewhere Classified
+  - - '1372'
+    - '220200'
+    - History and Philosophy of Specific Fields
+  - - '1373'
+    - '220201'
+    - Business and Labour History
+  - - '1374'
+    - '220202'
+    - History and Philosophy of Education
+  - - '1375'
+    - '220203'
+    - History and Philosophy of Engineering and Technology
+  - - '1376'
+    - '220204'
+    - History and Philosophy of Law and Justice
+  - - '1377'
+    - '220205'
+    - History and Philosophy of Medicine
+  - - '1378'
+    - '220206'
+    - ! "History and Philosophy of Science (Incl. Non-Historical Philosophy\n of Science)"
+  - - '1379'
+    - '220207'
+    - History and Philosophy of the Humanities
+  - - '1380'
+    - '220208'
+    - History and Philosophy of the Social Sciences
+  - - '1381'
+    - '220209'
+    - History of Ideas
+  - - '1382'
+    - '220210'
+    - History of Philosophy
+  - - '1383'
+    - '220299'
+    - History and Philosophy of Specific Fields Not Elsewhere Classified
+  - - '1384'
+    - '220300'
+    - Philosophy
+  - - '1385'
+    - '220301'
+    - Aesthetics
+  - - '1386'
+    - '220302'
+    - Decision Theory
+  - - '1387'
+    - '220303'
+    - Environmental Philosophy
+  - - '1388'
+    - '220304'
+    - Epistemology
+  - - '1389'
+    - '220305'
+    - Ethical Theory
+  - - '1390'
+    - '220306'
+    - Feminist Theory
+  - - '1391'
+    - '220307'
+    - Hermeneutic and Critical Theory
+  - - '1392'
+    - '220308'
+    - Logic
+  - - '1393'
+    - '220309'
+    - Metaphysics
+  - - '1394'
+    - '220310'
+    - Phenomenology
+  - - '1395'
+    - '220311'
+    - ! "Philosophical Psychology (Incl. Moral Psychology and Philosophy\n of Action)"
+  - - '1396'
+    - '220312'
+    - Philosophy of Cognition
+  - - '1397'
+    - '220313'
+    - Philosophy of Language
+  - - '1398'
+    - '220314'
+    - Philosophy of Mind (Excl. Cognition)
+  - - '1399'
+    - '220315'
+    - Philosophy of Religion
+  - - '1400'
+    - '220316'
+    - Philosophy of Specific Cultures (Incl. Comparative Philosophy)
+  - - '1401'
+    - '220317'
+    - Poststructuralism
+  - - '1402'
+    - '220318'
+    - Psychoanalytic Philosophy
+  - - '1403'
+    - '220319'
+    - Social Philosophy
+  - - '1404'
+    - '220399'
+    - Philosophy Not Elsewhere Classified
+  - - '1405'
+    - '220400'
+    - Religion and Religious Traditions
+  - - '1406'
+    - '220401'
+    - Christian Studies (Incl. Biblical Studies and Church History)
+  - - '1407'
+    - '220402'
+    - Comparative Religious Studies
+  - - '1408'
+    - '220403'
+    - Islamic Studies
+  - - '1409'
+    - '220404'
+    - Jewish Studies
+  - - '1410'
+    - '220405'
+    - Religion and Society
+  - - '1411'
+    - '220406'
+    - Studies in Eastern Religious Traditions
+  - - '1412'
+    - '220407'
+    - ! "Studies in Religious Traditions (Excl. Eastern, Jewish, Christian and\n Islamic
+      Traditions)"
+  - - '1413'
+    - '220499'
+    - Religion and Religious Studies Not Elsewhere Classified
+  - - '1414'
+    - '229900'
+    - Other Philosophy and Religious Studies
+  - - '1415'
+    - '229999'
+    - Philosophy and Religious Studies Not Elsewhere Classified
 
 ---
 output_collections:
