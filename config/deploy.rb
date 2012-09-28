@@ -136,6 +136,7 @@ namespace :deploy do
   task :populate, :roles => :db do
     generate_populate_yml
     run("cd #{current_path} && rake db:populate", :env => {'RAILS_ENV' => "#{stage}"})
+    run("cd #{current_path}/db && psql -U ap11 ap11 < create_research_subject_code.sql")
   end
 
   # Seed the db
