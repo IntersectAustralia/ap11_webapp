@@ -3,9 +3,9 @@
 %table{:class => "table table-striped"}
   %thead
     %tr
-      %th Title
-      %th Date
-      %th Owner
+      %th= sortable_column "Title"
+      %th= sortable_column "Date"
+      %th= sortable_column "Owner", :column => "user_id"
       %th
       %th
       %th

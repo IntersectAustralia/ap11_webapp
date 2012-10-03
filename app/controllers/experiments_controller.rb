@@ -4,8 +4,12 @@ class ExperimentsController < ApplicationController
   before_filter :authenticate_user!
   load_and_authorize_resource
 
+  handles_sortable_columns
+
   def index
-    @experiments = Experiment.all
+    #@experiments = Experiment.all
+    order = sortable_column_order
+    @experiments = Experiment.order(order)
   end
 
   def show
@@ -62,6 +66,6 @@ class ExperimentsController < ApplicationController
   private
 
   def load_static_data
-    @users = User.all(:order => :id)
+    @users = User.approved
   end
 end
