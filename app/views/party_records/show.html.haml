@@ -13,11 +13,11 @@
   %tr
     %th Description
     %th.table-value
-      = @party_record.description
+      = @party_record.description.html_safe
   %tr
     %th Address
     %th.table-value
-      = @party_record.address
+      = @party_record.address.html_safe
   %tr
     %th URL
     %th.table-value
