@@ -7,9 +7,8 @@ class ExperimentsController < ApplicationController
   handles_sortable_columns
 
   def index
-    #@experiments = Experiment.all
     order = sortable_column_order
-    @experiments = Experiment.order(order)
+    @experiments = Experiment.paginate(:page => params[:page], :per_page => 25).order(order)
   end
 
   def show

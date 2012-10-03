@@ -1,5 +1,7 @@
 -title  'Listing experiments'
-
+%a{:class => "btn btn-primary btn-right", :href => new_experiment_path, :value => "New Experiment"}
+  %i{:class => "icon-file icon-white"}
+  New Experiment
 %table{:class => "table table-striped"}
   %thead
     %tr
@@ -30,7 +32,7 @@
             %a.btn{"data-dismiss" => "modal", :href => '#'} Close
             %a.btn.btn-danger{:href => '/experiments/' + experiment.id.to_s, "data-method" => "delete", :id => "form_delete"} Delete
 %br
-
-%a{:class => "btn btn-primary", :href => new_experiment_path, :value => "New Experiment"}
+= page_navigation_links(@experiments)
+%a{:class => "btn btn-primary btn-right", :href => new_experiment_path, :value => "New Experiment"}
   %i{:class => "icon-file icon-white"}
   New Experiment
