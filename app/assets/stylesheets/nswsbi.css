@@ -245,7 +245,7 @@ ul {
 }
 li {
     list-style-type: disc;
-    padding-left: 5px;
+    /*padding-left: 5px;*/
 }
 table tr.even {
     background-color: #EEFEF7;

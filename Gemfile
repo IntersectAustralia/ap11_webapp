@@ -75,3 +75,4 @@ gem "paperclip"
 gem 'ckeditor', '3.7.2'
 gem 'yaml_db'
 gem 'select2-rails'
+gem 'will_paginate', '~> 3.0'

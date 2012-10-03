@@ -5,7 +5,7 @@ class PartyRecordsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @party_records = PartyRecord.all
+    @party_records = PartyRecord.paginate(:page => params[:page], :per_page => 25).order(:abbreviation)
   end
 
   def new

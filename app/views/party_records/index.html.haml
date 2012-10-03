@@ -28,6 +28,7 @@
             %a.btn{"data-dismiss" => "modal", :href => '#'} Close
             %a.btn.btn-danger{:href => '/party_records/' + record.id.to_s, "data-method" => "delete"} Delete
 %br
+= page_navigation_links(@party_records)
 %br
 
 %a{:class => "btn btn-primary", :href => new_party_record_path}
