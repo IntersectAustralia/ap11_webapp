@@ -7,8 +7,15 @@ class ExperimentsController < ApplicationController
   handles_sortable_columns
 
   def index
-    order = sortable_column_order
-    @experiments = Experiment.paginate(:page => params[:page], :per_page => 25).order(order)
+    order = sortable_column_order do |column, direction|
+      case column
+        when "user_id"
+          "users.first_name #{direction}, users.last_name"
+        else
+          "#{column} #{direction}"
+      end
+    end
+    @experiments = Experiment.paginate(:page => params[:page], :per_page => 25).joins("INNER JOIN users ON experiments.user_id = users.id").order(order)
   end
 
   def show
