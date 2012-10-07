@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20120921002656) do
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
 
   create_table "experiments", :force => true do |t|
-    t.string   "title"
+    t.text     "title"
     t.date     "date"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

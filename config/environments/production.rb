@@ -58,7 +58,7 @@ Ap11::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
 
 
-   Enable threaded mode
+  # Enable threaded mode
   # config.threadsafe!
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
