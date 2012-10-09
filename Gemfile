@@ -77,3 +77,4 @@ gem 'yaml_db'
 gem 'select2-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'handles_sortable_columns'
+gem "oai_repository"
