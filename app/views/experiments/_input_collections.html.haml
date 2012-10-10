@@ -11,7 +11,7 @@
   - @input_collections.each do |collection|
     %tr
       %td= collection.name
-      %td= collection.party_record.full_name
+      %td= collection.party_record.full_name unless collection.party_record.blank?
       %td
         %div= collection.for_code1
         - unless collection.for_code2.empty?

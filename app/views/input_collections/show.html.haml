@@ -30,7 +30,8 @@
   %tr
     %th Party
     %th.table-value
-      = @input_collection.party_record.full_name
+      - unless @input_collection.party_record.empty?
+        = @input_collection.party_record.full_name
   %tr
     %th FOR code
     %th.table-value
