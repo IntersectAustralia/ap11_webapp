@@ -18,7 +18,10 @@
     %th Input Collections
     %th.table-value
       - @input_collections.each do |input|
-        %div= link_to input.name, experiment_input_collection_path(@experiment, input)
+        %div.form-inline
+          = link_to input.name, experiment_input_collection_path(@experiment, input)
+          - unless input.party_record.blank?
+            = "- #{input.party_record.full_name}"
   %tr
     %th Output Collection
     %th.table-value
