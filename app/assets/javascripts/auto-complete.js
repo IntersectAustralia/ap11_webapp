@@ -41,4 +41,8 @@ $(function (){
         allowClear: true,
         minimumInputLength: 2
     });
+    $("#input_collection_party_record_id").select2({
+        placeholder: "Select a party record",
+        allowClear: true
+    })
 });

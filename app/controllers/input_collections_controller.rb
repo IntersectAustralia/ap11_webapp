@@ -61,5 +61,6 @@ class InputCollectionsController < ApplicationController
 
   def load_static_data
     @subject_codes = ResearchSubjectCode.all
+    @party_records = PartyRecord.all
   end
 end

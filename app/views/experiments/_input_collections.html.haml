@@ -2,9 +2,7 @@
   %thead
     %tr
       %th Name
-      %th License
-      %th Access Rights
-      %th Location
+      %th Party
       %th FOR Code(s)
       %th
       %th
@@ -13,9 +11,7 @@
   - @input_collections.each do |collection|
     %tr
       %td= collection.name
-      %td= collection.license
-      %td= collection.access_rights
-      %td= collection.location
+      %td= collection.party_record.full_name
       %td
         %div= collection.for_code1
         - unless collection.for_code2.empty?

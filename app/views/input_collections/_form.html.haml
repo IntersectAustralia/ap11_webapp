@@ -32,6 +32,10 @@
         Local
   .well{:id => 'collection_form'}
     .control-group
+      = f.label :party_record, "Owner of collection"
+      .controls
+        = f.collection_select :party_record_id, @party_records, :id, :full_name, :include_blank => ""
+    .control-group
       = f.label :license, "License", :class => "control-label"
       .controls
         = f.text_area :license, :rows => 5

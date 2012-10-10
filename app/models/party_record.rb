@@ -2,6 +2,8 @@ class PartyRecord < ActiveRecord::Base
   attr_accessible :abbreviation, :access_rights, :address, :description, :for_code1, :for_code2, :for_code3,
                   :full_name, :license, :url
 
+  has_many :input_collection, :foreign_key => 'party_record_id'
+
   before_validation :strip_whitespace
 
   validates_presence_of :abbreviation

@@ -1,8 +1,10 @@
 class InputCollection < ActiveRecord::Base
   attr_accessible :experiment_id, :name, :license, :access_rights, :location, :for_code1, :for_code2, :for_code3,
-                  :description, :website_name, :url, :collection_type
+                  :description, :website_name, :url, :collection_type, :party_record_id
 
   belongs_to :experiment
+  belongs_to :party_record
+
   before_validation :strip_whitespace
 
   validates_length_of :name, :maximum => 512
