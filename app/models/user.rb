@@ -142,10 +142,27 @@ class User < ActiveRecord::Base
     "#{first_name} #{last_name}".strip
   end
 
+  #Required by OAI Repository
+  def oai_dc_identifier
+    view_url
+  end
+
+  def oai_dc_title
+    title
+  end
+
+  def oai_dc_description
+    description
+  end
+
   private
 
   def initialize_status
     self.status = "U" unless self.status
   end
 
+  def view_url
+    url_opts = ActionController::Base.default_url_options
+    Rails.application.routes.url_helpers.collection_url(self, url_opts)
+  end
 end
