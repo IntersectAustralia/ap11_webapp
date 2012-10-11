@@ -1,5 +1,6 @@
 Ap11::Application.routes.draw do
   mount Ckeditor::Engine => "/ckeditor"
+  mount OaiRepository::Engine => "/oai_repository"
 
   devise_for :users, controllers: {registrations: "user_registers", passwords: "user_passwords"}
 

@@ -67,6 +67,7 @@ OaiRepository.setup do |config|
   #   }
   # ]
   #
+  #
   config.sets = [
     {
         spec: 'class:party',
@@ -80,11 +81,9 @@ OaiRepository.setup do |config|
   # (and those formats are subclasses of OAI::Provider::Metadata.Format) then
   # you can specify them here. E.g.
   #
-  # require 'rifcs_format'
-  #
-  # config.additional_formats = [
-  #   OAI::Provider::Metadata::RIFCS
-  # ]
-  config.additional_formats = []
+  require 'rifcs_format'
 
+  config.additional_formats = [
+     OAI::Provider::Metadata::RIFCS
+  ]
 end

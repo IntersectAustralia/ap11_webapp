@@ -1,6 +1,7 @@
 Ap11::Application.configure do
 
   config.action_mailer.default_url_options = { :host => 'gsw1-ap11-qa-vm.intersect.org.au' }
+  config.action_controller.default_url_options = { host: 'gsw1-ap11-qa-vm.intersect.org.au' }
 
   # Settings specified here will take precedence over those in config/application.rb
 
