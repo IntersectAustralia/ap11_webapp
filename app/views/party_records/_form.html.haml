@@ -28,15 +28,15 @@
   .control-group
     = f.label :for_code1, "FOR code 1 (optional)", :class => "control-label"
     .controls
-      = f.collection_select :for_code1, @subject_codes, :display_name, :display_name, :include_blank => "None"
+      = f.collection_select :for_code1, @subject_codes, :display_name, :display_name, :include_blank => ""
   .control-group
     = f.label :for_code2, "FOR code 2 (optional)", :class => "control-label"
     .controls
-      = f.collection_select :for_code2, @subject_codes, :display_name, :display_name, :include_blank => "None"
+      = f.collection_select :for_code2, @subject_codes, :display_name, :display_name, :include_blank => ""
   .control-group
     = f.label :for_code3, "FOR code 3 (optional)", :class => "control-label"
     .controls
-      = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => "None"
+      = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => ""
   .control-group
     = f.label :access_rights, "Default access rights", :class => "control-label"
     .controls
