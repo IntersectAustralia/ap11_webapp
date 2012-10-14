@@ -23,8 +23,9 @@ $navbarBackgroundHighlight: #fff;
 .controls textarea { width: 100%; }
 .select2-container, .select2-drop, .select2-search, .select2-search input{ width: 350px; }
 .pagination { margin-top: 0; margin-bottom: 0; }
-#page_footer{ position: absolute; bottom: 0; margin-left: auto; margin-right: auto;}
+#page_footer{ position: absolute; bottom: 0; margin-left: auto; margin-right: auto; }
 .btn-right { float: right }
 .banner-label { color: white; margin-left: 8px; text-align: left; }
-.nav { margin-bottom: 0; margin-right: 8px;}
+.nav { margin-bottom: 0; }
 .link a { color: black !important; text-align: left;}
+.dropdown-toggle { text-align: right; margin-right: 8px; }
