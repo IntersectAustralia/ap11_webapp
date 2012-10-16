@@ -37,7 +37,7 @@
               Are you sure you want to delete party record #{record.abbreviation}?
             .modal-footer
               %a.btn{"data-dismiss" => "modal", :href => '#'} Close
-              %a.btn.btn-danger{:href => '/party_records/' + record.id.to_s, "data-method" => "delete"} Delete
+              %a.btn.btn-danger{:href => '/party_records/' + record.id.to_s, "data-method" => "delete", :id => "form_delete"} Delete
 %br
 = page_navigation_links(@party_records)
 
