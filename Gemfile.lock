@@ -227,6 +227,8 @@ GEM
       ruby2ruby (~> 1.2.5)
       ruby_parser (~> 2.0)
       sexp_processor (~> 3.0)
+    rif-cs (1.2.2)
+      nokogiri
     ripper_ruby_parser (0.0.8)
       sexp_processor (~> 3.0)
     roodi (2.1.0)
@@ -330,6 +332,7 @@ DEPENDENCIES
   paperclip
   pg
   rails (= 3.2.8)
+  rif-cs
   rspec-rails
   rvm-capistrano
   sass-rails (~> 3.2.3)

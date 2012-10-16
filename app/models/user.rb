@@ -152,10 +152,9 @@ class User < ActiveRecord::Base
     ]
   end
 
-
   #Required by OAI Repository
   def party_group
-    'party'
+    'University of New South Wales'
   end
 
   def party_key
@@ -177,24 +176,24 @@ class User < ActiveRecord::Base
 
   def party_names
     [
-        {
-            xmllang: 'en',
-            type: 'primary',
-            name_parts: [
-                {
-                    value: title,
-                    type: 'title'
-                },
-                {
-                    value: first_name,
-                    type: 'given'
-                },
-                {
-                    value: last_name,
-                    type: 'family'
-                }
-            ]
-        }
+      {
+        xmllang: 'en',
+        type: 'primary',
+        name_parts: [
+          {
+            value: title,
+            type: 'title'
+          },
+          {
+            value: first_name,
+            type: 'given'
+          },
+          {
+            value: last_name,
+            type: 'family'
+          }
+        ]
+      }
     ]
   end
 
@@ -219,15 +218,15 @@ class User < ActiveRecord::Base
               }
           ],
           physical: [
-            {
-              type: 'streetAddress',
-              address_parts: [
-                {
-                  type: 'addressLine',
-                  value: ADDRESS
-                }
-              ]
-            }
+              {
+                type: 'streetAddress',
+                address_parts: [
+                  {
+                    type: 'addressLine',
+                    value: ADDRESS
+                  }
+                ]
+              }
             ]
           }
         ]
