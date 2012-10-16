@@ -39,7 +39,7 @@ OaiRepository.setup do |config|
   # This is your repository administrator's email address.
   # This will appear in the information returned from an "Identify" call to
   # your repository
-  config.admin_email = 'root@localhost'  #set at APP_CONFIG
+  config.admin_email = APP_CONFIG['oai_admin_email']
 
   # The number of records shown at a time (when doing a ListRecords)
   config.limit = 100
@@ -49,7 +49,7 @@ OaiRepository.setup do |config|
   # to be a ActiveRecord model class, but it should act like one.
   #
   # You must supply at least one model.
-  config.models = [ InputCollection, OutputCollection, User ]
+  config.models = [User] #TODO: InputCollection, OutputCollection
 
   # List the sets (and the ActiveRecord model they belong to). E.g.
   #

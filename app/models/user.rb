@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+  include RIFCS::Party
+
+  DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
+  ADDRESS = 'SomeBuildingHere<br />University of New South Wales<br />NSW 2109<br />Australia'
   # Include devise modules
   devise :database_authenticatable, :registerable, :lockable, :recoverable, :trackable, :validatable, :timeoutable
 
@@ -142,13 +146,116 @@ class User < ActiveRecord::Base
     "#{first_name} #{last_name}".strip
   end
 
+  def sets
+    [
+      OAI::Set.new({:name => 'Parties', :spec => 'class:party'})
+    ]
+  end
+
+
   #Required by OAI Repository
-  def oai_dc_identifier
+  def party_group
+    'party'
+  end
+
+  def party_key
     view_url
   end
 
-  def oai_dc_title
-    title
+  def party_originating_source
+    url_opts = ActionController::Base.default_url_options
+    Rails.application.routes.url_helpers.users_url(url_opts)
+  end
+
+  def party_date_modified
+    updated_at.strftime(DATE_FORMAT)
+  end
+
+  def party_type
+    'person'
+  end
+
+  def party_names
+    [
+        {
+            xmllang: 'en',
+            type: 'primary',
+            name_parts: [
+                {
+                    value: title,
+                    type: 'title'
+                },
+                {
+                    value: first_name,
+                    type: 'given'
+                },
+                {
+                    value: last_name,
+                    type: 'family'
+                }
+            ]
+        }
+    ]
+  end
+
+  def party_descriptions
+    [
+      {
+          value: "#{description}",
+          type: 'brief'
+      }
+    ]
+  end
+
+  def party_locations
+    [
+      {
+        addresses: [
+          {
+            electronic: [
+              {
+                type: 'url',
+                value: home_page,
+              }
+          ],
+          physical: [
+            {
+              type: 'streetAddress',
+              address_parts: [
+                {
+                  type: 'addressLine',
+                  value: ADDRESS
+                }
+              ]
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  end
+
+  def party_subjects
+    subjects = []
+    subjects.push(
+        {
+          value: subject_code(for_code1),
+          type: 'anzsrc-for'
+        }) unless for_code1.blank?
+    subjects.push(
+        {
+          value: subject_code(for_code2),
+          type: 'anzsrc-for'
+        }) unless for_code2.blank?
+    subjects.push(
+        {
+          value: subject_code(for_code3),
+          type: 'anzsrc-for'
+        }) unless for_code3.blank?
+  end
+
+  def oai_dc_identifier
+    view_url
   end
 
   def oai_dc_description
@@ -163,6 +270,10 @@ class User < ActiveRecord::Base
 
   def view_url
     url_opts = ActionController::Base.default_url_options
-    Rails.application.routes.url_helpers.collection_url(self, url_opts)
+    Rails.application.routes.url_helpers.user_url(self, url_opts)
+  end
+
+  def subject_code(for_code)
+    for_code.to_s.split(' - ')[0]
   end
 end
