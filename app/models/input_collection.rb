@@ -1,4 +1,8 @@
 class InputCollection < ActiveRecord::Base
+  include RIFCS::Collection
+
+  DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
+
   attr_accessible :experiment_id, :name, :license, :access_rights, :location, :for_code1, :for_code2, :for_code3,
                   :description, :website_name, :url, :collection_type, :party_record_id
 
@@ -30,9 +34,146 @@ class InputCollection < ActiveRecord::Base
     !url.blank?
   end
 
+  #Required for OAI repository
+  def collection_group
+    'University of New South Wales'
+  end
+
+  def collection_key
+    view_url
+  end
+
+  def collection_originating_source
+    url_opts = ActionController::Base.default_url_options
+    Rails.application.routes.url_helpers.experiment_input_collections_url(experiment_id, url_opts)
+  end
+
+  def collection_date_accessioned
+    created_at.strftime(DATE_FORMAT)
+  end
+
+  def collection_date_modified
+    updated_at.strftime(DATE_FORMAT)
+  end
+
+  def collection_type
+    'dataset'
+  end
+
+  def collection_descriptions
+    [
+      {
+        value: description,
+        type: 'brief'
+      }
+    ]
+  end
+
+  def collection_names
+    [
+      {
+        xmllang: 'en',
+        type: 'primary',
+        name_parts: [
+          {
+            value: name
+          }
+        ]
+      }
+    ]
+  end
+
+  # TODO: Check if local or remote for this method
+  def collection_rights
+    [
+      {
+        licence: {
+          value: license,
+          type: 'Unknown/Other'
+        },
+        access_rights: {
+            value: access_rights
+        }
+      }
+    ]
+  end
+
+  def collection_subjects
+    subjects = []
+    subjects.push(
+        {
+            value: subject_code(for_code1),
+            type: 'anzsrc-for'
+        }) unless for_code1.blank?
+    subjects.push(
+        {
+            value: subject_code(for_code2),
+            type: 'anzsrc-for'
+        }) unless for_code2.blank?
+    subjects.push(
+        {
+            value: subject_code(for_code3),
+            type: 'anzsrc-for'
+        }) unless for_code3.blank?
+  end
+
+  def collection_locations
+    [
+      {
+        addresses: [
+          {
+            electronic: [
+              {
+                type: 'url',
+                value: url,
+              }
+            ],
+            physical: [
+              {
+                type: 'streetAddress',
+                address_parts: [
+                  {
+                    type: 'addressLine',
+                    value: location
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  end
+
+  def collection_related_objects
+    {
+      is_owned_by: ::PartyRecord.all.map { |party| { key:  party.oai_dc_identifier } },
+      is_managed_by: ::PartyRecord.all.map { |party| { key: party.oai_dc_identifier} },
+    }
+  end
+
+  def oai_dc_identifier
+    view_url
+  end
+
+  def oai_dc_description
+    description
+  end
+
   protected
 
   def strip_whitespace
     self.name.strip! unless name.blank?
+  end
+
+  private
+
+  def view_url
+    url_opts = ActionController::Base.default_url_options
+    Rails.application.routes.url_helpers.experiment_input_collection_url(experiment_id, self, url_opts)
+  end
+
+  def subject_code(for_code)
+    for_code.to_s.split(' - ')[0]
   end
 end

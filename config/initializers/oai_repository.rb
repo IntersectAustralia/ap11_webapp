@@ -49,7 +49,7 @@ OaiRepository.setup do |config|
   # to be a ActiveRecord model class, but it should act like one.
   #
   # You must supply at least one model.
-  config.models = [User, PartyRecord] #TODO: InputCollection, OutputCollection
+  config.models = [User, PartyRecord, InputCollection, OutputCollection]
 
   # List the sets (and the ActiveRecord model they belong to). E.g.
   #
@@ -78,6 +78,16 @@ OaiRepository.setup do |config|
         spec: 'class:party',
         name: 'Party Records',
         model: PartyRecord
+    },
+    {
+        spec: 'class:collection',
+        name: 'Input Collections',
+        model: InputCollection
+    },
+    {
+        spec: 'class:collection',
+        name: 'Output Collections',
+        model: OutputCollection
     }
   ]
 
