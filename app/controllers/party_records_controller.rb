@@ -33,7 +33,7 @@ class PartyRecordsController < ApplicationController
     @party_record = PartyRecord.find(params[:id])
     respond_to do |format|
       if @party_record.update_attributes(params[:party_record])
-        format.html { redirect_to party_records_path, notice: 'Party Record was successfully updated.' }
+        format.html { redirect_to party_records_path, notice: 'Party record was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
