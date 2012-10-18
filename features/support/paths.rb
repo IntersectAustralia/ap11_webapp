@@ -50,6 +50,13 @@ module NavigationHelpers
     when /the create party record page/
       new_party_record_path
 
+    when /the OAI repository page/
+      root_path + 'oai_repository'
+
+    #TODO: form the repository urls under test conditions
+    when /^the OAI repository page for (.*)$/
+      root_path + 'oai_repository?verb=GetRecord&metadataPrefix=rif&identifier=http://localhost:3000/experiments/1/input_collections/' + InputCollection.where(:name => $1).first.id
+
 # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
