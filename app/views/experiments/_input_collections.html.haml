@@ -14,9 +14,9 @@
       %td= collection.party_record.full_name unless collection.party_record.blank?
       %td
         %div= collection.for_code1
-        - unless collection.for_code2.empty?
+        - unless collection.for_code2.nil?
           %div= collection.for_code2
-        - unless collection.for_code3.empty?
+        - unless collection.for_code3.nil?
           %div= collection.for_code3
       %td= link_to 'Show', experiment_input_collection_path(@experiment, collection)
       %td= link_to 'Edit', edit_experiment_input_collection_path(@experiment, collection)
@@ -31,4 +31,4 @@
             Are you sure you want to delete input collection #{collection.name}?
           .modal-footer
             %a.btn{"data-dismiss" => "modal", :href => '#'} Close
-            %a.btn.btn-danger{:href => '/experiments/' + @experiment.id.to_s + '/input_collections/' + collection.id.to_s, "data-method" => "delete"} Delete
+            %a.btn.btn-danger{:href => '/experiments/' + @experiment.id.to_s + '/input_collections/' + collection.id.to_s, "data-method" => "delete", :id => "form_delete"} Delete

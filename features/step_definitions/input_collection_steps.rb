@@ -12,3 +12,12 @@ end
 When /^I select collection type "(.*?)"$/ do |type|
   choose(type)
 end
+
+Given /^I have an input collection for experiment "([^"]*)"$/ do |title|
+  exp = Experiment.find_by_title(title)
+  FactoryGirl.create(:input_collection, :experiment => exp)
+end
+
+Given /^I delete the input collection/ do
+  click_link("form_delete")
+end
