@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20121010011730) do
     t.integer  "experiment_id"
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
-    t.string   "collection_type"
+    t.string   "collect_type"
     t.integer  "party_record_id"
   end
 

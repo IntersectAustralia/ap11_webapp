@@ -23,12 +23,12 @@
       .controls
         = f.collection_select :for_code3, @subject_codes, :display_name, :display_name, :include_blank => ""
     .control-group
-      = f.label :collection_type, "Collection type", :class => "control-label"
+      = f.label :collect_type, "Collection type", :class => "control-label"
       %label.radio
-        = f.radio_button :collection_type, "Remote", :class => "collection_type"
+        = f.radio_button :collect_type, "Remote", :class => "collection_type"
         Remote
       %label.radio
-        = f.radio_button :collection_type, "Local", :class => "collection_type"
+        = f.radio_button :collect_type, "Local", :class => "collection_type"
         Local
   .well{:id => 'collection_form'}
     .control-group

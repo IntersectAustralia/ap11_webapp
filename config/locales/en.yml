@@ -16,6 +16,7 @@ en:
         for_code2: "Field of Research code"
         for_code3: "Field of Research code"
       input_collection:
+        collect_type: "Collection type"
         for_code1: "Field of Research code"
         for_code2: "Field of Research code"
         for_code3: "Field of Research code"

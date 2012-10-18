@@ -2,9 +2,11 @@ class InputCollection < ActiveRecord::Base
   include RIFCS::Collection
 
   DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
+  REMOTE = "Remote"
+  LOCAL = "Local"
 
   attr_accessible :experiment_id, :name, :license, :access_rights, :location, :for_code1, :for_code2, :for_code3,
-                  :description, :website_name, :url, :collection_type, :party_record_id
+                  :description, :website_name, :url, :collect_type, :party_record_id
 
   belongs_to :experiment
   belongs_to :party_record
@@ -20,7 +22,7 @@ class InputCollection < ActiveRecord::Base
 
   validates_presence_of :name
   validates_presence_of :for_code1
-  validates_presence_of :collection_type
+  validates_presence_of :collect_type
   validates_presence_of :url, :if => :website_name_exists?
   validates_presence_of :website_name, :if => :url_exists?
 
@@ -83,19 +85,32 @@ class InputCollection < ActiveRecord::Base
     ]
   end
 
-  # TODO: Check if local or remote for this method
   def collection_rights
-    [
-      {
-        licence: {
-          value: license,
-          type: 'Unknown/Other'
-        },
-        access_rights: {
-            value: access_rights
-        }
-      }
-    ]
+    if collect_type.eql? REMOTE
+      [
+          {
+              licence: {
+                  value: license,
+                  type: 'Unknown/Other'
+              },
+              access_rights: {
+                  value: access_rights
+              }
+          }
+      ]
+    elsif collect_type.eql? LOCAL
+      [
+          {
+              licence: {
+                  value: OAI_CONFIG['license'],
+                  type: 'Unknown/Other'
+              },
+              access_rights: {
+                  value: OAI_CONFIG['access_rights']
+              }
+          }
+      ]
+    end
   end
 
   def collection_subjects
@@ -154,6 +169,10 @@ class InputCollection < ActiveRecord::Base
 
   def oai_dc_identifier
     view_url
+  end
+
+  def oai_dc_title
+    title
   end
 
   def oai_dc_description
