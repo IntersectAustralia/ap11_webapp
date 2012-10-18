@@ -171,10 +171,6 @@ class InputCollection < ActiveRecord::Base
     view_url
   end
 
-  def oai_dc_title
-    title
-  end
-
   def oai_dc_description
     description
   end
