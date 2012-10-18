@@ -1,0 +1,21 @@
+defaults: &defaults
+  access_rights: default_access_rights
+  license: default_license
+  location: default_location
+  website_name: default_website_name
+  website_url: default_website_url
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+qa:
+  <<: *defaults
+
+staging:
+  <<: *defaults
