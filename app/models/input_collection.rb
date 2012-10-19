@@ -133,6 +133,11 @@ class InputCollection < ActiveRecord::Base
   end
 
   def collection_locations
+    web_url = OAI_CONFIG['website_url']
+    if collect_type.eql? REMOTE
+      web_url = url
+    end
+
     [
       {
         addresses: [
@@ -140,7 +145,7 @@ class InputCollection < ActiveRecord::Base
             electronic: [
               {
                 type: 'url',
-                value: url,
+                value: web_url,
               }
             ],
             physical: [

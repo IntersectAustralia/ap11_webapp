@@ -59,7 +59,7 @@ class OutputCollection < ActiveRecord::Base
     [
         {
             value: description,
-            type: 'brief'
+            type: 'full'
         }
     ]
   end
@@ -134,6 +134,19 @@ class OutputCollection < ActiveRecord::Base
                         }
                     ]
                 }
+            ]
+        }
+    ]
+  end
+
+  def collection_related_info
+    [
+        {
+            key: "website",
+            identifier: [
+              {
+
+              }
             ]
         }
     ]
