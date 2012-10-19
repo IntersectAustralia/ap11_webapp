@@ -7,6 +7,7 @@ Feature: Harvesting OAI records
     Given I have an experiment "Proteome"
     And I have an input collection for experiment "Proteome"
 
+  @wip
   Scenario: Engine is mounted
     Given I am on the OAI repository page
     Then I should see "Value of the verb argument is not a legal OAI-PMH verb, the verb argument is missing, or the verb argument is repeated."
