@@ -7,6 +7,7 @@ class ExperimentsController < ApplicationController
   handles_sortable_columns
 
   def index
+    user_table = "INNER JOIN users ON experiments.user_id = users.id"
     order = sortable_column_order do |column, direction|
       case column
         when "user_id"
@@ -15,7 +16,7 @@ class ExperimentsController < ApplicationController
           "#{column} #{direction}"
       end
     end
-    @experiments = Experiment.paginate(:page => params[:page], :per_page => 25).joins("INNER JOIN users ON experiments.user_id = users.id").order(order)
+    @experiments = Experiment.paginate(:page => params[:page], :per_page => 25).joins(user_table).order(order)
   end
 
   def show
@@ -26,7 +27,6 @@ class ExperimentsController < ApplicationController
 
   def new
     @experiment = Experiment.new
-    @date = Date.current
   end
 
   def edit
