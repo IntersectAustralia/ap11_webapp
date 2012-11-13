@@ -37,6 +37,10 @@ class InputCollection < ActiveRecord::Base
   end
 
   #Required for OAI repository
+  def oai_published
+    published
+  end
+
   def collection_group
     'University of New South Wales'
   end

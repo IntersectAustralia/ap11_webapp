@@ -30,5 +30,8 @@
 
 .form-actions
   %a.btn.btn-primary{:href => edit_experiment_path(@experiment)} Edit Experiment
-  %a.btn.btn-danger.btn-right{:href => "#"} Publish
+  - if @experiment.published?
+    %a.btn.btn-danger.btn-right.disabled Publish
+  - else
+    %a.btn.btn-danger.btn-right{:href => "/publish/#{@experiment.id}"} Publish
   %a.btn{:href => experiments_path} Back

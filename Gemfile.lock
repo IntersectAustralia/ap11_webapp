@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/charles-shao/oai_repository.git
+  revision: f98dc4cb210b6b5987eeb4a3e21f12f902121f1e
+  specs:
+    oai_repository (0.9.0)
+      oai
+      rails (~> 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -106,7 +114,7 @@ GEM
       railties (>= 3.0.0)
     faraday (0.8.4)
       multipart-post (~> 1.1)
-    faraday_middleware (0.8.8)
+    faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
     ffi (1.1.5)
     flay (1.4.3)
@@ -175,9 +183,6 @@ GEM
       builder (>= 2.0.0)
       faraday
       faraday_middleware
-    oai_repository (0.9.0)
-      oai
-      rails (~> 3.1)
     orm_adapter (0.4.0)
     paperclip (3.1.4)
       activemodel (>= 3.0.0)
@@ -328,7 +333,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   metrical
-  oai_repository
+  oai_repository!
   paperclip
   pg
   rails (= 3.2.8)

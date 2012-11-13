@@ -10,6 +10,9 @@ Ap11::Application.routes.draw do
     put "/users/update_password", :to => "user_registers#update_password" #allow users to edit their own password
   end
 
+  get "/publish/:id", :to => "publish#view"
+  get "/publish/confirm/:id", :to => "publish#confirm"
+
   resources :users, :only => [:show] do
 
     collection do
