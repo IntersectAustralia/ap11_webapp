@@ -19,122 +19,130 @@
 
 %h4= "Input collections"
 %br
-- @input_collections.each do |collection|
-  %div.accordion{:id => "accordion-input"}
-    %div.accordion-group
-      %div.accordion-heading
-        %a.accordion-toggle{'data-toggle' => 'collapse', 'data-parent' => 'accordion-input', :href => "#collapse_inp_#{collection.id}"}
-          = "Input collection: #{collection.name}"
-      %div.accordion-body.collapse{:id => "collapse_inp_#{collection.id}"}
-        %div.accordion-inner
-          -# Content goes here
-          %table.table.table-striped
-            %thead
-              %th
-            %tbody
+- if @input_collections.blank?
+  %div None
+  %br
+- else
+  - @input_collections.each do |collection|
+    %div.accordion{:id => "accordion-input"}
+      %div.accordion-group
+        %div.accordion-heading
+          %a.accordion-toggle{'data-toggle' => 'collapse', 'data-parent' => 'accordion-input', :href => "#collapse_inp_#{collection.id}"}
+            = "Input collection: #{collection.name}"
+        %div.accordion-body.collapse{:id => "collapse_inp_#{collection.id}"}
+          %div.accordion-inner
+            -# Content goes here
+            %table.table.table-striped
+              %thead
+                %th
+              %tbody
+                %tr
               %tr
-            %tr
-              %th Name
-              %th.table-value
-                = collection.name
-            %tr
-              %th Description
-              %th.table-value
-                = collection.description.to_s.html_safe
-            %tr
-              %th License
-              %th.table-value
-                = collection.license
-            %tr
-              %th Access rights
-              %th.table-value
-                = collection.access_rights
-            %tr
-              %th Location
-              %th.table-value
-                = collection.location
-            %tr
-              %th Party
-              %th.table-value
-                - unless collection.party_record.nil?
-                  = collection.party_record.full_name
-            %tr
-              %th FOR code
-              %th.table-value
-                = collection.for_code1
-            %tr
-              %th FOR code
-              %th.table-value
-                = collection.for_code2
-            %tr
-              %th FOR code
-              %th.table-value
-                = collection.for_code3
-            %tr
-              %th Website name
-              %th.table-value
-                = collection.website_name
-            %tr
-              %th Website URL
-              %th.table-value
-                = collection.url
+                %th Name
+                %th.table-value
+                  = collection.name
+              %tr
+                %th Description
+                %th.table-value
+                  = collection.description.to_s.html_safe
+              %tr
+                %th License
+                %th.table-value
+                  = collection.license
+              %tr
+                %th Access rights
+                %th.table-value
+                  = collection.access_rights
+              %tr
+                %th Location
+                %th.table-value
+                  = collection.location
+              %tr
+                %th Party
+                %th.table-value
+                  - unless collection.party_record.nil?
+                    = collection.party_record.full_name
+              %tr
+                %th FOR code
+                %th.table-value
+                  = collection.for_code1
+              %tr
+                %th FOR code
+                %th.table-value
+                  = collection.for_code2
+              %tr
+                %th FOR code
+                %th.table-value
+                  = collection.for_code3
+              %tr
+                %th Website name
+                %th.table-value
+                  = collection.website_name
+              %tr
+                %th Website URL
+                %th.table-value
+                  = collection.url
 
 %h4= "Output collections"
 %br
-- @output_collections.each do |collection|
-  %div.accordion{:id => "accordion-output"}
-    %div.accordion-group
-      %div.accordion-heading
-        %a.accordion-toggle{'data-toggle' => 'collapse', 'data-parent' => 'accordion-output', :href => "#collapse_out_#{collection.id}"}
-          = "Output collection: #{collection.name}"
-      %div.accordion-body.collapse{:id => "collapse_out_#{collection.id}"}
-        %div.accordion-inner
-          -# Content goes here
-          %table.table.table-striped
-            %thead
-              %th
-            %tbody
+- if @output_collections.blank?
+  %div None
+  %br
+- else
+  - @output_collections.each do |collection|
+    %div.accordion{:id => "accordion-output"}
+      %div.accordion-group
+        %div.accordion-heading
+          %a.accordion-toggle{'data-toggle' => 'collapse', 'data-parent' => 'accordion-output', :href => "#collapse_out_#{collection.id}"}
+            = "Output collection: #{collection.name}"
+        %div.accordion-body.collapse{:id => "collapse_out_#{collection.id}"}
+          %div.accordion-inner
+            -# Content goes here
+            %table.table.table-striped
+              %thead
+                %th
+              %tbody
+                %tr
               %tr
-            %tr
-              %th Name
-              %th.table-value
-                = collection.name
-            %tr
-              %th Description
-              %th.table-value
-                = collection.description.to_s.html_safe
-            %tr
-              %th License
-              %th.table-value
-                = collection.license
-            %tr
-              %th Access rights
-              %th.table-value
-                = collection.access_rights
-            %tr
-              %th Location
-              %th.table-value
-                = collection.location
-            %tr
-              %th FOR code
-              %th.table-value
-                = collection.for_code1
-            %tr
-              %th FOR code
-              %th.table-value
-                = collection.for_code2
-            %tr
-              %th FOR code
-              %th.table-value
-                = collection.for_code3
-            %tr
-              %th Website name
-              %th.table-value
-                = collection.website_name
-            %tr
-              %th Website URL
-              %th.table-value
-                = collection.url
+                %th Name
+                %th.table-value
+                  = collection.name
+              %tr
+                %th Description
+                %th.table-value
+                  = collection.description.to_s.html_safe
+              %tr
+                %th License
+                %th.table-value
+                  = collection.license
+              %tr
+                %th Access rights
+                %th.table-value
+                  = collection.access_rights
+              %tr
+                %th Location
+                %th.table-value
+                  = collection.location
+              %tr
+                %th FOR code
+                %th.table-value
+                  = collection.for_code1
+              %tr
+                %th FOR code
+                %th.table-value
+                  = collection.for_code2
+              %tr
+                %th FOR code
+                %th.table-value
+                  = collection.for_code3
+              %tr
+                %th Website name
+                %th.table-value
+                  = collection.website_name
+              %tr
+                %th Website URL
+                %th.table-value
+                  = collection.url
 
 %div.n-alert
   %div
@@ -143,4 +151,4 @@
 
 .form-actions
   %a.btn.btn-primary{:href => "/publish/confirm/#{@experiment.id}"} Confirm
-  %a.btn{:href => experiment_path(@experiment)} Cancel
+  %a.btn{:href => "/publish/cancel/#{@experiment.id}"} Cancel
