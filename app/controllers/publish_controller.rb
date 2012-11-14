@@ -19,4 +19,9 @@ class PublishController < ApplicationController
     redirect_to(experiment, :alert => "Experiment has not been published")
   end
 
+  def unpublish
+    experiment = Experiment.find(params[:id])
+    experiment.unpublish
+    redirect_to(experiment, :notice => "Experiment has been unpublished from ANDS")
+  end
 end

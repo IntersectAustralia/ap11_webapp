@@ -13,7 +13,7 @@ Ap11::Application.routes.draw do
   get "/publish/:id", :to => "publish#view"
   get "/publish/confirm/:id", :to => "publish#confirm"
   get "/publish/cancel/:id", :to => "publish#cancel"
-
+  get "/unpublish/:id", :to => "publish#unpublish"
   resources :users, :only => [:show] do
 
     collection do

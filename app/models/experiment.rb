@@ -15,15 +15,25 @@ class Experiment < ActiveRecord::Base
   end
 
   def publish
-    self.published = true
+    set_publication(true)
+  end
+
+  def unpublish
+    set_publication(false)
+  end
+
+  private
+
+  def set_publication(published)
+    self.published = published
     input_collection = InputCollection.find_all_by_experiment_id(id)
     output_collection = OutputCollection.find_all_by_experiment_id(id)
     input_collection.each do |input|
-      input.published = true
+      input.published = published
       input.save!
     end
     output_collection.each do |output|
-      output.published = true
+      output.published = published
       output.save!
     end
     self.save!
