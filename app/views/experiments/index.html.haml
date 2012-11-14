@@ -8,6 +8,7 @@
       %th= sortable_column "Title"
       %th= sortable_column "Date"
       %th= sortable_column "Owner", :column => "user_id"
+      %th= "Published?"
       %th
       %th
       %th
@@ -19,12 +20,14 @@
       %td
       %td
       %td
+      %td
   -else
     - @experiments.each do |experiment|
       %tr
         %td= experiment.title
         %td= experiment.date
         %td= experiment.user.full_name
+        %td= experiment.display_published_simple
         %td= link_to 'Show', experiment
         %td= link_to 'Edit', edit_experiment_path(experiment)
         %td

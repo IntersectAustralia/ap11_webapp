@@ -14,6 +14,14 @@ class Experiment < ActiveRecord::Base
     exp.length >= 1
   end
 
+  def display_published_verbose
+    published ? "Published to ANDS" : "Not published to ANDS"
+  end
+
+  def display_published_simple
+    published ? "Yes" : "No"
+  end
+
   def publish
     set_publication(true)
   end

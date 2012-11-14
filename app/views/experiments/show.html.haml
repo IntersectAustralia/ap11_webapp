@@ -27,7 +27,10 @@
     %th.table-value
       - @output_collections.each do |output|
         %div= link_to output.name, experiment_output_collection_path(@experiment, output)
-
+  %tr
+    %th Published?
+    %th.table-value
+      = @experiment.display_published_verbose
 .form-actions
   %a.btn.btn-primary{:href => edit_experiment_path(@experiment)} Edit Experiment
   - if @experiment.published?
