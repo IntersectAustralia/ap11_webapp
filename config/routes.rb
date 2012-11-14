@@ -42,7 +42,8 @@ Ap11::Application.routes.draw do
 
   resources :party_records
 
-  root :to => "pages#home"
+  #root :to => "pages#home"
+  root :to => "experiments#index"
 
   get "pages/home"
 
