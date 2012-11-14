@@ -170,10 +170,39 @@ class InputCollection < ActiveRecord::Base
   end
 
   def collection_related_objects
-    {
-      is_owned_by: ::PartyRecord.all.map { |party| { key:  party.oai_dc_identifier } },
-      is_managed_by: ::PartyRecord.all.map { |party| { key: party.oai_dc_identifier} },
-    }
+    exp = Experiment.find(experiment_id)
+    if collect_type.eql? REMOTE
+      pr = PartyRecord.find(party_record_id)
+      key = pr.oai_dc_identifier
+      {
+          is_owned_by: [
+              {
+                  key: key
+              }
+          ],
+          is_managed_by: [
+            {
+                key: key
+            }
+          ]
+      }
+    elsif collect_type.eql? LOCAL
+      usr = User.find(exp.user_id)
+      key = usr.oai_dc_identifier
+      {
+          is_owned_by: [
+              {
+                  key: key
+              }
+          ],
+          is_managed_by: [
+              {
+                  key: key
+              }
+          ]
+      }
+    end
+
   end
 
   def oai_dc_identifier

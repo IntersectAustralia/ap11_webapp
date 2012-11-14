@@ -149,7 +149,8 @@ class OutputCollection < ActiveRecord::Base
             key: "website",
             identifier: [
               {
-
+                type: url,
+                value: website_name
               }
             ]
         }
