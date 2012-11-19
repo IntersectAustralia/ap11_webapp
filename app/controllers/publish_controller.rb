@@ -4,14 +4,22 @@ class PublishController < ApplicationController
 
   def view
     @experiment = Experiment.find(params[:id])
-    @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
-    @output_collections = OutputCollection.find_all_by_experiment_id(@experiment.id)
+    if @experiment.published?
+      redirect_to(@experiment, :notice => "Experiment has been published to ANDS")
+    else
+      @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
+      @output_collections = OutputCollection.find_all_by_experiment_id(@experiment.id)
+    end
   end
 
   def confirm
     experiment = Experiment.find(params[:id])
-    experiment.publish
-    redirect_to(experiment, :notice => "Experiment has been published to ANDS")
+    if experiment.published?
+      redirect_to(experiment, :notice => "Experiment has already been published to ANDS")
+    else
+      experiment.publish
+      redirect_to(experiment, :notice => "Experiment has been published to ANDS")
+    end
   end
 
   def cancel
