@@ -21,6 +21,9 @@ test: &test
   pool: 5
   timeout: 5000
 
+# TO CHANGE FOR PRODUCTION LATER
+# DO NOT WRITE PRODUCTION u/p HERE
+# AS THIS CODE IS OPEN SOURCE
 production: &production
   adapter: postgresql
   host: localhost
