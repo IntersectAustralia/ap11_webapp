@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/IntersectAustralia/ruby_rif-cs.git
+  revision: d766bee4b079bbff81433783df4b83e28c2efaa7
+  specs:
+    rif-cs (1.2.3)
+      nokogiri
+
+GIT
   remote: https://github.com/charles-shao/oai_repository.git
   revision: f98dc4cb210b6b5987eeb4a3e21f12f902121f1e
   specs:
@@ -178,7 +185,7 @@ GEM
     net-ssh (2.5.2)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
-    nokogiri (1.5.5)
+    nokogiri (1.5.6)
     oai (0.2.1)
       builder (>= 2.0.0)
       faraday
@@ -232,8 +239,6 @@ GEM
       ruby2ruby (~> 1.2.5)
       ruby_parser (~> 2.0)
       sexp_processor (~> 3.0)
-    rif-cs (1.2.2)
-      nokogiri
     ripper_ruby_parser (0.0.8)
       sexp_processor (~> 3.0)
     roodi (2.1.0)
@@ -337,7 +342,7 @@ DEPENDENCIES
   paperclip
   pg
   rails (= 3.2.8)
-  rif-cs
+  rif-cs!
   rspec-rails
   rvm-capistrano
   sass-rails (~> 3.2.3)
