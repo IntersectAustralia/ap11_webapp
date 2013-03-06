@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/IntersectAustralia/ruby_rif-cs.git
-  revision: 6d29a1eff6df0fb48ff8cf828cbe0c83129099a1
+  revision: 1c91c42ea46bd84f6b030c055a18d2bfd6b2a5f2
   specs:
-    rif-cs (1.2.4)
+    rif-cs (1.2.5)
       nokogiri
 
 GIT
