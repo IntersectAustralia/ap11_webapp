@@ -132,6 +132,11 @@ class PartyRecord < ActiveRecord::Base
     description
   end
 
+  def published
+    size = input_collection.where(:published => true).size
+    size > 0
+  end
+
   protected
 
   def strip_whitespace

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -77,5 +77,5 @@ gem 'yaml_db'
 gem 'select2-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'handles_sortable_columns'
-gem "oai_repository", :git => 'https://github.com/charles-shao/oai_repository.git'
+gem "oai_repository", :git => 'https://github.com/IntersectAustralia/oai_repository.git'
 gem 'rif-cs', :git => 'https://github.com/IntersectAustralia/ruby_rif-cs.git'

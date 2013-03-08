@@ -261,6 +261,12 @@ class User < ActiveRecord::Base
     description
   end
 
+
+  def published
+    size = OutputCollection.where(:published => true, :experiment_id => experiment.where(:published => true).select("id")).size
+    size += InputCollection.where(:published => true, :collect_type => 'Local', :experiment_id => experiment.where(:published => true).select("id")).size
+    size > 0
+  end
   private
 
   def initialize_status
