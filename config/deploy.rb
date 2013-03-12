@@ -245,6 +245,14 @@ task :generate_database_yml, :roles => :app do
   put YAML::dump(buffer), "#{release_path}/config/database.yml", :mode => 0664
 end
 
+desc "Run partial seeds, non-descructively"
+task :partial_seed, :roles => :db do
+  partial_seed = "#{ENV['partial']}"
+  rake_task = "db:seed:#{partial_seed}"
+  run("cd #{current_path} && rake #{rake_task}", :env => {'RAILS_ENV' => "#{stage}"})
+end
+
+
 after 'multistage:ensure' do
   set (:rails_env) {"#{defined?(rails_env) ? rails_env : stage.to_s}" }
 end
