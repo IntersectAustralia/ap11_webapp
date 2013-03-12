@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121112231722) do
+ActiveRecord::Schema.define(:version => 20130311020045) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -110,6 +110,34 @@ ActiveRecord::Schema.define(:version => 20121112231722) do
   create_table "roles_permissions", :id => false, :force => true do |t|
     t.integer "role_id"
     t.integer "permission_id"
+  end
+
+  create_table "services", :force => true do |t|
+    t.string   "description",   :limit => 2000
+    t.string   "name",          :limit => 2000
+    t.string   "access_rights", :limit => 2000
+    t.string   "license",       :limit => 2000
+    t.text     "location"
+    t.string   "url",           :limit => 2000
+    t.boolean  "published"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "static_party_records", :force => true do |t|
+    t.string   "abbreviation"
+    t.string   "full_name"
+    t.text     "description"
+    t.text     "address"
+    t.string   "url",           :limit => 2000
+    t.string   "for_code1"
+    t.string   "for_code2"
+    t.string   "for_code3"
+    t.text     "access_rights"
+    t.text     "license"
+    t.boolean  "published"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "users", :force => true do |t|

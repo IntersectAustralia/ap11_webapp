@@ -1,0 +1,3 @@
+class StaticPartyRecordsController  < ApplicationController
+
+end

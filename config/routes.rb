@@ -41,6 +41,8 @@ Ap11::Application.routes.draw do
   end
 
   resources :party_records
+  resources :static_party_records
+  resources :service
 
   root :to => "pages#home"
   #root :to => "experiments#index"

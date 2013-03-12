@@ -171,6 +171,7 @@ class InputCollection < ActiveRecord::Base
 
   def collection_related_objects
     exp = Experiment.find(experiment_id)
+    service = ::Service.first
     if collect_type.eql? REMOTE
       pr = PartyRecord.find(party_record_id)
       key = pr.oai_dc_identifier
@@ -184,6 +185,9 @@ class InputCollection < ActiveRecord::Base
             {
                 key: key
             }
+          ],
+          is_operated_on_by: [
+            key: service.oai_dc_identifier
           ]
       }
     elsif collect_type.eql? LOCAL
@@ -199,6 +203,9 @@ class InputCollection < ActiveRecord::Base
               {
                   key: key
               }
+          ],
+          is_operated_on_by: [
+              key: service.oai_dc_identifier
           ]
       }
     end
