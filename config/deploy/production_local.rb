@@ -3,7 +3,7 @@ set :deploy_base, '/home/ap11'
 set(:deploy_to) { "#{deploy_base}/ap11-web" }
 set :deploy_via, :copy
 set :scm, :none
-set :repository, "/home/ap11/code_base/ap11-master/"
+set :repository, "/home/ap11/code_base/ap11_webapp-master/"
 set :use_sudo, true
 set :copy_dir, "/home/#{user}/tmp/"
 set :remote_copy_dir, "/tmp"
