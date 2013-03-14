@@ -1,5 +1,5 @@
 set(:user) { 'ap11' }
-set :deploy_base, '/home/ap11'
+set :deploy_base, '/home/#{user}'
 set(:deploy_to) { "#{deploy_base}/ap11-web" }
 set :deploy_via, :copy
 set :scm, :none
