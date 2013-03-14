@@ -1,5 +1,5 @@
 module ExperimentsHelper
   def current_date
-    Date.current
+    Date.today
   end
 end
