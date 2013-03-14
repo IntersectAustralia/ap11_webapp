@@ -39,9 +39,9 @@ class ExperimentsController < ApplicationController
     @experiment = Experiment.new(params[:experiment])
 
     if @experiment.save
-      redirect_to experiments_path, notice: 'Experiment was successfully created.'
+      redirect_to experiments_path, :notice => 'Experiment was successfully created.'
     else
-      render action: "new"
+      render :action => "new"
     end
   end
 
@@ -50,11 +50,11 @@ class ExperimentsController < ApplicationController
     @input_collections = InputCollection.find_all_by_experiment_id(@experiment.id)
     respond_to do |format|
       if @experiment.update_attributes(params[:experiment])
-        format.html { redirect_to experiments_path, notice: 'Experiment was successfully updated.' }
+        format.html { redirect_to experiments_path, :notice => 'Experiment was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @experiment.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @experiment.errors, :status => unprocessable_entity }
       end
     end
   end

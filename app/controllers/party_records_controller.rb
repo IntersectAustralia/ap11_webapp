@@ -20,9 +20,9 @@ class PartyRecordsController < ApplicationController
     @party_record = PartyRecord.new(params[:party_record])
 
     if @party_record.save
-      redirect_to party_records_path, notice: 'Party record was successfully created.'
+      redirect_to party_records_path, :notice => 'Party record was successfully created.'
     else
-      render action: "new"
+      render :action => "new"
     end
   end
 
@@ -33,11 +33,11 @@ class PartyRecordsController < ApplicationController
     @party_record = PartyRecord.find(params[:id])
     respond_to do |format|
       if @party_record.update_attributes(params[:party_record])
-        format.html { redirect_to party_records_path, notice: 'Party record was successfully updated.' }
+        format.html { redirect_to party_records_path, :notice => 'Party record was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @party_record.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @party_record.errors, :status => unprocessable_entity }
       end
     end
   end

@@ -31,9 +31,9 @@ class OutputCollectionsController < ApplicationController
     @experiment = Experiment.find(experiment_id)
     unless @experiment.has_output_collection?
       if @output_collection.save
-        redirect_to edit_experiment_path(experiment_id), notice: 'Output collection was successfully created.'
+        redirect_to edit_experiment_path(experiment_id), :notice => 'Output collection was successfully created.'
       else
-        render action: "new"
+        render :action => "new"
       end
     end
   end
@@ -46,9 +46,9 @@ class OutputCollectionsController < ApplicationController
     @experiment = Experiment.find(experiment_id)
 
     if @output_collection.update_attributes(params[:output_collection])
-      redirect_to edit_experiment_path(experiment_id), notice: 'Output collection was successfully updated.'
+      redirect_to edit_experiment_path(experiment_id), :notice => 'Output collection was successfully updated.'
     else
-      render action: "edit"
+      render :action => "edit"
     end
   end
 

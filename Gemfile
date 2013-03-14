@@ -5,7 +5,8 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+#gem 'pg'
+gem 'mysql', '~> 2.8'
 
 
 # Gems used only for assets and not required
@@ -35,18 +36,18 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem "rspec-rails"
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", '~> 1.1'
 
   # cucumber gems
   gem "cucumber"
-  gem "capybara"
+  gem "capybara", '~> 1.1.2'
   gem "database_cleaner"
   #gem "spork"
   gem "launchy"    # So you can do Then show me the page
 end
 
 group :test do
-  gem "cucumber-rails", require: false
+  gem "cucumber-rails", :require => false
   gem "shoulda-matchers"
 end
 
@@ -71,7 +72,7 @@ gem "colorize"
 gem "metrical"
 gem "simplecov", ">=0.3.8", :require => false, :group => :test
 gem "wicked"
-gem "paperclip"
+gem "paperclip", '~> 2.3'
 gem 'ckeditor', '3.7.2'
 gem 'yaml_db'
 gem 'select2-rails'

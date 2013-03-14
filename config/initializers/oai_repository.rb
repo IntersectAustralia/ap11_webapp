@@ -70,34 +70,34 @@ OaiRepository.setup do |config|
   #
   config.sets = [
     {
-      spec: 'class:party',
-      name: 'Parties',
-      model: User
+      :spec =>'class:party',
+      :name => 'Parties',
+      :model => User
     },
     {
-      spec: 'class:party',
-      name: 'Party Records',
-      model: PartyRecord
+      :spec => 'class:party',
+      :name => 'Party Records',
+      :model => PartyRecord
     },
     {
-      spec: 'class:collection',
-      name: 'Input Collections',
-      model: InputCollection
+      :spec => 'class:collection',
+      :name => 'Input Collections',
+      :model => InputCollection
     },
     {
-      spec: 'class:collection',
-      name: 'Output Collections',
-      model: OutputCollection
+      :spec => 'class:collection',
+      :name => 'Output Collections',
+      :model => OutputCollection
     },
     {
-      spec: 'class:party',
-      name: 'Static Party Records',
-      model: StaticPartyRecords
+      :spec => 'class:party',
+      :name =>'Static Party Records',
+      :model => StaticPartyRecords
     },
     {
-      spec: 'class:service',
-      name: 'Service',
-      model: Service
+      :spec => 'class:service',
+      :name => 'Service',
+      :model => Service
     }
   ]
 

@@ -31,9 +31,9 @@ class InputCollectionsController < ApplicationController
     @experiment = Experiment.find(experiment_id)
 
     if @input_collection.save
-      redirect_to edit_experiment_path(experiment_id), notice: 'Input collection was successfully created.'
+      redirect_to edit_experiment_path(experiment_id), :notice => 'Input collection was successfully created.'
     else
-      render action: "new"
+      render :action => "new"
     end
   end
 
@@ -45,9 +45,9 @@ class InputCollectionsController < ApplicationController
     @experiment = Experiment.find(experiment_id)
 
     if @input_collection.update_attributes(params[:input_collection])
-      redirect_to edit_experiment_path(experiment_id), notice: 'Input collection was successfully updated.'
+      redirect_to edit_experiment_path(experiment_id), :notice => 'Input collection was successfully updated.'
     else
-      render action: "edit"
+      render :action => "edit"
     end
   end
 

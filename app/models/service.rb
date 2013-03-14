@@ -32,8 +32,8 @@ class Service < ActiveRecord::Base
   def service_descriptions
     [
         {
-            value: description,
-            type: 'brief'
+            :value => description,
+            :type => 'brief'
         }
     ]
   end
@@ -41,11 +41,11 @@ class Service < ActiveRecord::Base
   def service_names
     [
         {
-            xmllang: 'en',
-            type: 'primary',
-            name_parts: [
+            :xmllang => 'en',
+            :type => 'primary',
+            :name_parts => [
                 {
-                    value: name
+                    :value => name
                 }
             ]
         }
@@ -55,12 +55,12 @@ class Service < ActiveRecord::Base
   def service_rights
       [
           {
-              licence: {
-                  value: license,
-                  type: 'Unknown/Other'
+              :licence => {
+                  :value => license,
+                  :type => 'Unknown/Other'
               },
-              access_rights: {
-                  value: access_rights
+              :access_rights => {
+                  :value => access_rights
               }
           }
       ]
@@ -69,21 +69,21 @@ class Service < ActiveRecord::Base
   def service_locations
     [
         {
-            addresses: [
+            :addresses => [
                 {
-                    electronic: [
+                    :electronic => [
                         {
-                            type: 'url',
-                            value: url,
+                            :type => 'url',
+                            :value => url,
                         }
                     ],
-                    physical: [
+                    :physical => [
                         {
-                            type: 'streetAddress',
-                            address_parts: [
+                            :type => 'streetAddress',
+                            :address_parts => [
                                 {
-                                    type: 'addressLine',
-                                    value: location
+                                    :type => 'addressLine',
+                                    :value => location
                                 }
                             ]
                         }
@@ -100,14 +100,14 @@ class Service < ActiveRecord::Base
     bi = StaticPartyRecords.find_by_abbreviation("NSW Systems Biology Initiative")
 
     {
-        has_association_with: [
+        :has_association_with => [
             {
-                key: rc.oai_dc_identifier
+                :key => rc.oai_dc_identifier
             }
         ],
-        is_managed_by: [
+        :is_managed_by => [
             {
-                key: bi.oai_dc_identifier
+                :key => bi.oai_dc_identifier
             }
         ]
     }

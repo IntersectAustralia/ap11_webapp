@@ -69,8 +69,8 @@ class InputCollection < ActiveRecord::Base
   def collection_descriptions
     [
       {
-        value: description,
-        type: 'brief'
+        :value => description,
+        :type => 'brief'
       }
     ]
   end
@@ -78,11 +78,11 @@ class InputCollection < ActiveRecord::Base
   def collection_names
     [
       {
-        xmllang: 'en',
-        type: 'primary',
-        name_parts: [
+        :xmllang => 'en',
+        :type => 'primary',
+        :name_parts => [
           {
-            value: name
+            :value => name
           }
         ]
       }
@@ -93,24 +93,24 @@ class InputCollection < ActiveRecord::Base
     if collect_type.eql? REMOTE
       [
           {
-              licence: {
-                  value: license,
-                  type: 'Unknown/Other'
+              :licence => {
+                  :value => license,
+                  :type => 'Unknown/Other'
               },
-              access_rights: {
-                  value: access_rights
+              :access_rights => {
+                  :value => access_rights
               }
           }
       ]
     elsif collect_type.eql? LOCAL
       [
           {
-              licence: {
-                  value: OAI_CONFIG['license'],
-                  type: 'Unknown/Other'
+              :licence => {
+                  :value => OAI_CONFIG['license'],
+                  :type => 'Unknown/Other'
               },
-              access_rights: {
-                  value: OAI_CONFIG['access_rights']
+              :access_rights => {
+                  :value => OAI_CONFIG['access_rights']
               }
           }
       ]
@@ -121,18 +121,18 @@ class InputCollection < ActiveRecord::Base
     subjects = []
     subjects.push(
         {
-            value: subject_code(for_code1),
-            type: 'anzsrc-for'
+            :value => subject_code(for_code1),
+            :type => 'anzsrc-for'
         }) unless for_code1.blank?
     subjects.push(
         {
-            value: subject_code(for_code2),
-            type: 'anzsrc-for'
+            :value => subject_code(for_code2),
+            :type => 'anzsrc-for'
         }) unless for_code2.blank?
     subjects.push(
         {
-            value: subject_code(for_code3),
-            type: 'anzsrc-for'
+            :value => subject_code(for_code3),
+            :type => 'anzsrc-for'
         }) unless for_code3.blank?
   end
 
@@ -144,21 +144,21 @@ class InputCollection < ActiveRecord::Base
 
     [
       {
-        addresses: [
+        :addresses=> [
           {
-            electronic: [
+            :electronic => [
               {
-                type: 'url',
-                value: web_url,
+                :type => 'url',
+                :value => web_url,
               }
             ],
-            physical: [
+            :physical => [
               {
-                type: 'streetAddress',
-                address_parts: [
+                :type => 'streetAddress',
+                :address_parts => [
                   {
-                    type: 'addressLine',
-                    value: location
+                    :type => 'addressLine',
+                    :value => location
                   }
                 ]
               }
@@ -176,36 +176,36 @@ class InputCollection < ActiveRecord::Base
       pr = PartyRecord.find(party_record_id)
       key = pr.oai_dc_identifier
       {
-          is_owned_by: [
+          :is_owned_by => [
               {
-                  key: key
+                  :key => key
               }
           ],
-          is_managed_by: [
+          :is_managed_by => [
             {
-                key: key
+                :key => key
             }
           ],
-          is_operated_on_by: [
-            key: service.oai_dc_identifier
+          :is_operated_on_by => [
+            :key => service.oai_dc_identifier
           ]
       }
     elsif collect_type.eql? LOCAL
       usr = User.find(exp.user_id)
       key = usr.oai_dc_identifier
       {
-          is_owned_by: [
+          :is_owned_by => [
               {
-                  key: key
+                  :key => key
               }
           ],
-          is_managed_by: [
+          :is_managed_by => [
               {
-                  key: key
+                  :key => key
               }
           ],
-          is_operated_on_by: [
-              key: service.oai_dc_identifier
+          :is_operated_on_by => [
+              :key => service.oai_dc_identifier
           ]
       }
     end

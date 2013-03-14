@@ -177,20 +177,20 @@ class User < ActiveRecord::Base
   def party_names
     [
       {
-        xmllang: 'en',
-        type: 'primary',
-        name_parts: [
+        :xmllang => 'en',
+        :type => 'primary',
+        :name_parts => [
           {
-            value: title,
-            type: 'title'
+            :value => title,
+            :type => 'title'
           },
           {
-            value: first_name,
-            type: 'given'
+            :value => first_name,
+            :type => 'given'
           },
           {
-            value: last_name,
-            type: 'family'
+            :value => last_name,
+            :type => 'family'
           }
         ]
       }
@@ -200,8 +200,8 @@ class User < ActiveRecord::Base
   def party_descriptions
     [
       {
-          value: "#{description}",
-          type: 'brief'
+          :value => "#{description}",
+          :type => 'brief'
       }
     ]
   end
@@ -209,21 +209,21 @@ class User < ActiveRecord::Base
   def party_locations
     [
       {
-        addresses: [
+        :addresses => [
           {
-            electronic: [
+            :electronic => [
               {
-                type: 'url',
-                value: home_page,
+                :type => 'url',
+                :value => home_page,
               }
           ],
-          physical: [
+          :physical => [
               {
-                type: 'streetAddress',
-                address_parts: [
+                :type => 'streetAddress',
+                :address_parts => [
                   {
-                    type: 'addressLine',
-                    value: ADDRESS
+                    :type => 'addressLine',
+                    :value => ADDRESS
                   }
                 ]
               }
@@ -238,18 +238,18 @@ class User < ActiveRecord::Base
     subjects = []
     subjects.push(
         {
-          value: subject_code(for_code1),
-          type: 'anzsrc-for'
+          :value => subject_code(for_code1),
+          :type => 'anzsrc-for'
         }) unless for_code1.blank?
     subjects.push(
         {
-          value: subject_code(for_code2),
-          type: 'anzsrc-for'
+          :value => subject_code(for_code2),
+          :type => 'anzsrc-for'
         }) unless for_code2.blank?
     subjects.push(
         {
-          value: subject_code(for_code3),
-          type: 'anzsrc-for'
+          :value => subject_code(for_code3),
+          :type => 'anzsrc-for'
         }) unless for_code3.blank?
   end
 

@@ -62,8 +62,8 @@ class OutputCollection < ActiveRecord::Base
   def collection_descriptions
     [
         {
-            value: description,
-            type: 'full'
+            :value => description,
+            :type => 'full'
         }
     ]
   end
@@ -71,11 +71,11 @@ class OutputCollection < ActiveRecord::Base
   def collection_names
     [
         {
-            xmllang: 'en',
-            type: 'primary',
-            name_parts: [
+            :xmllang => 'en',
+            :type => 'primary',
+            :name_parts => [
                 {
-                    value: name
+                    :value => name
                 }
             ]
         }
@@ -85,12 +85,12 @@ class OutputCollection < ActiveRecord::Base
   def collection_rights
     [
         {
-            licence: {
-                value: license,
-                type: 'Unknown/Other'
+            :licence => {
+                :value => license,
+                :type => 'Unknown/Other'
             },
-            access_rights: {
-                value: access_rights
+            :access_rights => {
+                :value => access_rights
             }
         }
     ]
@@ -100,39 +100,39 @@ class OutputCollection < ActiveRecord::Base
     subjects = []
     subjects.push(
         {
-            value: subject_code(for_code1),
-            type: 'anzsrc-for'
+            :value => subject_code(for_code1),
+            :type => 'anzsrc-for'
         }) unless for_code1.blank?
     subjects.push(
         {
-            value: subject_code(for_code2),
-            type: 'anzsrc-for'
+            :value => subject_code(for_code2),
+            :type => 'anzsrc-for'
         }) unless for_code2.blank?
     subjects.push(
         {
-            value: subject_code(for_code3),
-            type: 'anzsrc-for'
+            :value => subject_code(for_code3),
+            :type => 'anzsrc-for'
         }) unless for_code3.blank?
   end
 
   def collection_locations
     [
         {
-            addresses: [
+            :addresses => [
                 {
-                    electronic: [
+                    :electronic => [
                         {
-                            type: 'url',
-                            value: url,
+                            :type => 'url',
+                            :value => url,
                         }
                     ],
-                    physical: [
+                    :physical => [
                         {
-                            type: 'streetAddress',
-                            address_parts: [
+                            :type => 'streetAddress',
+                            :address_parts => [
                                 {
-                                    type: 'addressLine',
-                                    value: location
+                                    :type => 'addressLine',
+                                    :value => location
                                 }
                             ]
                         }
@@ -146,11 +146,11 @@ class OutputCollection < ActiveRecord::Base
   def collection_related_info
     [
         {
-            key: "website",
-            identifier: [
+            :key => "website",
+            :identifier => [
               {
-                type: url,
-                value: website_name
+                :type => url,
+                :value => website_name
               }
             ]
         }
@@ -166,17 +166,17 @@ class OutputCollection < ActiveRecord::Base
     exp.input_collection.each { |input| input_keys.push(input.oai_dc_identifier) }
     bi = StaticPartyRecords.find_by_abbreviation("NSW Systems Biology Initiative")
       {
-          has_collector: [
-                  key: key
+          :has_collector => [
+              :key => key
           ],
-          is_managed_by: [
-                  key: bi.oai_dc_identifier
+          :is_managed_by => [
+              :key => bi.oai_dc_identifier
           ],
-          is_produced_by: [
-              key: service.oai_dc_identifier
+          :is_produced_by => [
+              :key => service.oai_dc_identifier
           ],
-          is_derived_from: [
-            key: input_keys.map{|x| x+"\n"}.join
+          :is_derived_from => [
+              :key => input_keys.map{|x| x+"\n"}.join
           ]
       }
     end
