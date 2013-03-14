@@ -76,6 +76,7 @@ end
 after 'deploy:update' do
   server_setup.logging.rotation
   server_setup.config.apache
+  copy_config_to_shared_folder
   deploy.restart
   deploy.additional_symlinks
 end
@@ -200,6 +201,25 @@ namespace :deploy do
     restart
   end
 
+
+  desc "Copying config files to shared folder"
+  task :copy_config_to_shared_folder,:roles => :app do
+    run "mkdir -p #{shared_path}/config"
+
+    src = "#{release_path}/config/environments/production.rb"
+    dest = "#{shared_path}/config/production.rb"
+    run "cp #{src} #{dest}"
+
+    src = "#{release_path}/config/deploy/production_local.rb"
+    dest = "#{shared_path}/config/production_local.rb"
+    run "cp #{src} #{dest}"
+
+    src = "#{release_path}/config/database.yml"
+    dest = "#{shared_path}/config/database.yml"
+
+    run "cp #{src} #{dest}"
+
+  end
 end
 
 namespace :backup do
