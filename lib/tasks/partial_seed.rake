@@ -8,6 +8,7 @@ namespace :db do
           :name => 'Proteomic-Genomic Nexus',
           :published => false
       }
+      Service.delete_all
       Service.create!(service_hash)
       party_hashes = [{
                           :abbreviation => 'NSW Systems Biology Initiative',
@@ -20,6 +21,7 @@ namespace :db do
                           :description => 'Ramaciotti Centre',
                           :published => true
                       }]
+      StaticPartyRecords.delete_all
       party_hashes.each do |attrs|
         StaticPartyRecords.create! (attrs)
       end

@@ -6,11 +6,11 @@ require 'rvm/capistrano'
 require 'colorize'
 
 set :application, 'ap11'
-set :stages, %w(qa staging production)
+set :stages, %w(qa staging production production_local)
 set :default_stage, "qa"
 set :shared_children, shared_children + %w(log_archive)
 set :shell, '/bin/bash'
-set :rvm_ruby_string, 'ruby-1.9.3-p194@ap11'
+set :rvm_ruby_string, 'ruby-1.8.7-p371@ap11'
 set :rvm_type, :user
 
 # Deploy using copy for now
@@ -137,7 +137,8 @@ namespace :deploy do
   task :populate, :roles => :db do
     generate_populate_yml
     run("cd #{current_path} && rake db:populate", :env => {'RAILS_ENV' => "#{stage}"})
-    run("cd #{current_path}/db && psql -U ap11 ap11 < create_research_subject_code.sql")
+    run("cd #{current_path}/db && mysql -u ap11 -pap11 ap11< create_research_subject_code.sql")
+    run("cd #{current_path} && rake db:seed:insert_static_data ", :env => {'RAILS_ENV' => "#{stage}"})
   end
 
   # Seed the db
