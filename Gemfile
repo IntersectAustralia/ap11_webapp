@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://github.com/IntersectAustralia/oai_repository.git'
 
 gem 'rails', '3.2.12'
 

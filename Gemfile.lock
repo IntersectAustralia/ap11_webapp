@@ -15,6 +15,7 @@ GIT
 
 GEM
   remote: https://rubygems.org/
+  remote: https://github.com/IntersectAustralia/oai_repository.git/
   specs:
     actionmailer (3.2.12)
       actionpack (= 3.2.12)

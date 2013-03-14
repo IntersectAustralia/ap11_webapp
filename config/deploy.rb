@@ -2,7 +2,7 @@
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
 require 'capistrano_colors'
-require 'rvm/capistrano'
+
 require 'colorize'
 
 set :application, 'ap11'
@@ -10,10 +10,11 @@ set :stages, %w(qa staging production production_local)
 set :default_stage, "qa"
 set :shared_children, shared_children + %w(log_archive)
 set :shell, '/bin/bash'
-set :rvm_ruby_string, 'ruby-1.8.7-p371@ap11'
+#set :rvm_ruby_string, 'ruby-1.8.7-p371@ap11'
 set :rvm_type, :user
-
-# Deploy using copy for now
+set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require 'rvm/capistrano'
 set :scm, 'git'
 set :repository, 'git@github.com:IntersectAustralia/ap11_webapp.git'
 set :deploy_via, :copy
