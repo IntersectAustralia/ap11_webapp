@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/IntersectAustralia/oai_repository.git
+  remote: http://github.com/IntersectAustralia/oai_repository.git
   revision: a82f781197eb9691776fdc46598a9f86679d8c33
   specs:
     oai_repository (0.9.5)
@@ -7,7 +7,7 @@ GIT
       rails (~> 3.1)
 
 GIT
-  remote: https://github.com/IntersectAustralia/ruby_rif-cs.git
+  remote: http://github.com/IntersectAustralia/ruby_rif-cs.git
   revision: 4ae77bcf19aceb7cbbefaa5f1b13cd3989d6357b
   specs:
     rif-cs (1.2.9)
@@ -15,7 +15,6 @@ GIT
 
 GEM
   remote: https://rubygems.org/
-  remote: https://github.com/IntersectAustralia/oai_repository.git/
   specs:
     actionmailer (3.2.12)
       actionpack (= 3.2.12)
