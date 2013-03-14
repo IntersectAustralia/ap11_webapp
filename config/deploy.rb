@@ -77,7 +77,7 @@ end
 after 'deploy:update' do
   server_setup.logging.rotation
   server_setup.config.apache
-  copy_config_to_shared_folder
+  deploy.copy_config_to_shared_folder
   deploy.restart
   deploy.additional_symlinks
 end
