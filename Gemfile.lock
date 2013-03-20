@@ -8,9 +8,9 @@ GIT
 
 GIT
   remote: http://github.com/IntersectAustralia/ruby_rif-cs.git
-  revision: 3549d0901ce949f21fff8d594bc4da2edbd062d4
+  revision: 832e7dfb3ef9ef688e710952a5edc4d768f01d71
   specs:
-    rif-cs (1.2.11)
+    rif-cs (1.2.12)
       nokogiri
 
 GEM
@@ -107,7 +107,7 @@ GEM
       cucumber (>= 1.1.8)
       nokogiri (>= 1.5.0)
     database_cleaner (0.9.1)
-    devise (2.2.3)
+    devise (2.1.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
@@ -208,7 +208,7 @@ GEM
     net-ssh (2.6.6)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    nokogiri (1.5.7)
+    nokogiri (1.5.8)
     oai (0.3.0)
       builder (>= 2.0.0)
       faraday
@@ -350,7 +350,7 @@ DEPENDENCIES
   cucumber
   cucumber-rails
   database_cleaner
-  devise
+  devise (~> 2.1.2)
   email_spec
   factory_girl_rails (~> 1.1)
   google-analytics-rails
