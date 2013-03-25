@@ -1,7 +1,7 @@
 class Service < ActiveRecord::Base
   include RIFCS::Service
   DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
-  attr_accessible :published, :description, :name
+  attr_accessible :published, :description, :name, :url
   #Required for OAI repository
 
 

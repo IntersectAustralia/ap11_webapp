@@ -1,6 +1,6 @@
 class StaticPartyRecords < ActiveRecord::Base
   include RIFCS::Party
-  attr_accessible :abbreviation, :full_name, :description, :published
+  attr_accessible :abbreviation, :full_name, :description, :published, :url
   DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
   #Required by OAI Repository
   def party_group
