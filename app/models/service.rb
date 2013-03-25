@@ -105,18 +105,10 @@ class Service < ActiveRecord::Base
     rc = StaticPartyRecords.find_by_abbreviation("Ramaciotti Centre")
     bi = StaticPartyRecords.find_by_abbreviation("NSW Systems Biology Initiative")
 
-    {
-        :has_association_with => [
-            {
-                :key => rc.oai_dc_identifier
-            }
-        ],
-        :is_managed_by => [
-            {
-                :key => bi.oai_dc_identifier
-            }
-        ]
-    }
+    [
+        { :name => "has_association_with", :values  => {:key => rc.oai_dc_identifier} },
+        { :name => "is_managed_by" , :values => {:key => bi.oai_dc_identifier} }
+    ]
   end
 
   def oai_dc_identifier

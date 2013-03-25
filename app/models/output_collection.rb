@@ -162,23 +162,14 @@ class OutputCollection < ActiveRecord::Base
     service = ::Service.first
     usr = User.find(exp.user_id)
     key = usr.oai_dc_identifier
-    input_keys = []
-    exp.input_collection.each { |input| input_keys.push(input.oai_dc_identifier) }
     bi = StaticPartyRecords.find_by_abbreviation("NSW Systems Biology Initiative")
-      {
-          :has_collector => [
-              :key => key
-          ],
-          :is_managed_by => [
-              :key => bi.oai_dc_identifier
-          ],
-          :is_produced_by => [
-              :key => service.oai_dc_identifier
-          ],
-          :is_derived_from => [
-              :key => input_keys.map{|x| x+"\n"}.join
+    related_objects =  [
+          { :name => "has_collector", :values => { :key => key } },
+          { :name => "is_managed_by", :values => { :key => bi.oai_dc_identifier} },
+          { :name => "is_produced_by", :values => { :key => service.oai_dc_identifier} }
           ]
-      }
+    exp.input_collection.each { |input| related_objects.push({:name => "is_derived_from", :values => { :key=> input.oai_dc_identifier } }) }
+    related_objects
     end
 
 
