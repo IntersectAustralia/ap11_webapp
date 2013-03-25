@@ -8,9 +8,9 @@ GIT
 
 GIT
   remote: http://github.com/IntersectAustralia/ruby_rif-cs.git
-  revision: 007aa3b4c2adace5d23c114d0440b8bd96fd4ef4
+  revision: bd5237697c3ba2d91053eab3d37a6ff982e7ef24
   specs:
-    rif-cs (1.2.13)
+    rif-cs (1.2.14)
       nokogiri
 
 GEM
