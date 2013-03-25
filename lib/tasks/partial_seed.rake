@@ -6,6 +6,7 @@ namespace :db do
       service_hash = {
           :description => 'Proteomic-Genomic Nexus',
           :name => 'Proteomic-Genomic Nexus',
+          :url =>'http://www.intersect.org.au/proteomic-genomic-nexus',
           :published => false
       }
       Service.delete_all

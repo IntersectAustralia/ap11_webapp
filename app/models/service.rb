@@ -4,6 +4,12 @@ class Service < ActiveRecord::Base
   attr_accessible :published, :description, :name
   #Required for OAI repository
 
+
+  def service_originating_source
+    url_opts = ActionController::Base.default_url_options
+    Rails.application.routes.url_helpers.service_url(self, url_opts)
+  end
+
   def service_group
     'University of New South Wales'
   end
@@ -32,7 +38,7 @@ class Service < ActiveRecord::Base
   def service_descriptions
     [
         {
-            :value => description,
+            :value => "#{description}",
             :type => 'brief'
         }
     ]

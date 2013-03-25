@@ -8,9 +8,9 @@ GIT
 
 GIT
   remote: http://github.com/IntersectAustralia/ruby_rif-cs.git
-  revision: 832e7dfb3ef9ef688e710952a5edc4d768f01d71
+  revision: 007aa3b4c2adace5d23c114d0440b8bd96fd4ef4
   specs:
-    rif-cs (1.2.12)
+    rif-cs (1.2.13)
       nokogiri
 
 GEM
@@ -208,7 +208,7 @@ GEM
     net-ssh (2.6.6)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    nokogiri (1.5.8)
+    nokogiri (1.5.9)
     oai (0.3.0)
       builder (>= 2.0.0)
       faraday
