@@ -103,7 +103,7 @@ class Service < ActiveRecord::Base
   def service_related_objects
 
     rc = PartyRecord.find_all_by_abbreviation("UNSW")
-    bi = PartyRecords.find_by_abbreviation("SBI")
+    bi = PartyRecord.find_by_abbreviation("SBI")
 
     [
         { :name => "has_association_with", :values  => {:key => rc.oai_dc_identifier} },
