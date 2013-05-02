@@ -134,6 +134,7 @@ class InputCollection < ActiveRecord::Base
             :value => subject_code(for_code3),
             :type => 'anzsrc-for'
         }) unless for_code3.blank?
+    subjects
   end
 
   def collection_locations
@@ -181,11 +182,6 @@ class InputCollection < ActiveRecord::Base
                   :key => key
               }
           ],
-          :is_managed_by => [
-            {
-                :key => key
-            }
-          ],
           :is_operated_on_by => [
             :key => service.oai_dc_identifier
           ]
@@ -195,11 +191,6 @@ class InputCollection < ActiveRecord::Base
       key = usr.oai_dc_identifier
       {
           :is_owned_by => [
-              {
-                  :key => key
-              }
-          ],
-          :is_managed_by => [
               {
                   :key => key
               }

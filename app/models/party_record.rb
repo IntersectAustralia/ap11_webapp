@@ -122,6 +122,7 @@ class PartyRecord < ActiveRecord::Base
             :value => subject_code(for_code3),
             :type => 'anzsrc-for'
         }) unless for_code3.blank?
+    subjects
   end
 
   def oai_dc_identifier

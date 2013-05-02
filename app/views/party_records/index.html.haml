@@ -40,7 +40,7 @@
               %a.btn.btn-danger{:href => '/party_records/' + record.id.to_s, "data-method" => "delete", :id => "form_delete"} Delete
 %br
 = page_navigation_links(@party_records)
-
+%h2 Please Note. You need to have party records with abbreviation "SBI" and "UNSW"
 %a{:class => "btn btn-primary btn-right", :href => new_party_record_path}
   %i{:class => "icon-file icon-white"}
   New Party Record
