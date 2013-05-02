@@ -102,7 +102,7 @@ class Service < ActiveRecord::Base
 
   def service_related_objects
 
-    rc = PartyRecord.find_all_by_abbreviation("UNSW")
+    rc = PartyRecord.find_by_abbreviation("UNSW")
     bi = PartyRecord.find_by_abbreviation("SBI")
 
     [
