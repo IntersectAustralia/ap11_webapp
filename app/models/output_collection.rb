@@ -163,7 +163,7 @@ class OutputCollection < ActiveRecord::Base
     service = ::Service.first
     usr = User.find(exp.user_id)
     key = usr.oai_dc_identifier
-    bi = StaticPartyRecords.find_by_abbreviation("NSW Systems Biology Initiative")
+    bi = PartyRecord.find_by_abbreviation("SBI")
     related_objects =  [
           { :name => "has_collector", :values => { :key => key } },
           { :name => "is_managed_by", :values => { :key => bi.oai_dc_identifier} },
