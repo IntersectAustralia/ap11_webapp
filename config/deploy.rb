@@ -259,7 +259,7 @@ end
 desc "After updating code we need to populate a new database.yml"
 task :generate_database_yml, :roles => :app do
   require "yaml"
-  set :production_database_password, proc { Capistrano::CLI.password_prompt("Database password: ") }
+  #set :production_database_password, proc { Capistrano::CLI.password_prompt("Database password: ") }
 
   buffer = YAML::load_file('config/database.yml')
   # get rid of unneeded configurations
@@ -269,7 +269,7 @@ task :generate_database_yml, :roles => :app do
   buffer.delete('spec')
 
   # Populate production password
-  buffer[rails_env]['password'] = production_database_password
+  buffer[rails_env]['password'] = 'ap11'#production_database_password
 
   put YAML::dump(buffer), "#{release_path}/config/database.yml", :mode => 0664
 end
