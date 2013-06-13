@@ -46,7 +46,7 @@ namespace :server_setup do
     end
   end
   task :passenger, :roles => :app do
-    run "passenger-install-apache2-module -a"
+    #run "passenger-install-apache2-module -a"
   end
   namespace :config do
     task :apache do
