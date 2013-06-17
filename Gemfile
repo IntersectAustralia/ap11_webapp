@@ -50,6 +50,8 @@ end
 group :test do
   gem "cucumber-rails", :require => false
   gem "shoulda-matchers"
+  gem "simplecov", ">=0.3.8", :require => false
+  gem 'simplecov-rcov'
 end
 
 #group :production do
