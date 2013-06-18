@@ -11,15 +11,14 @@ namespace :db do
                             We work closely with users of the NCRIS-funded -omics facilities, specifically the &lt;a href="http://www.ramaciotti.unsw.edu.au/"&gt;Ramaciotti Centre&lt;/a&gt; for Gene Function Analysis, the &lt;a href="http://www.bmsf.unsw.edu.au/"&gt;Bioanalytical Mass Spectrometry Facility&lt;/a&gt; (BMSF), the &lt;a href="http://www.proteome.org.au/"&gt;Australian Proteome Analysis Facility&lt;/a&gt; (APAF) and &lt;a href="http://www.scu.edu.au/scps/"&gt;Southern Cross Plant Science&lt;/a&gt; at Southern Cross University.&lt;/p&gt;
 EOM
       service_hash = {
-          :description => """
-    The Proteomic Genomic Nexus is a software tool that:</p>
+          :description => "The Proteomic Genomic Nexus is a software tool that:</p>
 <ol>
-    <li>
-        allows genomics and transcriptomics data from next-generation sequencing to be integrated with that from proteomics, and</li>
-    <li>
-        allows the integrated data to assist in the confirmation of open reading frames and/or splice isoforms in a directed or naive way.</li>
+<li>
+allows genomics and transcriptomics data from next-generation sequencing to be integrated with that from proteomics, and</li>
+<li>
+allows the integrated data to assist in the confirmation of open reading frames and/or splice isoforms in a directed or naive way.</li>
 </ol>
-""",
+",
           :name => 'Proteomic Genomic Nexus',
           :url => 'http://www.intersect.org.au/proteomic-genomic-nexus',
           :published => true
