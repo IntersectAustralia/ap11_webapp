@@ -1,8 +1,8 @@
 class OutputCollectionsController < ApplicationController
 
+  before_filter :login_required
   before_filter :load_static_data, :only => [:new, :create, :edit, :update]
-  before_filter :authenticate_user!
-  load_and_authorize_resource
+  load_and_authorize_resource :except => [:show]
 
   def index
     @output_collections = OutputCollection.all
@@ -62,5 +62,10 @@ class OutputCollectionsController < ApplicationController
 
   def load_static_data
     @subject_codes = ResearchSubjectCode.all
+  end
+  def login_required
+    if !OutputCollection.exists?(params[:id]) || !OutputCollection.find(params[:id]).published
+      authenticate_user!
+    end
   end
 end

@@ -54,5 +54,6 @@
       = @input_collection.url
 
 .form-actions
-  %a.btn.btn-primary{:href => edit_experiment_input_collection_path(@experiment, @input_collection)} Edit Input Collection
-  %a.btn{:href => edit_experiment_path(@experiment)} Back
+  - if can?(:edit, @user) then
+    %a.btn.btn-primary{:href => edit_experiment_input_collection_path(@experiment, @input_collection)} Edit Input Collection
+    %a.btn{:href => edit_experiment_path(@experiment)} Back

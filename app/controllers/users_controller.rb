@@ -1,13 +1,15 @@
 class UsersController < ApplicationController
 
-  before_filter :authenticate_user!
-  load_and_authorize_resource
+  before_filter :login_required
+
+  load_and_authorize_resource :except => [:show]
 
   def index
     @users = User.deactivated_or_approved
   end
 
   def show
+    @user = User.find(params[:id])
   end
 
   def admin
@@ -78,6 +80,15 @@ class UsersController < ApplicationController
       redirect_to(access_requests_users_path, :notice => "The access request for #{@user.email} was approved.")
     else
       redirect_to(edit_approval_user_path(@user), :alert => "Please select a role for the user.")
+    end
+  end
+
+  private
+
+
+  def login_required
+    if !User.exists?(params[:id]) || !User.find(params[:id]).published
+      authenticate_user!
     end
   end
 end

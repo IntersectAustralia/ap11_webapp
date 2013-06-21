@@ -1,8 +1,8 @@
 class PartyRecordsController < ApplicationController
 
+  before_filter :login_required
   before_filter :load_static_data, :only => [:new, :create, :edit, :update]
-  before_filter :authenticate_user!
-  load_and_authorize_resource
+  load_and_authorize_resource :except => [:show]
 
   def index
     @party_records = PartyRecord.paginate(:page => params[:page], :per_page => 25).order(:abbreviation)
@@ -56,5 +56,11 @@ class PartyRecordsController < ApplicationController
 
   def load_static_data
     @subject_codes = ResearchSubjectCode.all
+  end
+
+  def login_required
+    if !PartyRecord.exists?(params[:id]) || !PartyRecord.find(params[:id]).published
+      authenticate_user!
+    end
   end
 end

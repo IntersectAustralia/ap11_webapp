@@ -1,0 +1,33 @@
+- content_for :breadcrumb do
+  -title "Service / #{@service.name}"
+
+%table.table.table-striped
+  %thead
+    %th
+  %tbody
+    %tr
+
+  %tr
+    %th Name
+    %th.table-value
+      = @service.name.to_s.html_safe
+  %tr
+    %th Description
+    %th.table-value
+      = @service.description.to_s.html_safe
+  %tr
+    %th License
+    %th.table-value
+      = @service.license.to_s.html_safe
+  %tr
+    %th Access rights
+    %th.table-value
+      = @service.access_rights.to_s.html_safe
+  %tr
+    %th Location
+    %th.table-value
+      = @service.location.to_s.html_safe
+  %tr
+    %th Website URL
+    %th.table-value
+      = @service.url.to_s.html_safe

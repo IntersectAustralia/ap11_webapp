@@ -6,3 +6,8 @@ end
 Given /^I delete the experiment$/ do
   click_link("form_delete")
 end
+
+Given(/^I publish an experiment "(.*?)"$/) do |experiment_name|
+  exp = Experiment.find_by_title(experiment_name)
+  exp.publish
+end

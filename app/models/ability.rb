@@ -15,7 +15,7 @@ class Ability
 
     # alias reject_as_spam to reject so they are considered the same
     alias_action :reject_as_spam, :to => :reject
-
+    user ||= User.new # User hasn't logged in
     return unless user.role
     user.role.permissions.each do |permission|
       action = permission.action.to_sym

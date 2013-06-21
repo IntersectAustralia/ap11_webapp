@@ -1,8 +1,8 @@
 class InputCollectionsController < ApplicationController
 
+  before_filter :login_required
   before_filter :load_static_data, :only => [:new, :create, :edit, :update]
-  before_filter :authenticate_user!
-  load_and_authorize_resource
+  load_and_authorize_resource  :except => [:show]
 
   def index
     @input_collections = InputCollection.all
@@ -62,5 +62,11 @@ class InputCollectionsController < ApplicationController
   def load_static_data
     @subject_codes = ResearchSubjectCode.all
     @party_records = PartyRecord.all
+  end
+
+  def login_required
+    if !InputCollection.exists?(params[:id]) || !InputCollection.find(params[:id]).published
+      authenticate_user!
+    end
   end
 end
