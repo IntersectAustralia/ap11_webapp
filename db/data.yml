@@ -75,7 +75,7 @@ input_collections:
   - experiment_id
   - created_at
   - updated_at
-  - collection_type
+  - collect_type
   records: 
   - - '1'
     - QA Test Input Collection 1 - Local
