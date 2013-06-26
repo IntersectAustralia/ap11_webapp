@@ -43,7 +43,7 @@
     %th.table-value
       = @party_record.license
 
-
 .form-actions
-  %a.btn.btn-primary{:href => edit_party_record_path(@party_record)} Edit Record
-  %a.btn{:href => party_records_path} Back
+  - if can?(:edit, @user) then
+    %a.btn.btn-primary{:href => edit_party_record_path(@party_record)} Edit Record
+    %a.btn{:href => party_records_path} Back

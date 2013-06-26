@@ -84,6 +84,8 @@ Feature: Displaying records that are published to ands
     Given I publish an experiment "some experiment"
     Given I visit party record page for description "My sample party record"
     Then I should see "My sample party record"
+    And I should not see "Edit Record"
+    And I should not see "Back"
 
   Scenario: I shouldn't see information  for not published party record
     Given I have an experiment "some experiment"
