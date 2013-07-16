@@ -9,7 +9,7 @@ class ServiceController  < ApplicationController
 
   private
   def login_required
-    if !Service.exists?(params[:id]) || !Service.find(params[:id]).published
+    if (!Service.exists? :id => params[:id]) || !Service.find(params[:id].to_i).published
       authenticate_user!
     end
   end

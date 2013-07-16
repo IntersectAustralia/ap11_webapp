@@ -87,7 +87,7 @@ class UsersController < ApplicationController
 
 
   def login_required
-    if !User.exists?(params[:id]) || !User.find(params[:id]).published
+    if (!User.exists? :id => params[:id]) || !User.find(params[:id].to_i).published
       authenticate_user!
     end
   end

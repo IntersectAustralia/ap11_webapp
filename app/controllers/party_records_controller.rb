@@ -59,7 +59,7 @@ class PartyRecordsController < ApplicationController
   end
 
   def login_required
-    if !PartyRecord.exists?(params[:id]) || !PartyRecord.find(params[:id]).published
+    if (!PartyRecord.exists? :id => params[:id]) || !PartyRecord.find(params[:id].to_i).published
       authenticate_user!
     end
   end

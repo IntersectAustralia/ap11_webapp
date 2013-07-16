@@ -64,7 +64,7 @@ class OutputCollectionsController < ApplicationController
     @subject_codes = ResearchSubjectCode.all
   end
   def login_required
-    if !OutputCollection.exists?(params[:id]) || !OutputCollection.find(params[:id]).published
+    if (!OutputCollection.exists? :id => params[:id])  || !OutputCollection.find(params[:id].to_i).published
       authenticate_user!
     end
   end

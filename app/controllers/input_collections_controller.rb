@@ -65,7 +65,7 @@ class InputCollectionsController < ApplicationController
   end
 
   def login_required
-    if !InputCollection.exists?(params[:id]) || !InputCollection.find(params[:id]).published
+    if !(InputCollection.exists? :id => params[:id])  || !InputCollection.find(params[:id].to_i).published
       authenticate_user!
     end
   end

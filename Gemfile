@@ -7,7 +7,7 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'pg'
-gem 'mysql', '~> 2.8'
+gem 'mysql2'
 
 
 # Gems used only for assets and not required
@@ -83,3 +83,4 @@ gem 'will_paginate', '~> 3.0'
 gem 'handles_sortable_columns'
 gem "oai_repository", :git => 'http://github.com/IntersectAustralia/oai_repository.git'
 gem 'rif-cs', :git => 'http://github.com/IntersectAustralia/ruby_rif-cs.git'
+gem "brakeman", :require => false
