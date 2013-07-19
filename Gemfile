@@ -64,7 +64,7 @@ gem "haml"
 gem "haml-rails"
 gem "bootstrap-sass"
 gem "simple_form"
-gem "devise" , '~> 2.1.2'
+gem "devise" , '~> 2.1.3'
 gem "email_spec", :group => :test
 gem "cancan"
 gem "capistrano-ext"
