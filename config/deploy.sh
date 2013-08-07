@@ -1,6 +1,6 @@
 
 mkdir ~/tmp
-mysql -u root < /home/devel/code_base/ap11_webapp-master/config/deploy.sql
+mysql -u root < /home/devel/code_base/ap11_webapp/config/deploy.sql
 #bundle install
 gem install capistrano
 gem install capistrano-ext
