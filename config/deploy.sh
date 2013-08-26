@@ -4,7 +4,7 @@ mysql -u root < /home/devel/code_base/ap11_webapp/config/deploy.sql
 gem install capistrano
 gem install capistrano-ext
 gem install passenger -v4.0.14
-#passenger-install-apache2-module < ~/pressEnter
+passenger-install-apache2-module < ~/pressEnter
 cap production_local deploy:setup  <~/password
 cap production_local deploy:update <~/password
 cap production_local deploy:schema_load <~/password
