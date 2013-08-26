@@ -1,1 +1,1 @@
-rvm ruby-1.9.3@ap11 --create
+rvm ruby-1.9.3-p448@ap11 --create
