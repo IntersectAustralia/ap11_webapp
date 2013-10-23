@@ -78,6 +78,7 @@ after 'deploy:update' do
   server_setup.logging.rotation
   server_setup.config.apache
   deploy.copy_config_to_shared_folder
+  deploy.new_secret
   deploy.restart
   deploy.additional_symlinks
 end
@@ -90,7 +91,9 @@ after 'deploy:finalize_update' do
 end
 
 namespace :deploy do
-
+  task :new_secret, :roles => :app do
+    run("cd #{current_path} && rake app:generate_secret", :env => {'RAILS_ENV' => "#{stage}"})
+  end
   # Passenger specifics: restart by touching the restart.txt file
   task :start, :roles => :app, :except => {:no_release => true} do
     restart
